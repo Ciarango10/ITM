@@ -69,8 +69,20 @@ class Usuario():
             return None
         else:
             planilla = temp.data  
-            planilla.calcularPago()
-            planilla.estado = "Pagada"  
+            costo = planilla.calcularPago()
+            planilla.estado = "Pagada"
+            self.generarComprobante(planilla, costo)
+            
 
-    def generarComprobante(self,planilla,valor):
-        pass
+    def generarComprobante(self, planilla, valor):
+        try:
+            file = open("ArchivoPagos.txt", "w")
+            try:
+                while planilla is not None:
+                    file.write(str(planilla) + " " + str(valor) + "\n")
+                    planilla = planilla.next
+            finally:
+                file.close()
+        except:
+            print("Error de escritura en el archivo")
+
