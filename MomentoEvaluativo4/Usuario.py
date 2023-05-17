@@ -1,4 +1,5 @@
 import DoubleList as dl
+import Planilla as p
 class Usuario():
     def __init__(self, idenfificacion, nombre, fechaNacimiento):
         self.__identificacion = idenfificacion
@@ -35,7 +36,10 @@ class Usuario():
         return self.__identificacion + " " + self.__nombre + " " + self.__fechaNacimiento + " " + self.__planillas
     
     def agregarPlanilla(self,periodo,IBC,claseRiesgo):
-        pass
+        planilla = p.Planilla(periodo,IBC,claseRiesgo) #Creamos la planilla
+        agregarPlanilla = dl.DoubleList() #Creamos el nodo doble
+        agregarPlanilla.addFirst(planilla) #Agregamos la planilla al nodo doble
+
     def buscarPlanillaCodigo(self,codigo):
         pass
         #return doubleNode
