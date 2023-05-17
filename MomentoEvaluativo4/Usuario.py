@@ -73,14 +73,11 @@ class Usuario():
             planilla.estado = "Pagada"
             self.generarComprobante(planilla, costo)
             
-
-    def generarComprobante(self, planilla, valor):
+    def generarComprobante(self, planilla, valor): #INCOMPLETO
         try:
             file = open("ArchivoPagos.txt", "w")
             try:
-                while planilla is not None:
                     file.write(str(planilla) + " " + str(valor) + "\n")
-                    planilla = planilla.next
             finally:
                 file.close()
         except:
