@@ -1,8 +1,8 @@
 import DoubleList as dl
 import Planilla as p
 class Usuario():
-    def __init__(self, idenfificacion="", nombre="", fechaNacimiento = ""):
-        self.__identificacion = idenfificacion
+    def __init__(self, identificacion = "", nombre = "", fechaNacimiento = ""):
+        self.__identificacion = identificacion
         self.__nombre = nombre
         self.__fechaNacimiento = fechaNacimiento
         self.__planillas = dl.DoubleList()
@@ -36,34 +36,41 @@ class Usuario():
         return str(self.__identificacion) + " " + self.__nombre + " " + str(self.__fechaNacimiento) + " " + str(self.__planillas)
     
     def agregarPlanilla(self,periodo,IBC,claseRiesgo):
-        planilla = p.Planilla(periodo,IBC,claseRiesgo) #Creamos la planilla
-        agregarPlanilla = dl.DoubleList() #Creamos el nodo doble
-        agregarPlanilla.addFirst(planilla) #Agregamos la planilla al nodo doble
-        return agregarPlanilla
+        planilla = p.Planilla(periodo,IBC,claseRiesgo)
+        self.__planillas.addFirst(planilla)
 
     def buscarPlanillaCodigo(self,codigo):
-        pass
-        #return doubleNode
-        
+        temp = self.__planillas.first()
+        while temp != None and codigo != temp.data.codigo:
+            temp = temp.next
+        if temp == None:
+            return None 
+        else:
+            return temp
+
     def buscarPlanillaPeriodo(self, periodo):
-        temp = dl.DoubleList()
-        temp = temp.__head
-        while periodo != temp.data.periodo and temp != None:
+        temp = self.__planillas.first()
+        while temp != None and periodo != temp.data.periodo :
             temp = temp.next
         if temp == None:
             return None 
         else:
             return temp
             
-        #return doubleList
     def eliminarPlanilla(self,codigo):
-        eliminar = dl.DoubleList()
-        temp = self.buscarPlanillaPeriodo(codigo)
+        temp = self.buscarPlanillaCodigo(codigo)
         if temp != None:
-            eliminar.remove(temp)
-            
-        #return planilla
-    def pagarPlantilla(self,codigo):
-        pass
+            self.__planillas.remove(temp)      
+            return temp
+
+    def pagarPlanilla(self, codigo):
+        temp = self.buscarPlanillaCodigo(codigo)
+        if temp is None:
+            return None
+        else:
+            planilla = temp.data  
+            planilla.calcularPago()
+            planilla.estado = "Pagada"  
+
     def generarComprobante(self,planilla,valor):
         pass

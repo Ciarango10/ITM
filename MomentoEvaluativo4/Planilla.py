@@ -1,13 +1,14 @@
 class Planilla():
-    __codigo = 0
-    def __init__(self,periodo="",IBC=0.0,claseRiesgo=0):
-        Planilla.__codigo +=1
+    contador_plantillas = 0
+    def __init__(self,periodo = "",IBC= 0.0,claseRiesgo = 0):
+        Planilla.contador_plantillas += 1
         self.__periodo = periodo
         self.__IBC = IBC
         self.__claseRiesgo = claseRiesgo
         self.__estado = ""
         self.__pagoSalud = 0.0
         self.__pagoPension = 0.0
+        self.__codigo = 0
 
     @property
     def codigo(self):

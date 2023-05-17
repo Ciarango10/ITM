@@ -111,6 +111,8 @@ class DoubleList():
             m.next = n                   
         self.__size+=1
 
+    def __str__(self):
+        return str(self.__head)
 
 
 
