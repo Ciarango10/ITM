@@ -1,6 +1,6 @@
 class Planilla():
     __codigo = 0
-    def __init__(self,periodo,IBC,claseRiesgo):
+    def __init__(self,periodo="",IBC=0.0,claseRiesgo=0):
         Planilla.__codigo +=1
         self.__periodo = periodo
         self.__IBC = IBC
@@ -50,7 +50,7 @@ class Planilla():
         return self.__pagoPension
     
     def __str__(self):
-        return self.__codigo + " " + self.__periodo + " " + self.__IBC + " " + self.__claseRiesgo + " " + self.__estado + " " + self.__pagoPension + " " + self.__pagoSalud
+        return str(self.__codigo) + " " + str(self.__periodo) + " " + str(self.__IBC) + " " + str(self.__claseRiesgo) + " " + str(self.__estado) + " " + str(self.__pagoPension) + " " + str(self.__pagoSalud)
 
     def calcularPago(self):
         self.__pagoSalud = 0.16 * self.__IBC 

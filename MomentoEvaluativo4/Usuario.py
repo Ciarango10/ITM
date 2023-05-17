@@ -1,7 +1,7 @@
 import DoubleList as dl
 import Planilla as p
 class Usuario():
-    def __init__(self, idenfificacion, nombre, fechaNacimiento):
+    def __init__(self, idenfificacion="", nombre="", fechaNacimiento = ""):
         self.__identificacion = idenfificacion
         self.__nombre = nombre
         self.__fechaNacimiento = fechaNacimiento
@@ -33,21 +33,35 @@ class Usuario():
         return self.__planillas 
     
     def __str__(self):
-        return self.__identificacion + " " + self.__nombre + " " + self.__fechaNacimiento + " " + self.__planillas
+        return str(self.__identificacion) + " " + self.__nombre + " " + str(self.__fechaNacimiento) + " " + str(self.__planillas)
     
     def agregarPlanilla(self,periodo,IBC,claseRiesgo):
         planilla = p.Planilla(periodo,IBC,claseRiesgo) #Creamos la planilla
         agregarPlanilla = dl.DoubleList() #Creamos el nodo doble
         agregarPlanilla.addFirst(planilla) #Agregamos la planilla al nodo doble
+        return agregarPlanilla
 
     def buscarPlanillaCodigo(self,codigo):
         pass
         #return doubleNode
+        
     def buscarPlanillaPeriodo(self, periodo):
-        pass
+        temp = dl.DoubleList()
+        temp = temp.__head
+        while periodo != temp.data.periodo and temp != None:
+            temp = temp.next
+        if temp == None:
+            return None 
+        else:
+            return temp
+            
         #return doubleList
     def eliminarPlanilla(self,codigo):
-        pass
+        eliminar = dl.DoubleList()
+        temp = self.buscarPlanillaPeriodo(codigo)
+        if temp != None:
+            eliminar.remove(temp)
+            
         #return planilla
     def pagarPlantilla(self,codigo):
         pass
