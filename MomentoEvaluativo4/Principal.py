@@ -1,37 +1,76 @@
 import Usuario as us
-import Planilla as p
 import SeguridadSocial as segSocial
+import Planilla as p
+
+seguridad1 = segSocial.SeguridadSocial() #Inicializamos el objeto 
+usuario1 = us.Usuario("1025643641", "Carlos Arango", "31/01/2005")
+
+#METODOS USUARIO-----------------------------------------------------
+#Agregamos las planillas al usuario
+usuario1.agregarPlanilla("AAA",12.2,0)
+usuario1.agregarPlanilla("BBB",12.2,1)
+
+#----------------REVISION-----------------
+#Buscamos las planillas mediante el codigo
+#print(usuario1.buscarPlanillaCodigo(0))
+#print(usuario1.buscarPlanillaCodigo(0))
+#---------------FIN REVISION--------------
+
+#Buscamos las planillas mediante el periodo
+print(usuario1.buscarPlanillaPeriodo("AAA"))
+print(usuario1.buscarPlanillaPeriodo("BBB"))
+
+#----------------REVISION-----------------
+#Eliminar Planilla
+#print(usuario1.eliminarPlanilla(0))
+#print(usuario1.eliminarPlanilla(1))
+#---------------FIN REVISION--------------
+
+#Pagar Planilla
+usuario1.pagarPlanilla(0)
+usuario1.pagarPlanilla(1) #Hay que organizar con los demás codigos, pero está funcional
+
+#FIN METODOS USUARIO-------------------------------------------------
+
+#METODOS SEGURIDAD SOCIAL--------------------------------------------
+#Agregamos los usuarios a la coleccion de usuarios
+seguridad1.agregarUsuario("1025643641", "Carlos Arango", "21/01/2005")
+seguridad1.agregarUsuario("1025643644", "Ivan Londoño", "22/04/2000")
+seguridad1.agregarUsuario("1025643645", "Santiago Ruiz", "14/08/1998")
 
 
+#Buscamos los usuarios por id
+print(seguridad1.buscarUsuario("1025643641"))
+print(seguridad1.buscarUsuario("1025643644"))
+print(seguridad1.buscarUsuario("1025643645"))
 
-planilla1 = p.Planilla("aaaa", 12.2, 0)
+#Eliminamos usuarios por id
+print(seguridad1.eliminarUsuario("1025643645"))
+print(seguridad1.buscarUsuario("1025643645")) #Buscamos nuevamente el usuario para confirmar que ya no aparece en la coleccion
 
-usuario1 = us.Usuario("1928319023", "Carlos Arango", "2015")
-usuario2 = us.Usuario("1928319024","Ivan Londono", "2016")
+#Agregar Planilla Usuario
+seguridad1.agregarPlanillaUsuario("1025643641", "PlanillaUsuario", 15.0, 3)
+seguridad1.agregarPlanillaUsuario("1025643641", "PlanillaUsuario", 14.0, 0) #Funciona pero no se combinan las planillas con las que ya habian anteriormente
 
-usuario1.agregarPlanilla("BBBB", 13, 0)
-print(usuario1.buscarPlanillaPeriodo("BBBB"))
-print(usuario1.pagarPlanilla(0))
+#Imprimir planilla Unica
+seguridad1.imprimirPlanillaUnica("1025643641", 0)
 
-seguridad1 = segSocial.SeguridadSocial()
+#Imprimir planillas periodo
+#-------------------------REVISION--------------------------------------
+#seguridad1.imprimirPlanillasPeriodo("1025643641","PlanillaUsuario")
+#-----------------------FIN REVISION------------------------------------
 
+#Eliminar Planilla Usuario
+print(seguridad1.eliminarPlanillaUsuario("1025643641",0))
 
-seguridad1.agregarUsuario("1928319023", "Carlos Arango", "2015")
-seguridad1.agregarUsuario("1928319024","Ivan Londono", "2016")
-seguridad1.agregarUsuario("1928319025","Isamuel", "2016")
-seguridad1.agregarUsuario("1928319026","arango", "2016")
+#Pagar planilla usuario
+#seguridad1.pagarPlanillaUsuario()  SIN REALIZAR
 
-
-
-print(seguridad1.buscarUsuario("1928319023"))
-print(seguridad1.eliminarUsuario("1928319023"))
-print(seguridad1.buscarUsuario("1928319023"))
-print(seguridad1.agregarPlanillaUsuario(usuario2.identificacion,"BBBB", 13, 0))
-print(usuario2.buscarPlanillaCodigo(0))
-print(seguridad1.eliminarPlanillaUsuario("1928319024", 0))
-seguridad1.imprimirPlanillaUnica("1928319024",0)
-
+#Listar Usuarios
 seguridad1.listarUsuarios()
+#FIN METODOS SEGURIDAD SOCIAL----------------------------------------
+
+
 
 
 

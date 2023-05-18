@@ -51,7 +51,7 @@ class Planilla():
         return self.__pagoPension
     
     def __str__(self):
-        return str(self.__codigo) + " " + str(self.__periodo) + " " + str(self.__IBC) + " " + str(self.__claseRiesgo) + " " + str(self.__estado) + " " + str(self.__pagoPension) + " " + str(self.__pagoSalud)
+        return str(self.__codigo) + " " + str(self.__periodo) + " " + str(self.__IBC) + " " + str(self.__claseRiesgo) + " " + str(self.__estado) + " " + str(self.__pagoPension) + " " + str(self.__pagoSalud) + "\n"
 
     def calcularPago(self):
         self.__pagoSalud = 0.16 * self.__IBC 

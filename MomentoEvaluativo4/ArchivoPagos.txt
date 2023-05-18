@@ -1,1 +1,1 @@
-0 BBBB 13 0 Pagada 1.56 2.08 3.64
+USUARIO= Id:1025643641 Nombre:Carlos Arango PLANILLA= Codigo:0 Periodo:BBB IBC:12.2 Clase Riesgo:1 Estado:Pagada Pago salud:1.952 Pago Pension:1.464 Valor:3.4796839999999998

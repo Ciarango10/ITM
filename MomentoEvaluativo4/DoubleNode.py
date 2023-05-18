@@ -29,6 +29,6 @@ class DoubleNode():
         self.__prev = prev
 
     def __str__(self):
-        return str(self.data) + ' ' + str(self.next)
+        return str(self.data)
 
 
