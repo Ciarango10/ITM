@@ -5,10 +5,10 @@ class Planilla():
         self.__periodo = periodo
         self.__IBC = IBC
         self.__claseRiesgo = claseRiesgo
-        self.__estado = ""
+        self.__estado = "Pago Pendiente"
         self.__pagoSalud = 0.0
         self.__pagoPension = 0.0
-        self.__codigo = 0
+        self.__codigo = Planilla.contador_plantillas
 
     @property
     def codigo(self):

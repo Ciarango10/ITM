@@ -47,16 +47,19 @@ class Usuario():
             return None 
         else:
             return temp
-
+        
     def buscarPlanillaPeriodo(self, periodo):
         temp = self.__planillas.first()
-        while temp != None and periodo != temp.data.periodo :
+        listaTemporal = dl.DoubleList()
+        while temp is not None:
+            if temp.data.periodo == periodo:
+                listaTemporal.addFirst(temp)
             temp = temp.next
-        if temp == None:
+        if listaTemporal.isEmpty():
             return None 
         else:
-            return temp
-            
+            return listaTemporal
+
     def eliminarPlanilla(self,codigo):
         temp = self.buscarPlanillaCodigo(codigo)
         if temp != None:
@@ -66,7 +69,7 @@ class Usuario():
     def pagarPlanilla(self, codigo):
         temp = self.buscarPlanillaCodigo(codigo)
         if temp is None:
-            return None
+            return None     
         else:
             planilla = temp.data  
             costo = planilla.calcularPago()

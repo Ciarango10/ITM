@@ -45,6 +45,7 @@ class SeguridadSocial():
                 file.close()
         except:
             print("Error de escritura en el archivo")
+
 #METODO INCOMPLETO Y NO FUNCIONAL-------------------------------------------------
     def imprimirPlanillasPeriodo(self,identificacionUsuario, periodoPlanilla): 
         usuario = self.buscarUsuario(identificacionUsuario)
@@ -52,7 +53,7 @@ class SeguridadSocial():
         try:
             file = open("MultiplesPlanillas.txt", "w")
             try:
-                temp = usuario.first()
+                temp = planilla.first()
                 while temp.data != None:
                     file.write("USUARIO= Id:" + str(usuario.data.identificacion) + " Nombre:" + str(usuario.data.nombre) + " PLANILLA= " + "Codigo:" + str(planilla.data.codigo) + " Periodo:" + str(planilla.data.periodo) + " IBC:" + str(planilla.data.IBC) +  " Clase Riesgo:" + str(planilla.data.claseRiesgo)  + " Estado:" + str(planilla.data.estado)+ " Pago salud:" + str(planilla.data.pagoSalud)+ " Pago Pension:" + str(planilla.data.pagoPension)+ "\n")
                     temp = temp.next
@@ -67,8 +68,9 @@ class SeguridadSocial():
             eliminada = usuario.data.eliminarPlanilla(codigoPlanilla)
             return eliminada
 
-    def pagarPlanillaUsuario(self,identificacioUsuario,codigoPlanilla): #INCOMPLETO
-        pass
+    def pagarPlanillaUsuario(self,identificacioUsuario,codigoPlanilla): 
+        usuario = self.buscarUsuario(identificacioUsuario)
+        usuario.data.pagarPlanilla(codigoPlanilla)
     
     def listarUsuarios(self): 
         temp = self.__usuarios.first()
