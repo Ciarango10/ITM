@@ -6,13 +6,13 @@ seguridad1 = segSocial.SeguridadSocial() #Inicializamos el objeto
 usuario1 = us.Usuario("1025643641", "Carlos Arango", "31/01/2005")
 planilla1 = p.Planilla("CCC",12.2,5)
 
-#METODOS USUARIO-----------------------------------------------------
+print("#METODOS USUARIO\n")#-----------------------------------------------------
 #Agregamos las planillas al usuario
 usuario1.agregarPlanilla("AAA",12.2,0)
 usuario1.agregarPlanilla("AAA",20.2,0)
 usuario1.agregarPlanilla("BBB",12.2,1)
 
-#Buscamos las planillas mediante el codigo
+print("#Buscamos las planillas mediante el codigo")
 print(usuario1.buscarPlanillaCodigo(4))
 print(usuario1.buscarPlanillaCodigo(2))
 
@@ -48,12 +48,15 @@ print(seguridad1.buscarUsuario("1025643645")) #Buscamos nuevamente el usuario pa
 #Agregar Planilla Usuario
 seguridad1.agregarPlanillaUsuario("1025643641", "PlanillaUsuario", 15.0, 3)
 seguridad1.agregarPlanillaUsuario("1025643641", "PlanillaUsuario", 14.0, 0)
+seguridad1.agregarPlanillaUsuario("1025643641", "PlanillaUsuario", 22.0, 5)
+
 
 #Imprimir planilla Unica
 seguridad1.imprimirPlanillaUnica("1025643641", 5)
 
-#Imprimir planillas periodo
-seguridad1.imprimirPlanillasPeriodo("1025643641","AAA")
+print("#Imprimir planillas periodo")
+seguridad1.imprimirPlanillasPeriodo("1025643641","PlanillaUsuario")
+
 
 #Eliminar Planilla Usuario
 print(seguridad1.eliminarPlanillaUsuario("1025643641",0))

@@ -48,19 +48,22 @@ class SeguridadSocial():
 
 #METODO INCOMPLETO Y NO FUNCIONAL-------------------------------------------------
     def imprimirPlanillasPeriodo(self,identificacionUsuario, periodoPlanilla): 
-        usuario = self.buscarUsuario(identificacionUsuario)
-        planilla = usuario.data.buscarPlanillaPeriodo(periodoPlanilla)
-        try:
+       usuario = self.buscarUsuario(identificacionUsuario)
+       planilla = usuario.data.buscarPlanillaPeriodo(periodoPlanilla)
+       try:
             file = open("MultiplesPlanillas.txt", "w")
             try:
                 temp = planilla.first()
-                while temp.data != None:
-                    file.write("USUARIO= Id:" + str(usuario.data.identificacion) + " Nombre:" + str(usuario.data.nombre) + " PLANILLA= " + "Codigo:" + str(planilla.data.codigo) + " Periodo:" + str(planilla.data.periodo) + " IBC:" + str(planilla.data.IBC) +  " Clase Riesgo:" + str(planilla.data.claseRiesgo)  + " Estado:" + str(planilla.data.estado)+ " Pago salud:" + str(planilla.data.pagoSalud)+ " Pago Pension:" + str(planilla.data.pagoPension)+ "\n")
+                while temp != None:
+                    file.write("USUARIO= Id:" + str(usuario.data.identificacion) + " Nombre:" + str(usuario.data.nombre) + " PLANILLA= " + "Codigo:" + str(temp.data.codigo) + " Periodo:" + str(temp.data.periodo) + " IBC:" + str(temp.data.IBC) +  " Clase Riesgo:" + str(temp.data.claseRiesgo)  + " Estado:" + str(temp.data.estado)+ " Pago salud:" + str(temp.data.pagoSalud)+ " Pago Pension:" + str(temp.data.pagoPension)+ "\n")
                     temp = temp.next
             finally:
                 file.close()
-        except:
+       except:
             print("Error de escritura en el archivo")
+
+
+
 #---------------------------------------------------------------------------------
     def eliminarPlanillaUsuario(self,identificacionUsuario,codigoPlanilla): 
         usuario = self.buscarUsuario(identificacionUsuario)

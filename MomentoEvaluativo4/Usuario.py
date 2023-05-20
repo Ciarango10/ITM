@@ -1,5 +1,6 @@
 import DoubleList as dl
 import Planilla as p
+
 class Usuario():
     def __init__(self, identificacion = "", nombre = "", fechaNacimiento = ""):
         self.__identificacion = identificacion
@@ -53,7 +54,7 @@ class Usuario():
         listaTemporal = dl.DoubleList()
         while temp is not None:
             if temp.data.periodo == periodo:
-                listaTemporal.addFirst(temp)
+                listaTemporal.addFirst(temp.data)
             temp = temp.next
         if listaTemporal.isEmpty():
             return None 
