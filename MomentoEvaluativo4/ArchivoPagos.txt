@@ -1,1 +1,4 @@
-USUARIO= Id:1025643641 Nombre:Carlos Arango PLANILLA= Codigo:5 Periodo:PlanillaUsuario IBC:15.0 Clase Riesgo:3 Estado:Pagada Pago salud:2.4 Pago Pension:1.7999999999999998 Valor:4.5654
+USUARIO:
+Id:1025643689 Nombre:Efren Ruiz
+PLANILLA: 
+Codigo:5 Periodo:Febrero IBC:31.2 Clase Riesgo:0 Estado:Pagada Pago salud:4.992 Pago Pension:3.7439999999999998 Valor:8.736

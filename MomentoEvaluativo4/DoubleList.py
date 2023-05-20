@@ -1,3 +1,10 @@
+"""
+Carlos Ivan Arango Londoño
+Juan David Machado Mosquera
+Santiago Gonzalez Ruiz
+Cesar Augusto Marin Suaza
+Grupo 580506004-10
+"""
 import DoubleNode as Dnd
 class DoubleList():
     def __init__(self):

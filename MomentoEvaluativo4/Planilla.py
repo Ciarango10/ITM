@@ -1,3 +1,10 @@
+"""
+Carlos Ivan Arango Londoño
+Juan David Machado Mosquera
+Santiago Gonzalez Ruiz
+Cesar Augusto Marin Suaza
+Grupo 580506004-10
+"""
 class Planilla():
     contador_plantillas = 0
     def __init__(self,periodo = "",IBC= 0.0,claseRiesgo = 0):

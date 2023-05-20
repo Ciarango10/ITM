@@ -1,1 +1,4 @@
-USUARIO= Id:1025643641 Nombre:Carlos Arango PLANILLA= Codigo:5 Periodo:PlanillaUsuario IBC:15.0 Clase Riesgo:3 Estado:Pago Pendiente Pago salud:0.0 Pago Pension:0.0
+USUARIO: 
+Id:1025643641 Nombre:Carlos Arango
+PLANILLA: 
+Codigo:3 Periodo:PlanillaUsuario IBC:22.0 Clase Riesgo:5 Estado:Pago Pendiente Pago salud:0.0 Pago Pension:0.0

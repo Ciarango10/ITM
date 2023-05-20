@@ -1,8 +1,15 @@
+"""
+Carlos Ivan Arango Londoño
+Juan David Machado Mosquera
+Santiago Gonzalez Ruiz
+Cesar Augusto Marin Suaza
+Grupo 580506004-10
+"""
 import DoubleList as dl
 import Planilla as p
-
+import datetime 
 class Usuario():
-    def __init__(self, identificacion = "", nombre = "", fechaNacimiento = ""):
+    def __init__(self, identificacion = "", nombre = "", fechaNacimiento = datetime):
         self.__identificacion = identificacion
         self.__nombre = nombre
         self.__fechaNacimiento = fechaNacimiento
@@ -81,7 +88,7 @@ class Usuario():
         try:
             file = open("ArchivoPagos.txt", "w")
             try:
-                file.write("USUARIO= Id:" + str(self.identificacion) + " Nombre:" + str(self.nombre) + " PLANILLA= " + "Codigo:" + str(planilla.codigo) + " Periodo:" + str(planilla.periodo) + " IBC:" + str(planilla.IBC) +  " Clase Riesgo:" + str(planilla.claseRiesgo)  + " Estado:" + str(planilla.estado)+ " Pago salud:" + str(planilla.pagoSalud)+ " Pago Pension:" + str(planilla.pagoPension)+ " Valor:" + str(valor) + "\n")
+                file.write("USUARIO:" + "\n" + "Id:" + str(self.identificacion) + " Nombre:" + str(self.nombre) + "\n" +  "PLANILLA: " + "\n" + "Codigo:" + str(planilla.codigo) + " Periodo:" + str(planilla.periodo) + " IBC:" + str(planilla.IBC) +  " Clase Riesgo:" + str(planilla.claseRiesgo)  + " Estado:" + str(planilla.estado)+ " Pago salud:" + str(planilla.pagoSalud)+ " Pago Pension:" + str(planilla.pagoPension)+ " Valor:" + str(valor) + "\n")
             finally:
                 file.close()
         except:
