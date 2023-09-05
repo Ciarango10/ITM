@@ -1,0 +1,2 @@
+ALTER TABLE Alumno
+ADD CONSTRAINT CHK_Alumno CHECK(Nombre NOT LIKE '%[^0-9-A-Z-az]%')
