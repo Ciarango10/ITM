@@ -107,22 +107,17 @@ GO
 -- INDICE COLUMNAR
 CREATE NONCLUSTERED COLUMNSTORE INDEX CL_TituloIndiceCancion ON Cancion(Titulo);
 GO
-SELECT * FROM Cancion WITH (INDEX = CL_TituloIndiceCancion);
-GO
 -- INDICE NO AGRUPADO
 CREATE NONCLUSTERED INDEX CL_NombreIndiceGenero ON Genero(Nombre);
-GO
-SELECT * FROM Genero WITH (INDEX = CL_NombreIndiceGenero);
 GO
 -- PARA CREAR EL INDICE AGRUPADO TENEMOS QUE QUITAR LA PRIMARY KEY DE LA TABLA ALBUM, POR LO QUE TENEMOS PRIMERO QUE QUITAR SU REFERENCIA EN LA TABLA CANCION
 ALTER TABLE Cancion
 DROP CONSTRAINT FKAlbum_Cancion;
 GO
 ALTER TABLE Album
-DROP CONSTRAINT PK__Album__BF9C2A224992ADC4;
-CREATE CLUSTERED INDEX CL_TituloIndiceAlbum ON Album(Titulo);
+DROP CONSTRAINT PK__Album__BF9C2A221D8B7B2D;
 GO
-SELECT * FROM Album WITH (INDEX = CL_TituloIndiceAlbum);
+CREATE CLUSTERED INDEX CL_TituloIndiceAlbum ON Album(Titulo);
 GO
 -- 8)
 INSERT INTO Genero (IdGenero, Nombre) 
@@ -176,7 +171,8 @@ VALUES
 (7, 'Guns N Roses', 'Gns&Rss@example.com'), 
 (8, 'The Weeknd', 'wknd@example.com'), 
 (9, 'Frank Sinatra', 'franksinatra@example.com'), 
-(10, 'Martin Garrix', 'garrixmartin@example.com'); 
+(10, 'Martin Garrix', 'garrixmartin@example.com'),
+(11, 'Juan Machado', 'machado@example.com');
 GO
 INSERT INTO Album (IdAlbum,Titulo,Lanzamiento,Id_Artista)
 VALUES 
@@ -198,11 +194,15 @@ VALUES
 (3, 'In Da Club', 197000,'2003-01-01', 1, 5, 10, 8, 6), 
 (4, 'La Diabla', 240000,'2011-01-01', 1, 3, 3, 1, 2), 
 (5, 'Die for you', 260000,'2018-04-20', 1, 8, 2, 7, 8), 
-(6, 'OJITOS ROJOS', 227000,'2022-11-03', 1, 1, 1, 2, 4), 
+(6, 'OJITOS ROJOS', 222000,'2022-03-25', 1, 1, 1, 2, 4), 
 (7, 'OTRA NOCHE EN MIAMI', 234000,'2018-12-23', 1, 9, 5, 4, 5), 
 (8, 'El Cantante', 274000,'1978-01-01', 1, 10, 6, 3, 1), 
-(9, 'De 100 a 0', 206000,'2023-03-17', 1, 4, 7, 5, 3), 
+(9, 'De 100 a 0', 206000,'2022-03-25', 1, 4, 7, 5, 3), 
 (10, 'Sweet Child O Mine', 300000,'1987-07-21', 1, 7, 8, 9, 7); 
+GO
+INSERT INTO Cancion (IdCancion, Titulo, Milisegundos, Lanzamiento, Estado, Id_Compositor, Id_Productor, Id_Genero)
+VALUES 
+(11, 'UN PREVIEW', 190000,'2023-09-24', 1, 9, 4, 5);
 GO
 INSERT INTO CancionXArtista (IdCancionXArtista, Id_Artista, Id_Cancion)
 VALUES 
@@ -216,6 +216,14 @@ VALUES
 (8, 5, 7),
 (9, 8, 5),
 (10, 6, 3);
+GO
+INSERT INTO CancionXArtista (IdCancionXArtista, Id_Cancion)
+VALUES 
+(11, 11);
+GO
+INSERT INTO CancionXArtista (IdCancionXArtista, Id_Artista)
+VALUES 
+(12, 11);
 GO
 INSERT INTO Premios (IdPremio, Cantidad, Id_Cancion)
 VALUES 
@@ -241,7 +249,7 @@ VALUES
 (7, 'Electronicxx','2021-03-28','2021-01-12', 70000, 2),
 (8, 'La Voz','1977-01-01','1977-12-12', 15000, 8),
 (9, '80s','2017-06-21','2018-02-12', 85000, 5),
-(10, 'MTZ','2022-03-01','2022-07-17', 25000, 9),
+(10, 'MTZ','2022-03-01','2022-07-17', 20000, 9),
 (11, 'MRAW','2022-03-01','2022-07-17', 25000, 9);
 GO
 -- 9)
@@ -263,4 +271,138 @@ TRUNCATE TABLE Proyecto;
 GO
 TRUNCATE TABLE Premios;
 GO
+INSERT INTO Proyecto (IdProyecto, Titulo, FechaInicio ,FechaFinalizacion, Presupuesto, Id_Cancion)
+VALUES 
+(1, 'El Bendito','2022-01-01','2022-09-01', 20000, 6),
+(2, 'Trap Urbano','2018-03-01','2018-10-15', 40000, 7),
+(3, 'Classic Jazz','2007-05-01','2007-11-01', 10000, 1),
+(4, 'Rockses','1986-01-13','1987-02-21', 50000, 10),
+(5, 'Romeo','2010-02-03','2010-11-01', 45000, 4),
+(6, 'Gangsta','2002-01-01','2002-08-25', 60000, 3),
+(7, 'Electronicxx','2021-03-28','2021-01-12', 70000, 2),
+(8, 'La Voz','1977-01-01','1977-12-12', 15000, 8),
+(9, '80s','2017-06-21','2018-02-12', 85000, 5),
+(10, 'MTZ','2022-03-01','2022-07-17', 20000, 9);
+GO
+INSERT INTO Proyecto (IdProyecto, Titulo, FechaInicio)
+VALUES 
+(11, 'Desconocido', '2023-10-05');
+INSERT INTO Premios (IdPremio, Cantidad, Id_Cancion)
+VALUES 
+(1, 2, 1),
+(2, 5, 10),
+(3, 0, 6),
+(4, 3, 3),
+(5, 0, 9),
+(6, 4, 4),
+(7, 8, 5),
+(8, 7, 8),
+(9, 1, 2),
+(10, 2, 7);
+GO
 -- 10)
+-- SELECT, DISTINCT
+SELECT Milisegundos, Lanzamiento FROM Cancion;
+GO
+SELECT DISTINCT Milisegundos FROM Cancion;
+GO
+SELECT DISTINCT Lanzamiento FROM Cancion;
+GO
+-- ORDER BY DESC, ASC, OFFSET FETCH
+SELECT * FROM Compositor 
+ORDER BY Nombre ASC;
+GO
+SELECT * FROM Compositor 
+ORDER BY Nombre DESC;
+GO
+SELECT * FROM Album 
+ORDER BY Titulo ASC
+OFFSET 2 ROWS
+FETCH NEXT 5 ROWS ONLY;
+GO
+SELECT * FROM Album 
+ORDER BY Titulo DESC
+OFFSET 2 ROWS
+FETCH NEXT 5 ROWS ONLY;
+GO
+-- BETWEEN, AND
+SELECT Lanzamiento FROM Album
+WHERE Lanzamiento BETWEEN '2011-01-01' AND '2023-10-05';
+GO
+SELECT Milisegundos FROM Cancion
+WHERE Milisegundos BETWEEN 270000 AND 300000;
+GO
+-- IN, NOT IN, LIKE, SELECT-FROM-WHERE
+SELECT Titulo, Milisegundos FROM Cancion 
+WHERE Milisegundos IN (148000,197000,300000,206000);
+GO
+SELECT Titulo,Presupuesto FROM Proyecto
+WHERE Presupuesto IN(20000, 40000, 10000);
+GO
+SELECT Titulo, Milisegundos FROM Cancion 
+WHERE Milisegundos NOT IN (148000,197000,300000,206000);
+GO
+SELECT Titulo,Presupuesto FROM Proyecto
+WHERE Presupuesto NOT IN(20000, 40000, 10000);
+GO
+SELECT Nombre FROM Productor
+WHERE Nombre LIKE 'A%';
+GO
+SELECT FechaFinalizacion FROM Proyecto
+WHERE FechaFinalizacion LIKE '%-%-01';
+GO
+-- GROUP BY, HAVING, ORDER BY, SELECT * FROM-WHERE, AND OR
+SELECT Cantidad, Id_Cancion FROM Premios 
+GROUP BY Cantidad, Id_Cancion
+HAVING Cantidad > 2 AND Cantidad <= 4
+ORDER BY Cantidad ASC;
+GO
+SELECT Lanzamiento, IdCancion FROM Cancion 
+GROUP BY Lanzamiento, IdCancion
+HAVING Lanzamiento >= '2008-01-01' AND Lanzamiento < '2018-12-31'
+ORDER BY Lanzamiento DESC;
+GO
+SELECT * FROM Proyecto
+WHERE Titulo = 'Rockses' OR Titulo = 'Electronicxx';
+GO
+SELECT * FROM Album
+WHERE Id_Artista = 1 OR Id_Artista = 4;
+GO
+-- SQL JOINS (INNER, LEFT, RIGHT, FULL)
+SELECT p.Titulo, c.Titulo as Cancion
+FROM Proyecto p 
+INNER JOIN Cancion c ON p.Id_Cancion = c.IdCancion;
+GO
+SELECT c.Titulo as Cancion, a.Nombre as Artista
+FROM Cancion c
+INNER JOIN CancionXArtista ca ON c.IdCancion = ca.Id_Cancion
+INNER JOIN Artista a ON ca.Id_Artista = a.IdArtista;
+GO
+SELECT c.Titulo as Cancion, a.Titulo as Album
+FROM Cancion c
+LEFT JOIN Album a ON a.IdAlbum = c.Id_Album;
+GO
+SELECT a.Nombre as Artista, c.Titulo as Cancion
+FROM Artista a
+JOIN CancionXArtista ca ON a.IdArtista = ca.Id_Artista
+RIGHT JOIN Cancion c ON c.IdCancion = ca.Id_Cancion;
+GO 
+SELECT a.Nombre as Artista, c.Titulo as Cancion
+FROM Artista a
+JOIN CancionXArtista ca ON a.IdArtista = ca.Id_Artista
+LEFT JOIN Cancion c ON c.IdCancion = ca.Id_Cancion;
+GO
+SELECT a.Nombre as Artista, c.Titulo as Cancion
+FROM Artista a
+JOIN CancionXArtista ca ON a.IdArtista = ca.Id_Artista
+FULL JOIN Cancion c ON c.IdCancion = ca.Id_Cancion;
+GO
+SELECT c.Titulo as Cancion, p.Titulo as Proyecto
+FROM Cancion c
+RIGHT JOIN Proyecto p ON p.Id_Cancion = c.IdCancion;
+GO
+SELECT c.Titulo as Cancion, p.Titulo as Proyecto
+FROM Cancion c
+FULL JOIN Proyecto p ON p.Id_Cancion = c.IdCancion;
+GO
+-- 11)
