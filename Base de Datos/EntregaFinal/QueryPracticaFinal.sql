@@ -466,7 +466,7 @@ SELECT 'El proyecto ' + Titulo + ' inició el ' + CONVERT(VARCHAR(10),FechaInici
 ' con un presupuesto total de ' + CONVERT(VARCHAR(10),Presupuesto)
 FROM Proyecto;
 GO
--- CHOOSE, IF
+-- CHOOSE, IIF
 
 -- NULL: ISNULL, NULLIF, COALESCE
 
