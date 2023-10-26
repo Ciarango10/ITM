@@ -530,3 +530,4 @@ SELECT Contacto, COALESCE(Nombre,'Se desconoce') AS Nombre
 FROM Artista;
 GO
 -- 12)
+
