@@ -406,3 +406,68 @@ FROM Cancion c
 FULL JOIN Proyecto p ON p.Id_Cancion = c.IdCancion;
 GO
 -- 11)
+-- SUM, COUNT(*), COUNT(columna), MIN, MAX, AVG
+SELECT SUM(Presupuesto) as [Presupuesto Total]
+FROM Proyecto;
+GO
+SELECT SUM(Cantidad) as [Premios Totales]
+FROM Premios;
+GO
+SELECT COUNT(*) 
+FROM Cancion;
+GO
+SELECT COUNT(*)
+FROM Proyecto;
+GO
+SELECT COUNT(Milisegundos)
+FROM Cancion
+GROUP BY Milisegundos;
+GO
+SELECT COUNT(Presupuesto)
+FROM Proyecto
+GROUP BY Presupuesto;
+GO
+SELECT MIN(FechaFinalizacion) as [Proyecto Mas Antiguo]
+FROM Proyecto;
+GO
+SELECT MIN (Cantidad) as [Menor cantidad de premios]
+FROM Premios;
+GO
+SELECT MAX(Milisegundos) as [Duracion mas larga]
+FROM Cancion;
+GO
+SELECT MAX(Presupuesto) as [Mayor Presupuesto]
+FROM Proyecto;
+GO
+SELECT AVG(Milisegundos) as [Promedio Duracion]
+FROM Cancion;
+GO
+SELECT AVG(Cantidad) as [Promedio de Premios]
+FROM Premios;
+GO
+-- LOWER, UPPER
+
+-- GETDATE, DAY, MONTH, YEAR, DATEDIF
+
+-- CAST, CONVERT, PARSE
+SELECT 'El codigo ' + CAST(IdCancion AS VARCHAR(5))
++ ' corresponde a la cancion ' + Titulo + ' y tiene una duracion de ' + CAST(Milisegundos as VARCHAR(7))
+FROM Cancion;
+GO
+SELECT 'El artista ' + Nombre
++ ' con codigo ' + CAST(IdArtista AS VARCHAR(5)) + ' puede ser contactado al correo: ' + Contacto
+FROM Artista;
+GO
+SELECT 'El Album con codigo ' + CONVERT(VARCHAR(5),IdAlbum) + ' y titulo ' + Titulo +
+' fue lanzado al publico el ' + CONVERT(VARCHAR(10),Lanzamiento)
+FROM Album;
+GO
+SELECT 'El proyecto ' + Titulo + ' inició el ' + CONVERT(VARCHAR(10),FechaInicio) + ' y finalizó el ' + CONVERT(VARCHAR(10),FechaFinalizacion) + 
+' con un presupuesto total de ' + CONVERT(VARCHAR(10),Presupuesto)
+FROM Proyecto;
+GO
+-- CHOOSE, IF
+
+-- NULL: ISNULL, NULLIF, COALESCE
+
+-- 12)
