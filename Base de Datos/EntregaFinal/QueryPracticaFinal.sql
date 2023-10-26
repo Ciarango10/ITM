@@ -174,6 +174,10 @@ VALUES
 (10, 'Martin Garrix', 'garrixmartin@example.com'),
 (11, 'Juan Machado', 'machado@example.com');
 GO
+INSERT INTO Artista (IdArtista, Contacto)
+VALUES 
+(12, 'ca3101@gmail.com')
+GO
 INSERT INTO Album (IdAlbum,Titulo,Lanzamiento,Id_Artista)
 VALUES 
 (1, 'Formula, Vol. 1', '2011-01-01', 2), 
@@ -287,6 +291,12 @@ GO
 INSERT INTO Proyecto (IdProyecto, Titulo, FechaInicio)
 VALUES 
 (11, 'Desconocido', '2023-10-05');
+GO
+INSERT INTO Proyecto (IdProyecto, Titulo)
+VALUES 
+(12,'MilloGang'),
+(13,'KR');
+GO
 INSERT INTO Premios (IdPremio, Cantidad, Id_Cancion)
 VALUES 
 (1, 2, 1),
@@ -369,48 +379,48 @@ SELECT * FROM Album
 WHERE Id_Artista = 1 OR Id_Artista = 4;
 GO
 -- SQL JOINS (INNER, LEFT, RIGHT, FULL)
-SELECT p.Titulo, c.Titulo as Cancion
+SELECT p.Titulo, c.Titulo AS Cancion
 FROM Proyecto p 
 INNER JOIN Cancion c ON p.Id_Cancion = c.IdCancion;
 GO
-SELECT c.Titulo as Cancion, a.Nombre as Artista
+SELECT c.Titulo AS Cancion, a.Nombre AS Artista
 FROM Cancion c
 INNER JOIN CancionXArtista ca ON c.IdCancion = ca.Id_Cancion
 INNER JOIN Artista a ON ca.Id_Artista = a.IdArtista;
 GO
-SELECT c.Titulo as Cancion, a.Titulo as Album
+SELECT c.Titulo AS Cancion, a.Titulo AS Album
 FROM Cancion c
 LEFT JOIN Album a ON a.IdAlbum = c.Id_Album;
 GO
-SELECT a.Nombre as Artista, c.Titulo as Cancion
+SELECT a.Nombre AS Artista, c.Titulo AS Cancion
 FROM Artista a
 JOIN CancionXArtista ca ON a.IdArtista = ca.Id_Artista
 RIGHT JOIN Cancion c ON c.IdCancion = ca.Id_Cancion;
 GO 
-SELECT a.Nombre as Artista, c.Titulo as Cancion
+SELECT a.Nombre AS Artista, c.Titulo AS Cancion
 FROM Artista a
 JOIN CancionXArtista ca ON a.IdArtista = ca.Id_Artista
 LEFT JOIN Cancion c ON c.IdCancion = ca.Id_Cancion;
 GO
-SELECT a.Nombre as Artista, c.Titulo as Cancion
+SELECT a.Nombre AS Artista, c.Titulo AS Cancion
 FROM Artista a
 JOIN CancionXArtista ca ON a.IdArtista = ca.Id_Artista
 FULL JOIN Cancion c ON c.IdCancion = ca.Id_Cancion;
 GO
-SELECT c.Titulo as Cancion, p.Titulo as Proyecto
+SELECT c.Titulo AS Cancion, p.Titulo AS Proyecto
 FROM Cancion c
 RIGHT JOIN Proyecto p ON p.Id_Cancion = c.IdCancion;
 GO
-SELECT c.Titulo as Cancion, p.Titulo as Proyecto
+SELECT c.Titulo AS Cancion, p.Titulo AS Proyecto
 FROM Cancion c
 FULL JOIN Proyecto p ON p.Id_Cancion = c.IdCancion;
 GO
 -- 11)
 -- SUM, COUNT(*), COUNT(columna), MIN, MAX, AVG
-SELECT SUM(Presupuesto) as [Presupuesto Total]
+SELECT SUM(Presupuesto) AS [Presupuesto Total]
 FROM Proyecto;
 GO
-SELECT SUM(Cantidad) as [Premios Totales]
+SELECT SUM(Cantidad) AS [Premios Totales]
 FROM Premios;
 GO
 SELECT COUNT(*) 
@@ -427,31 +437,50 @@ SELECT COUNT(Presupuesto)
 FROM Proyecto
 GROUP BY Presupuesto;
 GO
-SELECT MIN(FechaFinalizacion) as [Proyecto Mas Antiguo]
+SELECT MIN(FechaFinalizacion) AS [Proyecto Mas Antiguo]
 FROM Proyecto;
 GO
-SELECT MIN (Cantidad) as [Menor cantidad de premios]
+SELECT MIN (Cantidad) AS [Menor cantidad de premios]
 FROM Premios;
 GO
-SELECT MAX(Milisegundos) as [Duracion mas larga]
+SELECT MAX(Milisegundos) AS [Duracion mas larga]
 FROM Cancion;
 GO
-SELECT MAX(Presupuesto) as [Mayor Presupuesto]
+SELECT MAX(Presupuesto) AS [Mayor Presupuesto]
 FROM Proyecto;
 GO
-SELECT AVG(Milisegundos) as [Promedio Duracion]
+SELECT AVG(Milisegundos) AS [Promedio Duracion]
 FROM Cancion;
 GO
-SELECT AVG(Cantidad) as [Promedio de Premios]
+SELECT AVG(Cantidad) AS [Promedio de Premios]
 FROM Premios;
 GO
 -- LOWER, UPPER
-
--- GETDATE, DAY, MONTH, YEAR, DATEDIF
-
+SELECT LOWER(Nombre) AS NombreMinus, UPPER(Contacto) AS ContactoMayus
+FROM Artista;
+GO
+SELECT UPPER(Titulo) AS TituloMayus
+FROM Album;
+GO
+SELECT LOWER(Nombre) AS GeneroMinus
+FROM Genero;
+GO
+-- GETDATE, DAY, MONTH, YEAR, DATEDIFF
+SELECT Lanzamiento, DAY(Lanzamiento) AS Dia, MONTH(Lanzamiento) AS Mes, YEAR(Lanzamiento) AS Año
+FROM Cancion;
+GO
+SELECT DATEDIFF(YEAR,Lanzamiento,GETDATE()) AS AñosDesdeLanzamiento
+FROM Cancion;
+GO
+SELECT FechaInicio, DAY(FechaInicio) AS Dia, MONTH(FechaInicio) AS Mes, YEAR(FechaInicio) AS Año
+FROM Proyecto;
+GO
+SELECT DATEDIFF(DAY,FechaInicio,GETDATE()) AS DiasDesdeInicio
+FROM Proyecto;
+GO
 -- CAST, CONVERT, PARSE
 SELECT 'El codigo ' + CAST(IdCancion AS VARCHAR(5))
-+ ' corresponde a la cancion ' + Titulo + ' y tiene una duracion de ' + CAST(Milisegundos as VARCHAR(7))
++ ' corresponde a la cancion ' + Titulo + ' y tiene una duracion de ' + CAST(Milisegundos AS VARCHAR(7))
 FROM Cancion;
 GO
 SELECT 'El artista ' + Nombre
@@ -466,8 +495,38 @@ SELECT 'El proyecto ' + Titulo + ' inició el ' + CONVERT(VARCHAR(10),FechaInici
 ' con un presupuesto total de ' + CONVERT(VARCHAR(10),Presupuesto)
 FROM Proyecto;
 GO
+SELECT PARSE(CAST(Presupuesto AS VARCHAR) AS money USING 'en-US') AS Presupuesto
+FROM Proyecto;
+GO
+SELECT PARSE(CAST(FechaFinalizacion AS VARCHAR) AS datetime2 USING 'es-US') AS FechaFinal
+FROM Proyecto;
+GO
 -- CHOOSE, IF
-
+SELECT Titulo,
+CHOOSE(IdProyecto, 'Reggaeton','Trap','Jazz','Rock', 'Bachata', 
+'Hip Hop','Electronica', 'Salsa','Pop','Merengue','','','') AS CategoriasMusicales
+FROM Proyecto;
+GO
+SELECT Nombre,
+CHOOSE(IdArtista, 'Bailar y Celebrar', 'Romance', 'Desamor', 'Motivación', 'Discoteca', 
+'Disfrute de la Cultura Hip-Hop', 'Celebración', 'Cualquier Momento', 'Cena y relajación', 'Festivales', 'Desconocido') AS UsoComun  
+FROM Artista;
+GO
+SELECT Titulo, Milisegundos,
+IIF(Milisegundos > 240000, 'Mayor a 4min','Menor a 4min') AS Duracion
+FROM Cancion
+ORDER BY Milisegundos DESC;
+GO
+SELECT Titulo, Lanzamiento,
+IIF(Lanzamiento > '2015-01-01', 'Reciente', 'Vieja Escuela') AS Antiguedad
+FROM Album
+ORDER BY Lanzamiento DESC;
+GO
 -- NULL: ISNULL, NULLIF, COALESCE
-
+SELECT IdProyecto, Titulo, COALESCE(CAST(Presupuesto AS VARCHAR),'No Aplica') AS Dinero
+FROM Proyecto;
+GO
+SELECT Contacto, COALESCE(Nombre,'Se desconoce') AS Nombre
+FROM Artista;
+GO
 -- 12)

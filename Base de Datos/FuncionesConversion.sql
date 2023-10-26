@@ -7,3 +7,5 @@ FROM Cancion;
 SELECT 'El Album con codigo ' + CONVERT(VARCHAR(5),IdAlbum) + ' y titulo ' + Titulo +
 ' fue lanzado al publico el ' + CONVERT(VARCHAR(10),Lanzamiento)
 FROM Album;
+-- PARSE()
+SELECT PARSE('7345' AS money USING 'en-US') AS Moneda;
