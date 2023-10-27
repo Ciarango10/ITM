@@ -297,6 +297,11 @@ VALUES
 (12,'MilloGang'),
 (13,'KR');
 GO
+INSERT INTO Proyecto (IdProyecto, Titulo, Presupuesto)
+VALUES 
+(14,'ARC',0),
+(15,'GNRS',0);
+GO
 INSERT INTO Premios (IdPremio, Cantidad, Id_Cancion)
 VALUES 
 (1, 2, 1),
@@ -429,11 +434,11 @@ GO
 SELECT COUNT(*)
 FROM Proyecto;
 GO
-SELECT COUNT(Milisegundos)
+SELECT COUNT(Milisegundos) AS [Canciones x Milisegundos]
 FROM Cancion
 GROUP BY Milisegundos;
 GO
-SELECT COUNT(Presupuesto)
+SELECT COUNT(Presupuesto) AS [Proyecto X Presupuesto]
 FROM Proyecto
 GROUP BY Presupuesto;
 GO
@@ -480,19 +485,19 @@ FROM Proyecto;
 GO
 -- CAST, CONVERT, PARSE
 SELECT 'El codigo ' + CAST(IdCancion AS VARCHAR(5))
-+ ' corresponde a la cancion ' + Titulo + ' y tiene una duracion de ' + CAST(Milisegundos AS VARCHAR(7))
++ ' corresponde a la cancion ' + Titulo + ' y tiene una duracion de ' + CAST(Milisegundos AS VARCHAR(7)) AS InfoCancion
 FROM Cancion;
 GO
 SELECT 'El artista ' + Nombre
-+ ' con codigo ' + CAST(IdArtista AS VARCHAR(5)) + ' puede ser contactado al correo: ' + Contacto
++ ' con codigo ' + CAST(IdArtista AS VARCHAR(5)) + ' puede ser contactado al correo: ' + Contacto AS InfoArtista
 FROM Artista;
 GO
 SELECT 'El Album con codigo ' + CONVERT(VARCHAR(5),IdAlbum) + ' y titulo ' + Titulo +
-' fue lanzado al publico el ' + CONVERT(VARCHAR(10),Lanzamiento)
+' fue lanzado al publico el ' + CONVERT(VARCHAR(10),Lanzamiento) AS InfoAlbum
 FROM Album;
 GO
 SELECT 'El proyecto ' + Titulo + ' inició el ' + CONVERT(VARCHAR(10),FechaInicio) + ' y finalizó el ' + CONVERT(VARCHAR(10),FechaFinalizacion) + 
-' con un presupuesto total de ' + CONVERT(VARCHAR(10),Presupuesto)
+' con un presupuesto total de ' + CONVERT(VARCHAR(10),Presupuesto) AS InfoProyecto
 FROM Proyecto;
 GO
 SELECT PARSE(CAST(Presupuesto AS VARCHAR) AS money USING 'en-US') AS Presupuesto
@@ -501,7 +506,7 @@ GO
 SELECT PARSE(CAST(FechaFinalizacion AS VARCHAR) AS datetime2 USING 'es-US') AS FechaFinal
 FROM Proyecto;
 GO
--- CHOOSE, IF
+-- CHOOSE, IIF
 SELECT Titulo,
 CHOOSE(IdProyecto, 'Reggaeton','Trap','Jazz','Rock', 'Bachata', 
 'Hip Hop','Electronica', 'Salsa','Pop','Merengue','','','') AS CategoriasMusicales
@@ -523,6 +528,18 @@ FROM Album
 ORDER BY Lanzamiento DESC;
 GO
 -- NULL: ISNULL, NULLIF, COALESCE
+SELECT IdProyecto, Titulo, ISNULL(Presupuesto,0) AS Presupuesto
+FROM Proyecto;
+GO
+SELECT Titulo, ISNULL(CAST(Id_Album AS VARCHAR),'Sin Album') AS Album
+FROM Cancion;
+GO
+SELECT NULLIF(Presupuesto,0) AS PresupuestoXProyecto
+FROM Proyecto;
+GO
+SELECT Id_Cancion, NULLIF(Cantidad,0) AS CantidadPremios
+FROM Premios;
+GO
 SELECT IdProyecto, Titulo, COALESCE(CAST(Presupuesto AS VARCHAR),'No Aplica') AS Dinero
 FROM Proyecto;
 GO
