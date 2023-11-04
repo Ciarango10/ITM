@@ -6,7 +6,6 @@ AS
 GO
 EXECUTE sp_Cancion 'O';
 GO
-
 CREATE PROCEDURE sp_Insertar_Artista
 	@IdArtista INT,
 	@Nombre VARCHAR(25),
@@ -18,3 +17,14 @@ END
 GO
 EXECUTE sp_Insertar_Artista 14, 'Adele', 'adele@business.com';
 GO
+CREATE PROCEDURE sp_Editar_Productor
+	@IdProductor INT,
+	@Nombre VARCHAR(25),
+	@Contacto VARCHAR(30)
+AS
+	UPDATE Productor
+	SET Nombre = @Nombre,
+	Contacto = @Contacto
+	WHERE IdProductor = @IdProductor;
+GO
+EXECUTE sp_Editar_Productor 1, 'SOGX', 'sog@business.com';

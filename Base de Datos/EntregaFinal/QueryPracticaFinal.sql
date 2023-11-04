@@ -547,4 +547,61 @@ SELECT Contacto, COALESCE(Nombre,'Se desconoce') AS Nombre
 FROM Artista;
 GO
 -- 12)
-
+-- VISTAS
+CREATE VIEW view_AlbumMayor2010 AS
+SELECT * FROM Album
+WHERE Lanzamiento >= '2010-01-01';
+GO
+SELECT Titulo FROM view_AlbumMayor2010;
+GO
+CREATE VIEW view_PremiosMayor3 AS 
+SELECT * FROM Premios
+WHERE Cantidad >= 3;
+GO
+SELECT * FROM view_PremiosMayor3;
+GO
+CREATE VIEW view_ProyectoSinPresupuesto AS
+SELECT * FROM Proyecto
+WHERE Presupuesto IS NULL;
+GO
+SELECT * FROM view_ProyectoSinPresupuesto;
+GO
+-- PROCEDIMIENTOS ALMACENADOS 
+CREATE PROCEDURE sp_Cancion
+	@Titulo VARCHAR(25)
+AS
+	SELECT * FROM Cancion
+	WHERE Titulo LIKE @Titulo+'%';
+GO
+EXECUTE sp_Cancion 'O';
+GO
+EXECUTE sp_Cancion 'F';
+GO
+CREATE PROCEDURE sp_Insertar_Artista
+	@IdArtista INT,
+	@Nombre VARCHAR(25),
+	@Contacto VARCHAR(30) 
+AS
+BEGIN
+	INSERT INTO Artista (IdArtista, Nombre,Contacto) VALUES (@IdArtista,@Nombre, @Contacto);
+END
+GO
+EXECUTE sp_Insertar_Artista 14, 'Adele', 'adele@business.com';
+GO
+EXECUTE sp_Insertar_Artista 15, 'Bruno Mars', 'mars@business.com';
+GO
+CREATE PROCEDURE sp_Editar_Productor
+	@IdProductor INT,
+	@Nombre VARCHAR(25),
+	@Contacto VARCHAR(30)
+AS
+	UPDATE Productor
+	SET Nombre = @Nombre,
+	Contacto = @Contacto
+	WHERE IdProductor = @IdProductor;
+GO
+EXECUTE sp_Editar_Productor 1, 'SOGX', 'sogx@business.com';
+GO
+EXECUTE sp_Editar_Productor 10, 'Tainy', 'tainy@example.com';
+GO
+-- TRIGGERS
