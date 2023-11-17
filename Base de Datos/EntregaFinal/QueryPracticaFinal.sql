@@ -158,7 +158,8 @@ VALUES
 (8, 'Sofía López', 'sofia@example.com'), 
 (9, 'Diego Sánchez', 'diego@example.com'), 
 (10, 'Valentina Torres', 'valentina@example.com'),
-(11, 'Juanito Perez', 'juanito@example.com'); 
+(11, 'Juanito Perez', 'juanito@example.com'),
+(12, 'Ciarango', 'cial3101@gmail.com');
 GO
 INSERT INTO Artista (IdArtista, Nombre, Contacto)
 VALUES 
@@ -645,4 +646,47 @@ UPDATE Artista
 SET Nombre = 'Bruno Marte' 
 WHERE IdArtista = 15;
 GO
+--13)
+USE EstudioMusical
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+Create  procedure sp_EnviarEmail
+AS
+BEGIN
+DECLARE @TablaHtml NVARCHAR(MAX);
+Declare @Mail as Varchar(50)
+DECLARE CURSORMAIL CURSOR FAST_FORWARD FOR
+SELECT Contacto a FROM Compositor FOR READ ONLY;
+OPEN CURSORMAIL;
+FETCH CURSORMAIL INTO @Mail;
+WHILE   @@fetch_status = 0
+BEGIN
+SET @TablaHtml =
+N'<H1>Sistema de envió de correos ITM</H1>'+
+N'Por favor no responda este Email.'+
+N'<table border ="1">'+
+N'<tr><th>Nombre</th><th>Contacto</th><tr/>'+
+CAST ((SELECT td= e.Nombre, '',
+td = e.Contacto,''
 
+FROM Compositor e WHERE Contacto = @Mail
+FOR XML PATH('tr'), TYPE
+) AS NVARCHAR(MAX) ) +
+N'</table>';
+EXEC msdb.dbo.sp_send_dbmail
+@profile_name='EnviarCorreos',
+@recipients= @Mail,
+@blind_copy_recipients = @Mail,
+@subject = 'Correo de alerta',
+@body = @TablaHtml,
+@body_format = 'HTML',
+@attach_query_result_as_file = 0;
+
+FETCH NEXT FROM CURSORMAIL INTO @Mail;
+END
+CLOSE CURSORMAIL;
+DEALLOCATE CURSORMAIL;
+END
