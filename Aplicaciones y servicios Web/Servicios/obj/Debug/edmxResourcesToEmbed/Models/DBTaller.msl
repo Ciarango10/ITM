@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBTallerModelStoreContainer" CdmEntityContainer="DBTallerEntities">
+    <EntitySetMapping Name="ReservaEscenarios">
+      <EntityTypeMapping TypeName="DBTallerModel.ReservaEscenario">
+        <MappingFragment StoreEntitySet="ReservaEscenarios">
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="HorasReserva" ColumnName="HorasReserva" />
+          <ScalarProperty Name="DiaReserva" ColumnName="DiaReserva" />
+          <ScalarProperty Name="ValorSinDescuento" ColumnName="ValorSinDescuento" />
+          <ScalarProperty Name="ValorDescuento" ColumnName="ValorDescuento" />
+          <ScalarProperty Name="ValorPagar" ColumnName="ValorPagar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

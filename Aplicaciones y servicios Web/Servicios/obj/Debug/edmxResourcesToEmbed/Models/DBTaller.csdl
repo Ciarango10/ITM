@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBTallerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ReservaEscenario">
+    <Key>
+      <PropertyRef Name="Documento" />
+    </Key>
+    <Property Name="Documento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HorasReserva" Type="Int32" Nullable="false" />
+    <Property Name="DiaReserva" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ValorSinDescuento" Type="Int32" Nullable="false" />
+    <Property Name="ValorDescuento" Type="Int32" Nullable="false" />
+    <Property Name="ValorPagar" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DBTallerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ReservaEscenarios" EntityType="Self.ReservaEscenario" />
+  </EntityContainer>
+</Schema>

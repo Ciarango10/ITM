@@ -182,8 +182,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Clases\clsCliente.cs" />
+    <Compile Include="Clases\clsReserva.cs" />
     <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReservasController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -214,6 +216,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbSuper.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBTaller.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTaller.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBTaller.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTaller.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBTaller.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTaller.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\DEPArtamento.cs">
       <DependentUpon>dbSuper.tt</DependentUpon>
@@ -256,6 +273,9 @@
     </Compile>
     <Compile Include="Models\PROVeedor.cs">
       <DependentUpon>dbSuper.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReservaEscenario.cs">
+      <DependentUpon>DBTaller.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SUCUrsal.cs">
       <DependentUpon>dbSuper.tt</DependentUpon>
@@ -307,6 +327,16 @@
       <DependentUpon>dbSuper.edmx</DependentUpon>
       <LastGenOutput>dbSuper.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\DBTaller.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBTaller.edmx</DependentUpon>
+      <LastGenOutput>DBTaller.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DBTaller.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBTaller.edmx</DependentUpon>
+      <LastGenOutput>DBTaller.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -339,6 +369,13 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <EntityDeploy Include="Models\DBTaller.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBTaller.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DBTaller.edmx.diagram">
+      <DependentUpon>DBTaller.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

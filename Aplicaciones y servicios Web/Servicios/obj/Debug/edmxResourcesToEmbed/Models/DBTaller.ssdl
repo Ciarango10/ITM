@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBTallerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ReservaEscenarios">
+    <Key>
+      <PropertyRef Name="Documento" />
+    </Key>
+    <Property Name="Documento" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="HorasReserva" Type="int" Nullable="false" />
+    <Property Name="DiaReserva" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ValorSinDescuento" Type="int" Nullable="false" />
+    <Property Name="ValorDescuento" Type="int" Nullable="false" />
+    <Property Name="ValorPagar" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DBTallerModelStoreContainer">
+    <EntitySet Name="ReservaEscenarios" EntityType="Self.ReservaEscenarios" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

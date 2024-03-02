@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reserva</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link href="Estilos/all.min.css" rel="stylesheet" />
+    <!-- Theme style -->
+    <link href="Estilos/adminlte.min.css" rel="stylesheet" />
+</head>
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12">
+                    <!-- general form elements -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">RESERVA DE ESCENARIOS DEPORTIVOS PARA LA PRÁCTICA DEPORTIVA</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form id="frmRegistroCliente">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="txtDocumento">Documento</label>
+                                            <input type="text" class="form-control" id="txtDocumento" placeholder="Documento">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="txtNombre">Nombre completo</label>
+                                            <input type="text" class="form-control" id="txtNombre" placeholder="Nombre">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Horas a reservar</label>
+                                            <select id="cboHoras" class="form-control select2" style="width: 100%;">
+                                                <option selected="selected" value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="4">4</option>
+                                                <option value="6">6</option>
+                                                <option value="8">8</option>
+                                                <option value="10">10</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="txtDiaReserva">Día reserva</label>
+                                            <input type="text" class="form-control" id="txtDiaReserva" placeholder="Día de la reserva">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="txtValorSinDescuento">Valor sin descuento</label>
+                                            <input type="text" class="form-control" id="txtValorSinDescuento" disabled placeholder="Valor sin descuento">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="txtValorDescuento">Valor descuento</label>
+                                            <input type="text" class="form-control" id="txtValorDescuento" disabled placeholder="Valor descuento">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="txtValorAPagar">Valor a pagar</label>
+                                            <input type="text" class="form-control" id="txtValorAPagar" disabled placeholder="Valor a pagar">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <br />
+                                        <button type="button" id="btnInsertar" class="btn-block btn-lg btn-primary">INSERTAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <br />
+                                        <button type="button" id="btnActualizar" class="btn-block btn-lg btn-primary">ACTUALIZAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <br />
+                                        <button type="button" id="btnEliminar" class="btn-block btn-lg btn-primary">ELIMINAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <br />
+                                        <button type="button" id="btnConsultar" class="btn-block btn-lg btn-primary">CONSULTAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card-body -->
+                            <div class="card-footer">
+                                <div id="dvMensaje" class=""></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../Scripts/jquery.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/Reserva.js"></script>
+    <!-- /.card -->
+</body>
+</html>

@@ -164,9 +164,11 @@
     <Content Include="Paginas\Pagina1.html" />
     <Content Include="Paginas\Pagina2.html" />
     <Content Include="Paginas\PaginaBase.html" />
+    <Content Include="Paginas\Reserva.html" />
     <Content Include="Paginas\Scripts\Cliente.js" />
     <Content Include="Paginas\Scripts\Pagina1.js" />
     <Content Include="Paginas\Scripts\Pagina2.js" />
+    <Content Include="Paginas\Scripts\Reserva.js" />
     <Content Include="Scripts\adminlte.js" />
     <Content Include="Scripts\adminlte.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
