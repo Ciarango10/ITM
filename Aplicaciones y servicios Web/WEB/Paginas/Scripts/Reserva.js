@@ -8,7 +8,7 @@
     });
 });
 
-function insertar() {
+async function insertar() {
     //Capturar los datos de entrada
     let Documento = $("#txtDocumento").val();
     let Nombre = $("#txtNombre").val();
