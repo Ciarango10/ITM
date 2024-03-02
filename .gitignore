@@ -1,0 +1,6 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/Aplicaciones y servicios Web/WEB/.vs
+/Aplicaciones y servicios Web/Servicios/.vs/Servicios/FileContentIndex
