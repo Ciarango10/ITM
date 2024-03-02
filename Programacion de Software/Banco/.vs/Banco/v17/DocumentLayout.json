@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\banco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\banco\\cuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|solutionrelative:cuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\banco\\banco.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|solutionrelative:banco.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 92,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Banco.csproj",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\Banco.csproj",
+              "RelativeDocumentMoniker": "Banco.csproj",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\Banco.csproj",
+              "RelativeToolTip": "Banco.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-29T22:08:09.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBkAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T22:05:46.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CuentaBancaria.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\CuentaBancaria.cs",
+              "RelativeDocumentMoniker": "CuentaBancaria.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\CuentaBancaria.cs",
+              "RelativeToolTip": "CuentaBancaria.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwDQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T21:32:20.151Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EMPLEADOS</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link href="Estilos/css/all.min.css" rel="stylesheet" />
+    <link href="Estilos/adminlte.min.css" rel="stylesheet" />
+</head>
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12" id="dvMenu">
+                </div>
+                <div class="col-md-12">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">ADMINISTRACION DE CLIENTES</h3>
+                        </div>
+                        <form id="frmIncapacidades">
+                            <div class="card-body">
+                                <div class="card card-gray-dark">
+                                    <div class="card-header">
+                                        <h3 class="card-title">DATOS ENTRADA</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="txtDocumento">Documento</label>
+                                                    <input type="text" class="form-control" id="txtDocumento" placeholder="Documento del cliente">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="txtNombre">Nombre</label>
+                                                    <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese el nombre del cliente">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="txtPrimerApellido">Primer Apellido</label>
+                                                    <input type="text" class="form-control" id="txtPrimerApellido" placeholder="Primer Apellido">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="txtSegundoApellido">Segundo Apellido</label>
+                                                    <input type="text" class="form-control" id="txtSegundoApellido" placeholder="Segundo Apellido">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="form-group">
+                                                    <label for="txtDireccion">Direccion</label>
+                                                    <input type="text" class="form-control" id="txtDireccion" placeholder="Direccion del cliente">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="dtFechaNacimiento">Fecha de Nacimiento</label>
+                                                    <input type="date" class="form-control" id="dtFechaNacimiento" placeholder="Fecha de nacimiento">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="txtEmail">Correo Electronico</label>
+                                                    <input type="text" class="form-control" id="txtEmail" placeholder="Email del cliente">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-danger">
+                                    <div class="card-header">
+                                        <h3 class="card-title">PROCESO</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-3 mx-auto">
+                                                <br />
+                                                <button type="button" id="btnInsertar" class="btn-block btn-lg btn-primary">INSERTAR</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div id="dvMensaje" class=""></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../Scripts/jquery-3.4.1.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/Cliente.js"></script>
+</body>
+</html>

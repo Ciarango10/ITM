@@ -1,0 +1,15 @@
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\bin\Debug\net8.0\Arreglos Unidimensionales.exe
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\bin\Debug\net8.0\Arreglos Unidimensionales.deps.json
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\bin\Debug\net8.0\Arreglos Unidimensionales.runtimeconfig.json
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\bin\Debug\net8.0\Arreglos Unidimensionales.dll
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\bin\Debug\net8.0\Arreglos Unidimensionales.pdb
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\obj\Debug\net8.0\Arreglos Unidimensionales.GeneratedMSBuildEditorConfig.editorconfig
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\obj\Debug\net8.0\Arreglos Unidimensionales.AssemblyInfoInputs.cache
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\obj\Debug\net8.0\Arreglos Unidimensionales.AssemblyInfo.cs
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\obj\Debug\net8.0\Arreglos Unidimensionales.csproj.CoreCompileInputs.cache
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\obj\Debug\net8.0\Arreglos Unidimensionales.sourcelink.json
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\obj\Debug\net8.0\Arreglos Unidimensionales.dll
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\obj\Debug\net8.0\refint\Arreglos Unidimensionales.dll
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\obj\Debug\net8.0\Arreglos Unidimensionales.pdb
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\obj\Debug\net8.0\Arreglos Unidimensionales.genruntimeconfig.cache
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Arreglos Unidimensionales\obj\Debug\net8.0\ref\Arreglos Unidimensionales.dll

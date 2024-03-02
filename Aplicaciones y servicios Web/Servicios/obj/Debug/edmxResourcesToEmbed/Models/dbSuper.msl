@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBSuperModelStoreContainer" CdmEntityContainer="DBSuperEntities">
+    <EntitySetMapping Name="CARGoes">
+      <EntityTypeMapping TypeName="DBSuperModel.CARGo">
+        <MappingFragment StoreEntitySet="CARGo">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Salario" ColumnName="Salario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CIUDads">
+      <EntityTypeMapping TypeName="DBSuperModel.CIUDad">
+        <MappingFragment StoreEntitySet="CIUDad">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="CodigoDepartamento" ColumnName="CodigoDepartamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIEntes">
+      <EntityTypeMapping TypeName="DBSuperModel.CLIEnte">
+        <MappingFragment StoreEntitySet="CLIEnte">
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="PrimerApellido" ColumnName="PrimerApellido" />
+          <ScalarProperty Name="SegundoApellido" ColumnName="SegundoApellido" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COntactoPRoveedors">
+      <EntityTypeMapping TypeName="DBSuperModel.COntactoPRoveedor">
+        <MappingFragment StoreEntitySet="COntactoPRoveedor">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="DocumentoProveedor" ColumnName="DocumentoProveedor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEPArtamentoes">
+      <EntityTypeMapping TypeName="DBSuperModel.DEPArtamento">
+        <MappingFragment StoreEntitySet="DEPArtamento">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="CodigoPais" ColumnName="CodigoPais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEtalleDEvolucions">
+      <EntityTypeMapping TypeName="DBSuperModel.DEtalleDEvolucion">
+        <MappingFragment StoreEntitySet="DEtalleDEvolucion">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="CodigoDevolucion" ColumnName="CodigoDevolucion" />
+          <ScalarProperty Name="CodigoProveedor" ColumnName="CodigoProveedor" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="ValorUnitario" ColumnName="ValorUnitario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEtalleFActuras">
+      <EntityTypeMapping TypeName="DBSuperModel.DEtalleFActura">
+        <MappingFragment StoreEntitySet="DEtalleFActura">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="CodigoProducto" ColumnName="CodigoProducto" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="ValorUnitario" ColumnName="ValorUnitario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEtalleFacturaCompras">
+      <EntityTypeMapping TypeName="DBSuperModel.DEtalleFacturaCompra">
+        <MappingFragment StoreEntitySet="DEtalleFacturaCompra">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NumeroFactura" ColumnName="NumeroFactura" />
+          <ScalarProperty Name="CodigoProducto" ColumnName="CodigoProducto" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="ValorUnitario" ColumnName="ValorUnitario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEVOlucions">
+      <EntityTypeMapping TypeName="DBSuperModel.DEVOlucion">
+        <MappingFragment StoreEntitySet="DEVOlucion">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="NumeroFactura" ColumnName="NumeroFactura" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="CodigoEmpleado" ColumnName="CodigoEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLeadoes">
+      <EntityTypeMapping TypeName="DBSuperModel.EMPLeado">
+        <MappingFragment StoreEntitySet="EMPLeado">
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="PrimerApellido" ColumnName="PrimerApellido" />
+          <ScalarProperty Name="SegundoApellido" ColumnName="SegundoApellido" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMpleadoCArgoes">
+      <EntityTypeMapping TypeName="DBSuperModel.EMpleadoCArgo">
+        <MappingFragment StoreEntitySet="EMpleadoCArgo">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="CodigoCargo" ColumnName="CodigoCargo" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+          <ScalarProperty Name="CodigoSucursal" ColumnName="CodigoSucursal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FACTuras">
+      <EntityTypeMapping TypeName="DBSuperModel.FACTura">
+        <MappingFragment StoreEntitySet="FACTura">
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="CodigoEmpleado" ColumnName="CodigoEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FActuraCOmpras">
+      <EntityTypeMapping TypeName="DBSuperModel.FActuraCOmpra">
+        <MappingFragment StoreEntitySet="FActuraCOmpra">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="CodigoEmpleado" ColumnName="CodigoEmpleado" />
+          <ScalarProperty Name="DocumentoProveedor" ColumnName="DocumentoProveedor" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="FechaPago" ColumnName="FechaPago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NOtaCReditoes">
+      <EntityTypeMapping TypeName="DBSuperModel.NOtaCRedito">
+        <MappingFragment StoreEntitySet="NOtaCRedito">
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="CodigoDevolucion" ColumnName="CodigoDevolucion" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PAIS">
+      <EntityTypeMapping TypeName="DBSuperModel.PAI">
+        <MappingFragment StoreEntitySet="PAIS">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODuctoes">
+      <EntityTypeMapping TypeName="DBSuperModel.PRODucto">
+        <MappingFragment StoreEntitySet="PRODucto">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="ValorUnitario" ColumnName="ValorUnitario" />
+          <ScalarProperty Name="CodigoTipoProducto" ColumnName="CodigoTipoProducto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRoductoPRoveedors">
+      <EntityTypeMapping TypeName="DBSuperModel.PRoductoPRoveedor">
+        <MappingFragment StoreEntitySet="PRoductoPRoveedor">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="CodigoProducto" ColumnName="CodigoProducto" />
+          <ScalarProperty Name="ValorUnitario" ColumnName="ValorUnitario" />
+          <ScalarProperty Name="FechaCotizacion" ColumnName="FechaCotizacion" />
+          <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROVeedors">
+      <EntityTypeMapping TypeName="DBSuperModel.PROVeedor">
+        <MappingFragment StoreEntitySet="PROVeedor">
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="SitioWeb" ColumnName="SitioWeb" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUCUrsals">
+      <EntityTypeMapping TypeName="DBSuperModel.SUCUrsal">
+        <MappingFragment StoreEntitySet="SUCUrsal">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="NitSupermercado" ColumnName="NitSupermercado" />
+          <ScalarProperty Name="CodigoCiudad" ColumnName="CodigoCiudad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUPErmercadoes">
+      <EntityTypeMapping TypeName="DBSuperModel.SUPErmercado">
+        <MappingFragment StoreEntitySet="SUPErmercado">
+          <ScalarProperty Name="Nit" ColumnName="Nit" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="SitioWeb" ColumnName="SitioWeb" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DBSuperModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TELEfonoes">
+      <EntityTypeMapping TypeName="DBSuperModel.TELEfono">
+        <MappingFragment StoreEntitySet="TELEfono">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="CodigoTipoTelefono" ColumnName="CodigoTipoTelefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIpoPRoductoes">
+      <EntityTypeMapping TypeName="DBSuperModel.TIpoPRoducto">
+        <MappingFragment StoreEntitySet="TIpoPRoducto">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIpoTElefonoes">
+      <EntityTypeMapping TypeName="DBSuperModel.TIpoTElefono">
+        <MappingFragment StoreEntitySet="TIpoTElefono">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

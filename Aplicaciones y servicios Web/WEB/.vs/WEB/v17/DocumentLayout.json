@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\scripts\\cliente.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\scripts\\cliente.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\cliente.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\cliente.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\menu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\menu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\scripts\\pagina1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\scripts\\pagina1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\pagina1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\pagina1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\paginabase.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\paginabase.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pagina1.js",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Pagina1.js",
+              "RelativeDocumentMoniker": "Paginas\\Scripts\\Pagina1.js",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Pagina1.js",
+              "RelativeToolTip": "Paginas\\Scripts\\Pagina1.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-02T03:15:42.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cliente.js",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Cliente.js",
+              "RelativeDocumentMoniker": "Paginas\\Scripts\\Cliente.js",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Cliente.js",
+              "RelativeToolTip": "Paginas\\Scripts\\Cliente.js",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwC4AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-02T03:15:38.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.html",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Menu.html",
+              "RelativeDocumentMoniker": "Paginas\\Menu.html",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Menu.html",
+              "RelativeToolTip": "Paginas\\Menu.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-02T03:12:49.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pagina1.html",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Pagina1.html",
+              "RelativeDocumentMoniker": "Paginas\\Pagina1.html",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Pagina1.html",
+              "RelativeToolTip": "Paginas\\Pagina1.html",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAmwE8AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-02T03:11:42.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cliente.html",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Cliente.html",
+              "RelativeDocumentMoniker": "Paginas\\Cliente.html",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Cliente.html",
+              "RelativeToolTip": "Paginas\\Cliente.html",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-02T03:11:28.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PaginaBase.html",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\PaginaBase.html",
+              "RelativeDocumentMoniker": "Paginas\\PaginaBase.html",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\PaginaBase.html",
+              "RelativeToolTip": "Paginas\\PaginaBase.html",
+              "ViewState": "AQIAAHEBAAAAAAAAAAAAAHsBAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-02T03:05:51.632Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

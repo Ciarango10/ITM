@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBSuperModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CARGo">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Salario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CIUDad">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+    <Property Name="CodigoDepartamento" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CLIEnte">
+    <Key>
+      <PropertyRef Name="Documento" />
+    </Key>
+    <Property Name="Documento" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PrimerApellido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SegundoApellido" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="date" />
+    <Property Name="Email" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="COntactoPRoveedor">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Cargo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DocumentoProveedor" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DEPArtamento">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+    <Property Name="CodigoPais" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DEtalleDEvolucion">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CodigoDevolucion" Type="int" Nullable="false" />
+    <Property Name="CodigoProveedor" Type="int" Nullable="false" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+    <Property Name="ValorUnitario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DEtalleFActura">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Numero" Type="int" Nullable="false" />
+    <Property Name="CodigoProducto" Type="int" Nullable="false" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+    <Property Name="ValorUnitario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DEtalleFacturaCompra">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroFactura" Type="int" Nullable="false" />
+    <Property Name="CodigoProducto" Type="int" Nullable="false" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+    <Property Name="ValorUnitario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DEVOlucion">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Documento" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NumeroFactura" Type="int" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="CodigoEmpleado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EMPLeado">
+    <Key>
+      <PropertyRef Name="Documento" />
+    </Key>
+    <Property Name="Documento" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PrimerApellido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SegundoApellido" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="date" />
+  </EntityType>
+  <EntityType Name="EMpleadoCArgo">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Documento" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CodigoCargo" Type="int" Nullable="false" />
+    <Property Name="FechaInicio" Type="datetime" Nullable="false" />
+    <Property Name="FechaFin" Type="datetime" />
+    <Property Name="CodigoSucursal" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FACTura">
+    <Key>
+      <PropertyRef Name="Numero" />
+    </Key>
+    <Property Name="Numero" Type="int" Nullable="false" />
+    <Property Name="Documento" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="CodigoEmpleado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FActuraCOmpra">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="CodigoEmpleado" Type="int" Nullable="false" />
+    <Property Name="DocumentoProveedor" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="FechaPago" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NOtaCRedito">
+    <Key>
+      <PropertyRef Name="Numero" />
+    </Key>
+    <Property Name="Numero" Type="int" Nullable="false" />
+    <Property Name="CodigoDevolucion" Type="int" Nullable="false" />
+    <Property Name="Valor" Type="int" Nullable="false" />
+    <Property Name="FechaValidez" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PAIS">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODucto">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+    <Property Name="ValorUnitario" Type="int" Nullable="false" />
+    <Property Name="CodigoTipoProducto" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRoductoPRoveedor">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Documento" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CodigoProducto" Type="int" Nullable="false" />
+    <Property Name="ValorUnitario" Type="int" Nullable="false" />
+    <Property Name="FechaCotizacion" Type="datetime" Nullable="false" />
+    <Property Name="FechaValidez" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PROVeedor">
+    <Key>
+      <PropertyRef Name="Documento" />
+    </Key>
+    <Property Name="Documento" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RazonSocial" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Direccion" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SitioWeb" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SUCUrsal">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NitSupermercado" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CodigoCiudad" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SUPErmercado">
+    <Key>
+      <PropertyRef Name="Nit" />
+    </Key>
+    <Property Name="Nit" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SitioWeb" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TELEfono">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Numero" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Documento" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CodigoTipoTelefono" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIpoPRoducto">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIpoTElefono">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_COntactoPRoveedoreedor">
+    <End Role="PROVeedor" Type="Self.PROVeedor" Multiplicity="1" />
+    <End Role="COntactoPRoveedor" Type="Self.COntactoPRoveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROVeedor">
+        <PropertyRef Name="Documento" />
+      </Principal>
+      <Dependent Role="COntactoPRoveedor">
+        <PropertyRef Name="DocumentoProveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DEtalleDEvolucionlucion">
+    <End Role="DEVOlucion" Type="Self.DEVOlucion" Multiplicity="1" />
+    <End Role="DEtalleDEvolucion" Type="Self.DEtalleDEvolucion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEVOlucion">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="DEtalleDEvolucion">
+        <PropertyRef Name="CodigoDevolucion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DEtalleFacturaCompraucto">
+    <End Role="PRODucto" Type="Self.PRODucto" Multiplicity="1" />
+    <End Role="DEtalleFacturaCompra" Type="Self.DEtalleFacturaCompra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODucto">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="DEtalleFacturaCompra">
+        <PropertyRef Name="CodigoProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DEtalleFacturaComprauraCOmpra">
+    <End Role="FActuraCOmpra" Type="Self.FActuraCOmpra" Multiplicity="1" />
+    <End Role="DEtalleFacturaCompra" Type="Self.DEtalleFacturaCompra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FActuraCOmpra">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="DEtalleFacturaCompra">
+        <PropertyRef Name="NumeroFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DEtalleFActuraucto">
+    <End Role="PRODucto" Type="Self.PRODucto" Multiplicity="1" />
+    <End Role="DEtalleFActura" Type="Self.DEtalleFActura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODucto">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="DEtalleFActura">
+        <PropertyRef Name="CodigoProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DEtalleFActuraura">
+    <End Role="FACTura" Type="Self.FACTura" Multiplicity="1" />
+    <End Role="DEtalleFActura" Type="Self.DEtalleFActura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FACTura">
+        <PropertyRef Name="Numero" />
+      </Principal>
+      <Dependent Role="DEtalleFActura">
+        <PropertyRef Name="Numero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMpleadoCArgo_EMPLeado">
+    <End Role="EMPLeado" Type="Self.EMPLeado" Multiplicity="1" />
+    <End Role="EMpleadoCArgo" Type="Self.EMpleadoCArgo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLeado">
+        <PropertyRef Name="Documento" />
+      </Principal>
+      <Dependent Role="EMpleadoCArgo">
+        <PropertyRef Name="Documento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKCucursalCiudad">
+    <End Role="CIUDad" Type="Self.CIUDad" Multiplicity="1" />
+    <End Role="SUCUrsal" Type="Self.SUCUrsal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDad">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="SUCUrsal">
+        <PropertyRef Name="CodigoCiudad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKDepartamento">
+    <End Role="DEPArtamento" Type="Self.DEPArtamento" Multiplicity="1" />
+    <End Role="CIUDad" Type="Self.CIUDad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPArtamento">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="CIUDad">
+        <PropertyRef Name="CodigoDepartamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKDevollucionEmpleadoCArgo">
+    <End Role="EMpleadoCArgo" Type="Self.EMpleadoCArgo" Multiplicity="1" />
+    <End Role="DEVOlucion" Type="Self.DEVOlucion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMpleadoCArgo">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="DEVOlucion">
+        <PropertyRef Name="CodigoEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKDevolucionCliente">
+    <End Role="CLIEnte" Type="Self.CLIEnte" Multiplicity="1" />
+    <End Role="DEVOlucion" Type="Self.DEVOlucion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIEnte">
+        <PropertyRef Name="Documento" />
+      </Principal>
+      <Dependent Role="DEVOlucion">
+        <PropertyRef Name="Documento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKEmpleadoCArgo">
+    <End Role="CARGo" Type="Self.CARGo" Multiplicity="1" />
+    <End Role="EMpleadoCArgo" Type="Self.EMpleadoCArgo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARGo">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="EMpleadoCArgo">
+        <PropertyRef Name="CodigoCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKEmpleadoCArgoSucursal">
+    <End Role="SUCUrsal" Type="Self.SUCUrsal" Multiplicity="1" />
+    <End Role="EMpleadoCArgo" Type="Self.EMpleadoCArgo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUCUrsal">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="EMpleadoCArgo">
+        <PropertyRef Name="CodigoSucursal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFacturaCliente">
+    <End Role="CLIEnte" Type="Self.CLIEnte" Multiplicity="1" />
+    <End Role="FACTura" Type="Self.FACTura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIEnte">
+        <PropertyRef Name="Documento" />
+      </Principal>
+      <Dependent Role="FACTura">
+        <PropertyRef Name="Documento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFacturaCOmpraEmpleadoCArgo">
+    <End Role="EMpleadoCArgo" Type="Self.EMpleadoCArgo" Multiplicity="1" />
+    <End Role="FActuraCOmpra" Type="Self.FActuraCOmpra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMpleadoCArgo">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="FActuraCOmpra">
+        <PropertyRef Name="CodigoEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFacturaCOmpraProveedor">
+    <End Role="PROVeedor" Type="Self.PROVeedor" Multiplicity="1" />
+    <End Role="FActuraCOmpra" Type="Self.FActuraCOmpra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROVeedor">
+        <PropertyRef Name="Documento" />
+      </Principal>
+      <Dependent Role="FActuraCOmpra">
+        <PropertyRef Name="DocumentoProveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKFacturaEmpleadoCArgo">
+    <End Role="EMpleadoCArgo" Type="Self.EMpleadoCArgo" Multiplicity="1" />
+    <End Role="FACTura" Type="Self.FACTura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMpleadoCArgo">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="FACTura">
+        <PropertyRef Name="CodigoEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKProducto_TIpoPRoducto">
+    <End Role="TIpoPRoducto" Type="Self.TIpoPRoducto" Multiplicity="1" />
+    <End Role="PRODucto" Type="Self.PRODucto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIpoPRoducto">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="PRODucto">
+        <PropertyRef Name="CodigoTipoProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKProductoPRoveedoructo">
+    <End Role="PRODucto" Type="Self.PRODucto" Multiplicity="1" />
+    <End Role="PRoductoPRoveedor" Type="Self.PRoductoPRoveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODucto">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="PRoductoPRoveedor">
+        <PropertyRef Name="CodigoProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKrtamento">
+    <End Role="PAIS" Type="Self.PAIS" Multiplicity="1" />
+    <End Role="DEPArtamento" Type="Self.DEPArtamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAIS">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="DEPArtamento">
+        <PropertyRef Name="CodigoPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKSucursalSupermercado">
+    <End Role="SUPErmercado" Type="Self.SUPErmercado" Multiplicity="1" />
+    <End Role="SUCUrsal" Type="Self.SUCUrsal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SUPErmercado">
+        <PropertyRef Name="Nit" />
+      </Principal>
+      <Dependent Role="SUCUrsal">
+        <PropertyRef Name="NitSupermercado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKTelefono_TIpoTElefono">
+    <End Role="TIpoTElefono" Type="Self.TIpoTElefono" Multiplicity="1" />
+    <End Role="TELEfono" Type="Self.TELEfono" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIpoTElefono">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="TELEfono">
+        <PropertyRef Name="CodigoTipoTelefono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKTelefonoCliente">
+    <End Role="CLIEnte" Type="Self.CLIEnte" Multiplicity="1" />
+    <End Role="TELEfono" Type="Self.TELEfono" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIEnte">
+        <PropertyRef Name="Documento" />
+      </Principal>
+      <Dependent Role="TELEfono">
+        <PropertyRef Name="Documento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKuctoPRoveedoreedor">
+    <End Role="PROVeedor" Type="Self.PROVeedor" Multiplicity="1" />
+    <End Role="PRoductoPRoveedor" Type="Self.PRoductoPRoveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROVeedor">
+        <PropertyRef Name="Documento" />
+      </Principal>
+      <Dependent Role="PRoductoPRoveedor">
+        <PropertyRef Name="Documento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBSuperModelStoreContainer">
+    <EntitySet Name="CARGo" EntityType="Self.CARGo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CIUDad" EntityType="Self.CIUDad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CLIEnte" EntityType="Self.CLIEnte" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="COntactoPRoveedor" EntityType="Self.COntactoPRoveedor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DEPArtamento" EntityType="Self.DEPArtamento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DEtalleDEvolucion" EntityType="Self.DEtalleDEvolucion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DEtalleFActura" EntityType="Self.DEtalleFActura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DEtalleFacturaCompra" EntityType="Self.DEtalleFacturaCompra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DEVOlucion" EntityType="Self.DEVOlucion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EMPLeado" EntityType="Self.EMPLeado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EMpleadoCArgo" EntityType="Self.EMpleadoCArgo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FACTura" EntityType="Self.FACTura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FActuraCOmpra" EntityType="Self.FActuraCOmpra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NOtaCRedito" EntityType="Self.NOtaCRedito" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PAIS" EntityType="Self.PAIS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRODucto" EntityType="Self.PRODucto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRoductoPRoveedor" EntityType="Self.PRoductoPRoveedor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PROVeedor" EntityType="Self.PROVeedor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SUCUrsal" EntityType="Self.SUCUrsal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SUPErmercado" EntityType="Self.SUPErmercado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TELEfono" EntityType="Self.TELEfono" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TIpoPRoducto" EntityType="Self.TIpoPRoducto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TIpoTElefono" EntityType="Self.TIpoTElefono" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_COntactoPRoveedoreedor" Association="Self.FK_COntactoPRoveedoreedor">
+      <End Role="PROVeedor" EntitySet="PROVeedor" />
+      <End Role="COntactoPRoveedor" EntitySet="COntactoPRoveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DEtalleDEvolucionlucion" Association="Self.FK_DEtalleDEvolucionlucion">
+      <End Role="DEVOlucion" EntitySet="DEVOlucion" />
+      <End Role="DEtalleDEvolucion" EntitySet="DEtalleDEvolucion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DEtalleFacturaCompraucto" Association="Self.FK_DEtalleFacturaCompraucto">
+      <End Role="PRODucto" EntitySet="PRODucto" />
+      <End Role="DEtalleFacturaCompra" EntitySet="DEtalleFacturaCompra" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DEtalleFacturaComprauraCOmpra" Association="Self.FK_DEtalleFacturaComprauraCOmpra">
+      <End Role="FActuraCOmpra" EntitySet="FActuraCOmpra" />
+      <End Role="DEtalleFacturaCompra" EntitySet="DEtalleFacturaCompra" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DEtalleFActuraucto" Association="Self.FK_DEtalleFActuraucto">
+      <End Role="PRODucto" EntitySet="PRODucto" />
+      <End Role="DEtalleFActura" EntitySet="DEtalleFActura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DEtalleFActuraura" Association="Self.FK_DEtalleFActuraura">
+      <End Role="FACTura" EntitySet="FACTura" />
+      <End Role="DEtalleFActura" EntitySet="DEtalleFActura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMpleadoCArgo_EMPLeado" Association="Self.FK_EMpleadoCArgo_EMPLeado">
+      <End Role="EMPLeado" EntitySet="EMPLeado" />
+      <End Role="EMpleadoCArgo" EntitySet="EMpleadoCArgo" />
+    </AssociationSet>
+    <AssociationSet Name="FKCucursalCiudad" Association="Self.FKCucursalCiudad">
+      <End Role="CIUDad" EntitySet="CIUDad" />
+      <End Role="SUCUrsal" EntitySet="SUCUrsal" />
+    </AssociationSet>
+    <AssociationSet Name="FKDepartamento" Association="Self.FKDepartamento">
+      <End Role="DEPArtamento" EntitySet="DEPArtamento" />
+      <End Role="CIUDad" EntitySet="CIUDad" />
+    </AssociationSet>
+    <AssociationSet Name="FKDevollucionEmpleadoCArgo" Association="Self.FKDevollucionEmpleadoCArgo">
+      <End Role="EMpleadoCArgo" EntitySet="EMpleadoCArgo" />
+      <End Role="DEVOlucion" EntitySet="DEVOlucion" />
+    </AssociationSet>
+    <AssociationSet Name="FKDevolucionCliente" Association="Self.FKDevolucionCliente">
+      <End Role="CLIEnte" EntitySet="CLIEnte" />
+      <End Role="DEVOlucion" EntitySet="DEVOlucion" />
+    </AssociationSet>
+    <AssociationSet Name="FKEmpleadoCArgo" Association="Self.FKEmpleadoCArgo">
+      <End Role="CARGo" EntitySet="CARGo" />
+      <End Role="EMpleadoCArgo" EntitySet="EMpleadoCArgo" />
+    </AssociationSet>
+    <AssociationSet Name="FKEmpleadoCArgoSucursal" Association="Self.FKEmpleadoCArgoSucursal">
+      <End Role="SUCUrsal" EntitySet="SUCUrsal" />
+      <End Role="EMpleadoCArgo" EntitySet="EMpleadoCArgo" />
+    </AssociationSet>
+    <AssociationSet Name="FKFacturaCliente" Association="Self.FKFacturaCliente">
+      <End Role="CLIEnte" EntitySet="CLIEnte" />
+      <End Role="FACTura" EntitySet="FACTura" />
+    </AssociationSet>
+    <AssociationSet Name="FKFacturaCOmpraEmpleadoCArgo" Association="Self.FKFacturaCOmpraEmpleadoCArgo">
+      <End Role="EMpleadoCArgo" EntitySet="EMpleadoCArgo" />
+      <End Role="FActuraCOmpra" EntitySet="FActuraCOmpra" />
+    </AssociationSet>
+    <AssociationSet Name="FKFacturaCOmpraProveedor" Association="Self.FKFacturaCOmpraProveedor">
+      <End Role="PROVeedor" EntitySet="PROVeedor" />
+      <End Role="FActuraCOmpra" EntitySet="FActuraCOmpra" />
+    </AssociationSet>
+    <AssociationSet Name="FKFacturaEmpleadoCArgo" Association="Self.FKFacturaEmpleadoCArgo">
+      <End Role="EMpleadoCArgo" EntitySet="EMpleadoCArgo" />
+      <End Role="FACTura" EntitySet="FACTura" />
+    </AssociationSet>
+    <AssociationSet Name="FKProducto_TIpoPRoducto" Association="Self.FKProducto_TIpoPRoducto">
+      <End Role="TIpoPRoducto" EntitySet="TIpoPRoducto" />
+      <End Role="PRODucto" EntitySet="PRODucto" />
+    </AssociationSet>
+    <AssociationSet Name="FKProductoPRoveedoructo" Association="Self.FKProductoPRoveedoructo">
+      <End Role="PRODucto" EntitySet="PRODucto" />
+      <End Role="PRoductoPRoveedor" EntitySet="PRoductoPRoveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FKrtamento" Association="Self.FKrtamento">
+      <End Role="PAIS" EntitySet="PAIS" />
+      <End Role="DEPArtamento" EntitySet="DEPArtamento" />
+    </AssociationSet>
+    <AssociationSet Name="FKSucursalSupermercado" Association="Self.FKSucursalSupermercado">
+      <End Role="SUPErmercado" EntitySet="SUPErmercado" />
+      <End Role="SUCUrsal" EntitySet="SUCUrsal" />
+    </AssociationSet>
+    <AssociationSet Name="FKTelefono_TIpoTElefono" Association="Self.FKTelefono_TIpoTElefono">
+      <End Role="TIpoTElefono" EntitySet="TIpoTElefono" />
+      <End Role="TELEfono" EntitySet="TELEfono" />
+    </AssociationSet>
+    <AssociationSet Name="FKTelefonoCliente" Association="Self.FKTelefonoCliente">
+      <End Role="CLIEnte" EntitySet="CLIEnte" />
+      <End Role="TELEfono" EntitySet="TELEfono" />
+    </AssociationSet>
+    <AssociationSet Name="FKuctoPRoveedoreedor" Association="Self.FKuctoPRoveedoreedor">
+      <End Role="PROVeedor" EntitySet="PROVeedor" />
+      <End Role="PRoductoPRoveedor" EntitySet="PRoductoPRoveedor" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
