@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\scripts\\reserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\scripts\\reserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\reserva.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\reserva.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\pagina1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\pagina1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\pagina1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\scripts\\pagina1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\scripts\\pagina1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\scripts\\reserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\scripts\\reserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\menu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Pagina1.html",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Pagina1.html",
               "RelativeDocumentMoniker": "Paginas\\Pagina1.html",
@@ -82,25 +82,24 @@
               "RelativeToolTip": "Paginas\\Pagina1.html",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T13:06:22.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-02T13:06:22.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Reserva.js",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Reserva.js",
               "RelativeDocumentMoniker": "Paginas\\Scripts\\Reserva.js",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Reserva.js",
               "RelativeToolTip": "Paginas\\Scripts\\Reserva.js",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBEAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-03-02T12:14:16.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Reserva.html",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Reserva.html",
               "RelativeDocumentMoniker": "Paginas\\Reserva.html",
@@ -113,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Pagina1.js",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Pagina1.js",
               "RelativeDocumentMoniker": "Paginas\\Scripts\\Pagina1.js",
@@ -121,8 +120,7 @@
               "RelativeToolTip": "Paginas\\Scripts\\Pagina1.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-03-02T03:15:42.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-02T03:15:42.38Z"
             },
             {
               "$type": "Document",
@@ -162,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PaginaBase.html",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\PaginaBase.html",
               "RelativeDocumentMoniker": "Paginas\\PaginaBase.html",
@@ -170,8 +168,7 @@
               "RelativeToolTip": "Paginas\\PaginaBase.html",
               "ViewState": "AQIAAHEBAAAAAAAAAAAAAHsBAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T03:05:51.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-02T03:05:51.632Z"
             }
           ]
         }
