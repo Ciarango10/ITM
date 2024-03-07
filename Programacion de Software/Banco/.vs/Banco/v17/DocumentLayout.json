@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\banco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\banco\\cuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|solutionrelative:cuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\banco\\banco.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|solutionrelative:banco.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\banco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B4FFC88-FE1D-4CC2-A025-CF46C96B74BD}|Banco.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,40 +50,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Banco.csproj",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\Banco.csproj",
-              "RelativeDocumentMoniker": "Banco.csproj",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\Banco.csproj",
-              "RelativeToolTip": "Banco.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-02-29T22:08:09.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwBkAAABDAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-29T22:05:46.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CuentaBancaria.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\CuentaBancaria.cs",
               "RelativeDocumentMoniker": "CuentaBancaria.cs",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\CuentaBancaria.cs",
-              "RelativeToolTip": "CuentaBancaria.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAIwDQAAAAJAAAA",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Banco\\CuentaBancaria.cs*",
+              "RelativeToolTip": "CuentaBancaria.cs*",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAowA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T21:32:20.151Z"
+              "WhenOpened": "2024-02-29T21:32:20.151Z",
+              "EditorCaption": ""
             }
           ]
         }
