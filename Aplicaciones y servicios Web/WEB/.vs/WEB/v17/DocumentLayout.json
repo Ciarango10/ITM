@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\scripts\\reserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\scripts\\reserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\scripts\\reserva.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\reserva.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\reserva.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\reserva.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -92,7 +92,7 @@
               "RelativeDocumentMoniker": "Paginas\\Scripts\\Reserva.js",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Reserva.js",
               "RelativeToolTip": "Paginas\\Scripts\\Reserva.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-03-02T12:14:16.626Z",
               "EditorCaption": ""
@@ -107,8 +107,7 @@
               "RelativeToolTip": "Paginas\\Reserva.html",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-02T12:12:26.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-02T12:12:26.486Z"
             },
             {
               "$type": "Document",

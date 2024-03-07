@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial #1\\WEB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A508CC49-671F-48C7-AA08-E9D5178FBCA5}|Web.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\parcial #1\\web\\paginas\\scripts\\natillera.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A508CC49-671F-48C7-AA08-E9D5178FBCA5}|Web.csproj|solutionrelative:paginas\\scripts\\natillera.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A508CC49-671F-48C7-AA08-E9D5178FBCA5}|Web.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\parcial #1\\web\\paginas\\natillera.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A508CC49-671F-48C7-AA08-E9D5178FBCA5}|Web.csproj|solutionrelative:paginas\\natillera.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Natillera.html",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial #1\\WEB\\Paginas\\Natillera.html",
+              "RelativeDocumentMoniker": "Paginas\\Natillera.html",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial #1\\WEB\\Paginas\\Natillera.html",
+              "RelativeToolTip": "Paginas\\Natillera.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-07T01:55:27.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Natillera.js",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial #1\\WEB\\Paginas\\Scripts\\Natillera.js",
+              "RelativeDocumentMoniker": "Paginas\\Scripts\\Natillera.js",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial #1\\WEB\\Paginas\\Scripts\\Natillera.js",
+              "RelativeToolTip": "Paginas\\Scripts\\Natillera.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-07T01:14:25.441Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

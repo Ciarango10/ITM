@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBExamenModelStoreContainer" CdmEntityContainer="DBExamenEntities">
+    <EntitySetMapping Name="tblExamen_Natillera">
+      <EntityTypeMapping TypeName="DBExamenModel.tblExamen_Natillera">
+        <MappingFragment StoreEntitySet="tblExamen_Natillera">
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Afiliado" ColumnName="Afiliado" />
+          <ScalarProperty Name="FechaCredito" ColumnName="FechaCredito" />
+          <ScalarProperty Name="ValorCredito" ColumnName="ValorCredito" />
+          <ScalarProperty Name="PlazoCredito" ColumnName="PlazoCredito" />
+          <ScalarProperty Name="PorcentajeCredito" ColumnName="PorcentajeCredito" />
+          <ScalarProperty Name="CuotaMensualIntereses" ColumnName="CuotaMensualIntereses" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
