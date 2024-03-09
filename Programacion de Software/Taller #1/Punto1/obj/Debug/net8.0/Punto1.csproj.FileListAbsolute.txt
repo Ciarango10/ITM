@@ -1,0 +1,15 @@
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\bin\Debug\net8.0\Punto1.exe
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\bin\Debug\net8.0\Punto1.deps.json
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\bin\Debug\net8.0\Punto1.runtimeconfig.json
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\bin\Debug\net8.0\Punto1.dll
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\bin\Debug\net8.0\Punto1.pdb
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\obj\Debug\net8.0\Punto1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\obj\Debug\net8.0\Punto1.AssemblyInfoInputs.cache
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\obj\Debug\net8.0\Punto1.AssemblyInfo.cs
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\obj\Debug\net8.0\Punto1.csproj.CoreCompileInputs.cache
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\obj\Debug\net8.0\Punto1.sourcelink.json
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\obj\Debug\net8.0\Punto1.dll
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\obj\Debug\net8.0\refint\Punto1.dll
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\obj\Debug\net8.0\Punto1.pdb
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\obj\Debug\net8.0\Punto1.genruntimeconfig.cache
+D:\Carlos Arango\Codigo\ITM\Aplicaciones y servicios Web\Punto1\obj\Debug\net8.0\ref\Punto1.dll

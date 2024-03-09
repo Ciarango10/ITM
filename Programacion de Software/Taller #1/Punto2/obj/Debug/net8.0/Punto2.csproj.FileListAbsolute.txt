@@ -1,0 +1,15 @@
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\obj\Debug\net8.0\Punto2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\obj\Debug\net8.0\Punto2.AssemblyInfoInputs.cache
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\obj\Debug\net8.0\Punto2.AssemblyInfo.cs
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\obj\Debug\net8.0\Punto2.csproj.CoreCompileInputs.cache
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\obj\Debug\net8.0\Punto2.sourcelink.json
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\bin\Debug\net8.0\Punto2.exe
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\bin\Debug\net8.0\Punto2.deps.json
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\bin\Debug\net8.0\Punto2.runtimeconfig.json
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\bin\Debug\net8.0\Punto2.dll
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\bin\Debug\net8.0\Punto2.pdb
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\obj\Debug\net8.0\Punto2.dll
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\obj\Debug\net8.0\refint\Punto2.dll
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\obj\Debug\net8.0\Punto2.pdb
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\obj\Debug\net8.0\Punto2.genruntimeconfig.cache
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Taller #1\Punto2\obj\Debug\net8.0\ref\Punto2.dll

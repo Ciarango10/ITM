@@ -2,7 +2,7 @@
 //preguntale al usuario los valores y calcula la suma y promedio de todos ellos.
 class Program
 {
-    public static void Main(String[] args)
+    public static void Main(string[] args)
     {
         int i;
         double Suma, Promedio;

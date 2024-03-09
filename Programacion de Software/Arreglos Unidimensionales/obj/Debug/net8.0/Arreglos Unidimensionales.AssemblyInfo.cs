@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arreglos Unidimensionales")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a3f23e86a2203fa21b681ccf989cec1c3c970a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8a4d4a33712521fbd436c45599e14f73d8362eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arreglos Unidimensionales")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arreglos Unidimensionales")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
