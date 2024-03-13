@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Taller #1\\Punto4\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B0A8E61C-EE68-48F9-B7C6-B8ABA05A1E7B}|Punto4.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\taller #1\\punto4\\periodico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0A8E61C-EE68-48F9-B7C6-B8ABA05A1E7B}|Punto4.csproj|solutionrelative:periodico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B0A8E61C-EE68-48F9-B7C6-B8ABA05A1E7B}|Punto4.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\taller #1\\punto4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0A8E61C-EE68-48F9-B7C6-B8ABA05A1E7B}|Punto4.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B0A8E61C-EE68-48F9-B7C6-B8ABA05A1E7B}|Punto4.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\taller #1\\punto4\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0A8E61C-EE68-48F9-B7C6-B8ABA05A1E7B}|Punto4.csproj|solutionrelative:libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0A8E61C-EE68-48F9-B7C6-B8ABA05A1E7B}|Punto4.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\taller #1\\punto4\\periodico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0A8E61C-EE68-48F9-B7C6-B8ABA05A1E7B}|Punto4.csproj|solutionrelative:periodico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 92,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Periodico.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Taller #1\\Punto4\\Periodico.cs",
               "RelativeDocumentMoniker": "Periodico.cs",
@@ -71,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Libro.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Taller #1\\Punto4\\Libro.cs",
               "RelativeDocumentMoniker": "Libro.cs",
@@ -79,12 +79,11 @@
               "RelativeToolTip": "Libro.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T02:23:32.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-09T02:23:32.19Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Publicacion.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Taller #1\\Punto4\\Publicacion.cs",
               "RelativeDocumentMoniker": "Publicacion.cs",
@@ -92,18 +91,17 @@
               "RelativeToolTip": "Publicacion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T02:08:37.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-09T02:08:37.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Taller #1\\Punto4\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Taller #1\\Punto4\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T02:01:29.404Z",
               "EditorCaption": ""
