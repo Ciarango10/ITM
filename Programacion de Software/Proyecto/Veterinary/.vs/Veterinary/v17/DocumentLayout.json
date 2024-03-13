@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|solutionrelative:veterinary.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|solutionrelative:veterinary.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.api\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|solutionrelative:veterinary.api\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EC2F4BB-5160-4434-81E8-25E4E639A043}|Veterinary.Shared\\Veterinary.Shared.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.shared\\entities\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EC2F4BB-5160-4434-81E8-25E4E639A043}|Veterinary.Shared\\Veterinary.Shared.csproj|solutionrelative:veterinary.shared\\entities\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,7 +63,46 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Veterinary.Shared",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Veterinary.API\\appsettings.json",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\appsettings.json",
+              "RelativeToolTip": "Veterinary.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-13T17:06:04.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Veterinary.API\\appsettings.Development.json",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\appsettings.Development.json",
+              "RelativeToolTip": "Veterinary.API\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-13T16:59:33.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "Veterinary.API\\Data\\DataContext.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\Data\\DataContext.cs",
+              "RelativeToolTip": "Veterinary.API\\Data\\DataContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T16:52:39.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Veterinary.Shared.csproj",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.Shared\\Veterinary.Shared.csproj",
               "RelativeDocumentMoniker": "Veterinary.Shared\\Veterinary.Shared.csproj",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.Shared\\Veterinary.Shared.csproj",
@@ -63,13 +114,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Owner.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.Shared\\Entities\\Owner.cs",
               "RelativeDocumentMoniker": "Veterinary.Shared\\Entities\\Owner.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.Shared\\Entities\\Owner.cs",
               "RelativeToolTip": "Veterinary.Shared\\Entities\\Owner.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T13:20:49.63Z",
               "EditorCaption": ""
