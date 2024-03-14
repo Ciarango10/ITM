@@ -9,6 +9,7 @@
 
 namespace Servicios.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -30,12 +31,18 @@ namespace Servicios.Models
         public int CodigoSucursal { get; set; }
     
         public virtual CARGo CARGo { get; set; }
+        
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DEVOlucion> DEVOlucions { get; set; }
         public virtual EMPLeado EMPLeado { get; set; }
         public virtual SUCUrsal SUCUrsal { get; set; }
+
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FActuraCOmpra> FActuraCOmpras { get; set; }
+
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FACTura> FACTuras { get; set; }
     }

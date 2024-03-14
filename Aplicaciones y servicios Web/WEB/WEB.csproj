@@ -125,6 +125,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Paginas\Cliente.html" />
+    <Content Include="Paginas\Empleado.html" />
     <Content Include="Paginas\Estilos\adminlte.css" />
     <Content Include="Paginas\Estilos\adminlte.min.css" />
     <Content Include="Paginas\Estilos\all.min.css" />
@@ -166,6 +167,7 @@
     <Content Include="Paginas\PaginaBase.html" />
     <Content Include="Paginas\Reserva.html" />
     <Content Include="Paginas\Scripts\Cliente.js" />
+    <Content Include="Paginas\Scripts\Empleado.js" />
     <Content Include="Paginas\Scripts\Pagina1.js" />
     <Content Include="Paginas\Scripts\Pagina2.js" />
     <Content Include="Paginas\Scripts\Reserva.js" />
