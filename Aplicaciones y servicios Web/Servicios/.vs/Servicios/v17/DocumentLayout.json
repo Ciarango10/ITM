@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\servicios\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\servicios\\clases\\clsempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\clases\\clsempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:clases\\clsempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\servicios\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\servicios\\models\\empleadocargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:models\\empleadocargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\clases\\clsreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,16 +26,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "clsEmpleado.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Clases\\clsEmpleado.cs",
               "RelativeDocumentMoniker": "Clases\\clsEmpleado.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Clases\\clsEmpleado.cs",
               "RelativeToolTip": "Clases\\clsEmpleado.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAcwEAAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T01:43:12.53Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -58,10 +45,9 @@
               "RelativeDocumentMoniker": "Controllers\\EmpleadosController.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Controllers\\EmpleadosController.cs",
               "RelativeToolTip": "Controllers\\EmpleadosController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAuwAgAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T02:01:47.57Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -94,46 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "Controllers\\ClientesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T02:44:57.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EMpleadoCArgo.cs",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Models\\EMpleadoCArgo.cs",
-              "RelativeDocumentMoniker": "Models\\EMpleadoCArgo.cs",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Models\\EMpleadoCArgo.cs",
-              "RelativeToolTip": "Models\\EMpleadoCArgo.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwCgAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T02:18:59.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EMPLeado.cs",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Models\\EMPLeado.cs",
-              "RelativeDocumentMoniker": "Models\\EMPLeado.cs",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Models\\EMPLeado.cs",
-              "RelativeToolTip": "Models\\EMPLeado.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAASwCEAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T02:16:39.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "clsReserva.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Clases\\clsReserva.cs",
               "RelativeDocumentMoniker": "Clases\\clsReserva.cs",
@@ -141,8 +88,7 @@
               "RelativeToolTip": "Clases\\clsReserva.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T11:38:18.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-02T11:38:18.078Z"
             }
           ]
         }
