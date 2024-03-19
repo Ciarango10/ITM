@@ -34,7 +34,7 @@ class AuthorsController extends Controller
 
         }catch(Exception $ex){
 
-            // Log::error($ex);
+            echo $ex->getMessage();
         }
     }
 
@@ -69,22 +69,28 @@ class AuthorsController extends Controller
             return redirect()->action([AuthorsController::class,"index"]);
 
         }catch(Exception $ex){
-
-            // Log::error($ex);
+            echo $ex->getMessage();
         }
     }
 
     public function delete($id) {
 
-        $author = Author::find($id);
+        try{
 
-        if(empty($author)){
+            $author = Author::find($id);
 
-            abort(404, "El autor con id $id no existe");
+            if(empty($author)){
+    
+                abort(404, "El autor con id $id no existe");
+            }
+    
+            $author->delete();
+
+            return redirect()->action([AuthorsController::class,"index"]);
+
+        }catch(Exception $ex){
+            echo $ex->getMessage();
         }
 
-        $author->delete();
-        
-        return redirect()->action([AuthorsController::class,"index"]);
     }
 }
