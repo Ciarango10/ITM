@@ -10,7 +10,7 @@ namespace Servicios.Clases
     public class clsProducto
     {
         //Crear el atributo que maneja las clases modelos, de la base de datos
-        DBSuperEntities dbSuper = new DBSuperEntities();
+        private DBSuperEntities dbSuper = new DBSuperEntities();
 
         //Crear propiedad de tipo producto para manipular la informacion de la base de datos 
         public PRODucto producto { get; set; }
