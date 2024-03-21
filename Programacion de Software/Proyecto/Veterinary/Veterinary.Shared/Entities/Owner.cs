@@ -31,9 +31,15 @@ namespace Veterinary.Shared.Entities
         [Required(ErrorMessage = "El campo {0} es obligatorio")]
         [EmailAddress(ErrorMessage = "Digite un Email válido")]
         public string Email { get; set; }
+
         public string FixedPhone { get; set; }
+
         public string CellPhone { get; set; }
+
         public string Address { get; set; }
+
         public string FullName => $"{FirstName} {LastName}";
+
+        public ICollection<Agenda> Agendas { get; set; }
     }
 }

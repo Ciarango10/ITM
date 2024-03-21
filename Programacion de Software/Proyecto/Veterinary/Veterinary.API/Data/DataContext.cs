@@ -11,6 +11,11 @@ namespace Veterinary.API.Data
         }
 
         public DbSet<Owner>Owners { get; set; }
+        public DbSet<PetType> PetTypes { get; set; }
+        public DbSet<Pet> Pets { get; set; }
+        public DbSet<ServiceType> ServicesTypes { get; set; }
+        public DbSet<History> Histories { get; set; }
+        public DbSet<Agenda> Agendas { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
