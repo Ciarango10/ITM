@@ -20,6 +20,12 @@ namespace Servicios.Controllers
             return _producto.Consultar(id);
         }
 
+        public IQueryable Get()
+        {
+            clsProducto _producto = new clsProducto();
+            return _producto.ListarProductos();
+        }
+
         // POST api/<controller>
         public string Post([FromBody] PRODucto producto)
         {

@@ -54,6 +54,24 @@ namespace Servicios.Clases
             return dbSuper.PRODuctoes.FirstOrDefault(p => p.Codigo == id);
         }
 
+        public IQueryable ListarProductos()
+        {
+            return from TP in dbSuper.Set<TIpoPRoducto>()
+                   join P in dbSuper.Set<PRODucto>()
+                   on TP.Codigo equals P.CodigoTipoProducto
+                   orderby TP.Nombre, P.Nombre
+                   select new
+                   {
+                       Cod_Tipo_Producto = TP.Codigo,
+                       Tipo_Producto = TP.Nombre,
+                       Codigo = P.Codigo,
+                       Nombre = P.Nombre,
+                       Descripcion = P.Descripcion,
+                       Cantidad = P.Cantidad,
+                       ValorUnitario = P.ValorUnitario
+                   };
+        }
+
         public string Eliminar()
         {
             try

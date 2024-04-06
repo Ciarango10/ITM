@@ -1,9 +1,12 @@
-﻿jQuery(function () {
+﻿var oTabla = $("#tblProductos").DataTable();
+jQuery(function () {
     //Registrar los botones para responder al evento click
     $("#dvMenu").load("../Paginas/Menu.html");
 
     //Llenar el combo de tipo producto
     LlenarComboTipoProducto();
+    //Llenar la tabla de productos
+    LlenarTablaProductos();
 
     //Levantar el evento click del boton insertar
     $("#btnInsertar").on("click", () => {
@@ -23,25 +26,65 @@
     });
 });
 
-async function LlenarComboTipoProducto() {
-    try {
-        const Respuesta = await fetch("https://localhost:44374/api/TipoProductos",
-            {
-                method: "GET",
-                mode: "cors",
-                headers: { "Content-Type": "application/json" },
-            });
-        //Leer la respuesta y presentarla en el div
-        const Resultado = await Respuesta.json();
-        //Con la respuesta se llena el combo
-        for (let i = 0; i < Resultado.length; i++) {
-            $("#cboTipoProducto").append(`<option value="${Resultado[i].Codigo}">${Resultado[i].Nombre}</option>`);
-        }
-    }
-    catch (error) {
-        $("#dvMensaje").html(error);
-    }
+async function LlenarTablaProductos() {
+    LlenarTablaXServicios("https://localhost:44374/api/Productos", "#tblProductos");
 }
+
+async function LlenarComboTipoProducto() {
+    LlenarComboXServicios("https://localhost:44374/api/TipoProductos", "#cboTipoProducto");
+}
+
+//async function LlenarTablaProductos() {
+//    try {
+//        const Respuesta = await fetch("https://localhost:44374/api/Productos",
+//            {
+//                method: "GET",
+//                mode: "cors",
+//                headers: { "Content-Type": "application/json" },
+//            });
+//        //Leer la respuesta y presentarla en el div
+//        const Resultado = await Respuesta.json();
+//        //Con la respuesta se llena la tabla
+//        //Llena el encabezado
+//        var Columnas = [];
+//        NombreColumnas = Object.keys(Resultado[0]);
+//        for (var i in NombreColumnas) {
+//            Columnas.push({
+//                data: NombreColumnas[i],
+//                title: NombreColumnas[i]
+//            });
+//        }
+//        //Llena los datos
+//        $("#tblProductos").DataTable({
+//            data: Resultado,
+//            columns: Columnas,
+//            destroy: true
+//        });
+//    }
+//    catch (error) {
+//        $("#dvMensaje").html(error);
+//    }
+//}
+
+//async function LlenarComboTipoProducto() {
+//    try {
+//        const Respuesta = await fetch("https://localhost:44374/api/TipoProductos",
+//            {
+//                method: "GET",
+//                mode: "cors",
+//                headers: { "Content-Type": "application/json" },
+//            });
+//        //Leer la respuesta y presentarla en el div
+//        const Resultado = await Respuesta.json();
+//        //Con la respuesta se llena el combo
+//        for (let i = 0; i < Resultado.length; i++) {
+//            $("#cboTipoProducto").append(`<option value="${Resultado[i].Codigo}">${Resultado[i].Nombre}</option>`);
+//        }
+//    }
+//    catch (error) {
+//        $("#dvMensaje").html(error);
+//    }
+//}
 
 async function EjecutarComando(Comando) {
     //Capturar los datos de entrada
@@ -83,6 +126,7 @@ async function EjecutarComando(Comando) {
             });
         //Leer la respuesta y presentarla en el div
         const Resultado = await Respuesta.json();
+        LlenarTablaProductos();
         $("#dvMensaje").html(Resultado);
     }
     catch (error) {

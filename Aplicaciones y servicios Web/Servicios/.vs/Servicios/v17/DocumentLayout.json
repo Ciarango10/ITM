@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\clases\\clsproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:clases\\clsproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\clases\\clstipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:clases\\clstipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\clases\\clsproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:clases\\clsproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,16 +48,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "clsTipoProducto.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Clases\\clsTipoProducto.cs",
               "RelativeDocumentMoniker": "Clases\\clsTipoProducto.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Clases\\clsTipoProducto.cs",
               "RelativeToolTip": "Clases\\clsTipoProducto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T01:49:12.004Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -67,23 +68,25 @@
               "RelativeDocumentMoniker": "Controllers\\ProductosController.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Controllers\\ProductosController.cs",
               "RelativeToolTip": "Controllers\\ProductosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowBcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T01:57:48.617Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "clsProducto.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Clases\\clsProducto.cs",
               "RelativeDocumentMoniker": "Clases\\clsProducto.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Clases\\clsProducto.cs",
               "RelativeToolTip": "Clases\\clsProducto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAABEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T01:34:18.323Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -121,7 +124,7 @@
               "RelativeDocumentMoniker": "Controllers\\EmpleadosController.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Controllers\\EmpleadosController.cs",
               "RelativeToolTip": "Controllers\\EmpleadosController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAA2AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T03:23:42.194Z",
               "EditorCaption": ""
