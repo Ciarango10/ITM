@@ -8,47 +8,51 @@ USE DBInmobiliaria;
 GO
 CREATE TABLE Pais (
 	IdPais int identity(1,1) primary key,
-	Nombre varchar(25)
+	Nombre varchar(25) not null
 );
 GO
 CREATE TABLE Departamento (
 	IdDepartamento int identity(1,1) primary key,
-	Nombre varchar(25),
+	Nombre varchar(25) not null,
 	Id_Pais int,
 	Constraint FKPais_Departamento foreign key (Id_Pais) references Pais(IdPais)
 );
 GO
 CREATE TABLE Ciudad (
 	IdCiudad int identity(1,1) primary key,
-	Nombre varchar(25),
+	Nombre varchar(25) not null,
 	Id_Departamento int,
 	Constraint FKDepartamento_Ciudad foreign key (Id_Departamento) references Departamento(IdDepartamento)
 );
 GO
 CREATE TABLE Estado (
 	IdEstado int identity(1,1) primary key,
-	Nombre varchar(25),
+	Nombre varchar(25) not null,
 	Descripcion varchar(100)
 );
 GO 
 CREATE TABLE Cliente (
 	Documento varchar(20) primary key,
-	Nombre varchar(50),
+	Nombre varchar(50) not null,
+	Apellido varchar(50) not null,
 	Email varchar(50),
-	Telefono varchar(20)
+	Telefono varchar(20),
+	FechaNacimiento date
 );
 GO
 CREATE TABLE Empleado (
 	Documento varchar(20) primary key,
-	Nombre varchar(50),
+	Nombre varchar(50) not null,
+	Apellido varchar(50) not null,
 	Email varchar(50),
-	Telefono varchar(20)
+	Telefono varchar(20),
+	FechaNacimiento date
 );
 GO
 CREATE TABLE Queja (
 	IdQueja int identity(1,1) primary key,
 	Fecha date,
-	Descripcion varchar(100),
+	Descripcion varchar(100) not null,
 	Id_Estado int,
 	Documento_Cliente varchar(20),
 	Documento_Empleado varchar(20),
@@ -59,13 +63,13 @@ CREATE TABLE Queja (
 GO
 CREATE TABLE TipoInmueble (
 	IdTipoInmueble int identity(1,1) primary key,
-	Tipo varchar(30)
+	Tipo varchar(30) not null
 );
 GO 
 CREATE TABLE Inmueble (
 	IdInmueble int identity(1,1) primary key,
-	Direccion varchar(30),
-	Precio float,
+	Direccion varchar(30) not null,
+	Precio float not null,
 	Id_Ciudad int,
 	Id_TipoInmueble int,
 	Constraint FKCiudad_Inmueble foreign key (Id_Ciudad) references Ciudad(IdCiudad),
@@ -86,14 +90,14 @@ CREATE TABLE Visita (
 GO
 CREATE TABLE FormaPago(
 	IdFormaPago int identity(1,1) primary key,
-	Tipo varchar(15),
+	Tipo varchar(15) not null,
 	Detalles varchar(100)
 );
 GO
 CREATE TABLE Venta (
 	IdVenta int identity(1,1) primary key,
 	Fecha date,
-	Precio float,
+	Precio float not null,
 	Documento_Cliente varchar(20),
 	Documento_Empleado varchar(20),
 	Id_Inmueble int,
@@ -106,9 +110,9 @@ CREATE TABLE Venta (
 GO
 CREATE TABLE Contrato (
 	IdContrato int identity(1,1) primary key,
-	Fecha_Inicio date,
-	Fecha_Fin date,
-	Monto float,
+	Fecha_Inicio date not null,
+	Fecha_Fin date not null,
+	Monto float not null,
 	Documento_Cliente varchar(20),
 	Documento_Empleado varchar(20),
 	Id_Inmueble int,
@@ -120,16 +124,16 @@ GO
 CREATE TABLE Comision (
 	IdComision int identity(1,1) primary key,
 	Fecha date,
-	Monto float,
+	Monto float not null,
 	Id_Contrato int,
 	Constraint FKContrato_Comision foreign key (Id_Contrato) references Contrato(IdContrato)
 );
 GO
 CREATE TABLE Arriendo (
 	IdArriendo int identity(1,1) primary key,
-	Fecha_Inicio date,
-	Fecha_Fin date,
-	Precio_Mensual float,
+	Fecha_Inicio date not null,
+	Fecha_Fin date not null,
+	Precio_Mensual float not null,
 	Documento_Cliente varchar(20),
 	Documento_Empleado varchar(20),
 	Id_Inmueble int,
