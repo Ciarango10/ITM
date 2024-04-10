@@ -32,16 +32,14 @@ CREATE TABLE Estado (
 );
 GO 
 CREATE TABLE Cliente (
-	IdCliente int identity(1,1) primary key,
-	Documento varchar(20),
+	Documento varchar(20) primary key,
 	Nombre varchar(50),
 	Email varchar(50),
 	Telefono varchar(20)
 );
 GO
 CREATE TABLE Empleado (
-	IdEmpleado int identity(1,1) primary key,
-	Documento varchar(20),
+	Documento varchar(20) primary key,
 	Nombre varchar(50),
 	Email varchar(50),
 	Telefono varchar(20)
@@ -52,11 +50,11 @@ CREATE TABLE Queja (
 	Fecha date,
 	Descripcion varchar(100),
 	Id_Estado int,
-	Id_Cliente int,
-	Id_Empleado int,
+	Documento_Cliente varchar(20),
+	Documento_Empleado varchar(20),
 	Constraint FKEstado_Queja foreign key (Id_Estado) references Estado(IdEstado),
-	Constraint FKCliente_Queja foreign key (Id_Cliente) references Cliente(IdCliente),
-	Constraint FKEmpleado_Queja foreign key (Id_Empleado) references Empleado(IdEmpleado)
+	Constraint FKCliente_Queja foreign key (Documento_Cliente) references Cliente(Documento),
+	Constraint FKEmpleado_Queja foreign key (Documento_Empleado) references Empleado(Documento)
 );
 GO
 CREATE TABLE TipoInmueble (
@@ -78,11 +76,11 @@ CREATE TABLE Visita (
 	IdVisita int identity(1,1) primary key,
 	Fecha date,
 	Comentarios varchar(100),
-	Id_Cliente int,
-	Id_Empleado int,
+	Documento_Cliente varchar(20),
+	Documento_Empleado varchar(20),
 	Id_Inmueble int,
-	Constraint FKCliente_Visita foreign key (Id_Cliente) references Cliente(IdCliente),
-	Constraint FKEmpleado_Visita foreign key (Id_Empleado) references Empleado(IdEmpleado),
+	Constraint FKCliente_Visita foreign key (Documento_Cliente) references Cliente(Documento),
+	Constraint FKEmpleado_Visita foreign key (Documento_Empleado) references Empleado(Documento),
 	Constraint FKInmueble_Visita foreign key (Id_Inmueble) references Inmueble(IdInmueble)
 );
 GO
@@ -96,12 +94,12 @@ CREATE TABLE Venta (
 	IdVenta int identity(1,1) primary key,
 	Fecha date,
 	Precio float,
-	Id_Cliente int,
-	Id_Empleado int,
+	Documento_Cliente varchar(20),
+	Documento_Empleado varchar(20),
 	Id_Inmueble int,
 	Id_FormaPago int,
-	Constraint FKCliente_Venta foreign key (Id_Cliente) references Cliente(IdCliente),
-	Constraint FKEmpleado_Venta foreign key (Id_Empleado) references Empleado(IdEmpleado),
+	Constraint FKCliente_Venta foreign key (Documento_Cliente) references Cliente(Documento),
+	Constraint FKEmpleado_Venta foreign key (Documento_Empleado) references Empleado(Documento),
 	Constraint FKInmueble_Venta foreign key (Id_Inmueble) references Inmueble(IdInmueble),
 	Constraint FKFormaPago_Venta foreign key (Id_FormaPago) references FormaPago(IdFormaPago)
 );
@@ -111,11 +109,11 @@ CREATE TABLE Contrato (
 	Fecha_Inicio date,
 	Fecha_Fin date,
 	Monto float,
-	Id_Cliente int,
-	Id_Empleado int,
+	Documento_Cliente varchar(20),
+	Documento_Empleado varchar(20),
 	Id_Inmueble int,
-	Constraint FKCliente_Contrato foreign key (Id_Cliente) references Cliente(IdCliente),
-	Constraint FKEmpleado_Contrato foreign key (Id_Empleado) references Empleado(IdEmpleado),
+	Constraint FKCliente_Contrato foreign key (Documento_Cliente) references Cliente(Documento),
+	Constraint FKEmpleado_Contrato foreign key (Documento_Empleado) references Empleado(Documento),
 	Constraint FKInmueble_Contrato foreign key (Id_Inmueble) references Inmueble(IdInmueble)
 );
 GO
@@ -132,12 +130,12 @@ CREATE TABLE Arriendo (
 	Fecha_Inicio date,
 	Fecha_Fin date,
 	Precio_Mensual float,
-	Id_Cliente int,
-	Id_Empleado int,
+	Documento_Cliente varchar(20),
+	Documento_Empleado varchar(20),
 	Id_Inmueble int,
 	Id_FormaPago int,
-	Constraint FKCliente_Arriendo foreign key (Id_Cliente) references Cliente(IdCliente),
-	Constraint FKEmpleado_Arriendo foreign key (Id_Empleado) references Empleado(IdEmpleado),
+	Constraint FKCliente_Arriendo foreign key (Documento_Cliente) references Cliente(Documento),
+	Constraint FKEmpleado_Arriendo foreign key (Documento_Empleado) references Empleado(Documento),
 	Constraint FKInmueble_Arriendo foreign key (Id_Inmueble) references Inmueble(IdInmueble),
 	Constraint FKFormaPago_Arriendo foreign key (Id_FormaPago) references FormaPago(IdFormaPago)
 );
