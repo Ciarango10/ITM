@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\scripts\\producto.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\producto.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\producto.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\producto.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -58,8 +58,7 @@
               "RelativeToolTip": "Paginas\\Producto.html",
               "ViewState": "AQIAAGcAAAAAAAAAAAAAAH8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-04-06T11:47:20.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-06T11:47:20.521Z"
             },
             {
               "$type": "Document",
