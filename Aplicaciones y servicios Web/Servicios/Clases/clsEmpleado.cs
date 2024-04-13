@@ -55,6 +55,22 @@ namespace Servicios.Clases
             return dbSuper.EMPLeadoes.FirstOrDefault(e => e.Documento == Documento);
         }
 
+        public IQueryable ConsultarConCargo(string Documento)
+        {
+            return from E in dbSuper.Set<EMPLeado>()
+                   join EC in dbSuper.Set<EMpleadoCArgo>()
+                   on E.Documento equals EC.Documento
+                   join C in dbSuper.Set<CARGo>()
+                   on EC.CodigoCargo equals C.Codigo
+                   where E.Documento == Documento 
+                   //&& EC.FechaFin == null
+                   select new
+                   {
+                       NombreEmpleado  = E.Nombre + " " + E.PrimerApellido + " " + E.SegundoApellido,
+                       Cargo = C.Nombre
+                   };
+        }
+
         //Para consultar todos los empleados, se retorna una list de empleados
         public List<EMPLeado> ConsultarTodos()
         {

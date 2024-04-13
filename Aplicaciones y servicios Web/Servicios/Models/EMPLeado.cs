@@ -19,6 +19,7 @@ namespace Servicios.Models
         public EMPLeado()
         {
             this.EMpleadoCArgoes = new HashSet<EMpleadoCArgo>();
+            this.Usuarios = new HashSet<Usuario>();
         }
     
         public string Documento { get; set; }
@@ -32,5 +33,9 @@ namespace Servicios.Models
         [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EMpleadoCArgo> EMpleadoCArgoes { get; set; }
+
+        [JsonIgnore]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }

@@ -176,6 +176,8 @@
     <Content Include="Paginas\Scripts\Pagina2.js" />
     <Content Include="Paginas\Scripts\Producto.js" />
     <Content Include="Paginas\Scripts\Reserva.js" />
+    <Content Include="Paginas\Scripts\Usuario.js" />
+    <Content Include="Paginas\Usuario.html" />
     <Content Include="Scripts\adminlte.js" />
     <Content Include="Scripts\adminlte.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />

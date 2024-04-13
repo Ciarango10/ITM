@@ -13,21 +13,20 @@ namespace Servicios.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class TIpoPRoducto
+    public partial class Perfil
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TIpoPRoducto()
+        public Perfil()
         {
-            this.PRODuctoes = new HashSet<PRODucto>();
+            this.Usuario_Perfil = new HashSet<Usuario_Perfil>();
         }
     
-        public int Codigo { get; set; }
+        public int id { get; set; }
         public string Nombre { get; set; }
-        public bool Activo { get; set; }
-
+        public string PaginaNavegar { get; set; }
 
         [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PRODucto> PRODuctoes { get; set; }
+        public virtual ICollection<Usuario_Perfil> Usuario_Perfil { get; set; }
     }
 }

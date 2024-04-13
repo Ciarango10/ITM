@@ -31,7 +31,7 @@ namespace Servicios.Models
         public int CodigoSucursal { get; set; }
     
         public virtual CARGo CARGo { get; set; }
-        
+
         [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DEVOlucion> DEVOlucions { get; set; }
@@ -41,8 +41,6 @@ namespace Servicios.Models
         [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FActuraCOmpra> FActuraCOmpras { get; set; }
-
-        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FACTura> FACTuras { get; set; }
     }

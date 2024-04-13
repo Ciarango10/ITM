@@ -9,25 +9,17 @@
 
 namespace Servicios.Models
 {
-    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
-    public partial class TIpoPRoducto
+    public partial class Usuario_Perfil
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TIpoPRoducto()
-        {
-            this.PRODuctoes = new HashSet<PRODucto>();
-        }
-    
-        public int Codigo { get; set; }
-        public string Nombre { get; set; }
+        public int id { get; set; }
+        public int idUsuario { get; set; }
+        public int idPerfil { get; set; }
         public bool Activo { get; set; }
-
-
-        [JsonIgnore]
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PRODucto> PRODuctoes { get; set; }
+    
+        public virtual Perfil Perfil { get; set; }
+        public virtual Usuario Usuario { get; set; }
     }
 }

@@ -27,6 +27,15 @@ namespace Servicios.Controllers
             return _empleado.Consultar(Documento);
         }
 
+        [HttpGet]
+        [Route("api/Empleado/ConsultarConCargo")]
+        // GET -- Invoca el Consultar con un parametro: Documento
+        public IQueryable ConsultarConCargo(string Documento)
+        {
+            clsEmpleado _empleado = new clsEmpleado();
+            return _empleado.ConsultarConCargo(Documento);
+        }
+
         // POST -- Invoca el metodo Insertar
         public string Post([FromBody] EMPLeado empleado)
         {

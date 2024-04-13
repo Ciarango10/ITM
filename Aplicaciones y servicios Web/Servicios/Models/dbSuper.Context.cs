@@ -40,6 +40,7 @@ namespace Servicios.Models
         public virtual DbSet<FActuraCOmpra> FActuraCOmpras { get; set; }
         public virtual DbSet<NOtaCRedito> NOtaCReditoes { get; set; }
         public virtual DbSet<PAI> PAIS { get; set; }
+        public virtual DbSet<Perfil> Perfils { get; set; }
         public virtual DbSet<PRODucto> PRODuctoes { get; set; }
         public virtual DbSet<PRoductoPRoveedor> PRoductoPRoveedors { get; set; }
         public virtual DbSet<PROVeedor> PROVeedors { get; set; }
@@ -49,5 +50,7 @@ namespace Servicios.Models
         public virtual DbSet<TELEfono> TELEfonoes { get; set; }
         public virtual DbSet<TIpoPRoducto> TIpoPRoductoes { get; set; }
         public virtual DbSet<TIpoTElefono> TIpoTElefonoes { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set; }
+        public virtual DbSet<Usuario_Perfil> Usuario_Perfil { get; set; }
     }
 }

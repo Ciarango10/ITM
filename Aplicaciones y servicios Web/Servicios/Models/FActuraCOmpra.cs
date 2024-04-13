@@ -9,6 +9,7 @@
 
 namespace Servicios.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -25,7 +26,8 @@ namespace Servicios.Models
         public string DocumentoProveedor { get; set; }
         public System.DateTime Fecha { get; set; }
         public System.DateTime FechaPago { get; set; }
-    
+
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DEtalleFacturaCompra> DEtalleFacturaCompras { get; set; }
         public virtual EMpleadoCArgo EMpleadoCArgo { get; set; }
