@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.api\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|solutionrelative:veterinary.api\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.web\\shared\\genericlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|solutionrelative:veterinary.web\\shared\\genericlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|solutionrelative:veterinary.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.web\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|solutionrelative:veterinary.web\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.web\\repositories\\httpresponsewrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|solutionrelative:veterinary.web\\repositories\\httpresponsewrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.web\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|solutionrelative:veterinary.web\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|solutionrelative:veterinary.web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.web\\wwwroot\\css\\estilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|solutionrelative:veterinary.web\\wwwroot\\css\\estilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.web\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5D9BF64-3D36-451A-BA98-435AD648BBA5}|Veterinary.WEB\\Veterinary.WEB.csproj|solutionrelative:veterinary.web\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|solutionrelative:veterinary.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.api\\controllers\\ownerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|solutionrelative:veterinary.api\\controllers\\ownerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.api\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A0991D6-B86A-4E0E-B7C3-FBD4461C1F6B}|Veterinary.API\\Veterinary.API.csproj|solutionrelative:veterinary.api\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EC2F4BB-5160-4434-81E8-25E4E639A043}|Veterinary.Shared\\Veterinary.Shared.csproj|d:\\carlos arango\\codigo\\itm\\programacion de software\\proyecto\\veterinary\\veterinary.shared\\entities\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 92,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +106,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenericList.razor",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Shared\\GenericList.razor",
+              "RelativeDocumentMoniker": "Veterinary.WEB\\Shared\\GenericList.razor",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Shared\\GenericList.razor",
+              "RelativeToolTip": "Veterinary.WEB\\Shared\\GenericList.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T16:08:22.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Veterinary.WEB\\wwwroot\\index.html",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\wwwroot\\index.html",
+              "RelativeToolTip": "Veterinary.WEB\\wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-13T15:22:51.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Estilos.css",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\wwwroot\\css\\Estilos.css",
+              "RelativeDocumentMoniker": "Veterinary.WEB\\wwwroot\\css\\Estilos.css",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\wwwroot\\css\\Estilos.css",
+              "RelativeToolTip": "Veterinary.WEB\\wwwroot\\css\\Estilos.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-13T15:22:06.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Veterinary.WEB\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Veterinary.WEB\\Repositories\\Repository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T15:11:14.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "Veterinary.WEB\\Repositories\\IRepository.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "Veterinary.WEB\\Repositories\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T15:05:58.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "HttpResponseWrapper.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Repositories\\HttpResponseWrapper.cs",
+              "RelativeDocumentMoniker": "Veterinary.WEB\\Repositories\\HttpResponseWrapper.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Repositories\\HttpResponseWrapper.cs",
+              "RelativeToolTip": "Veterinary.WEB\\Repositories\\HttpResponseWrapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T14:27:52.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Veterinary.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Veterinary.API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-13T14:22:54.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Program.cs",
+              "RelativeDocumentMoniker": "Veterinary.WEB\\Program.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Program.cs",
+              "RelativeToolTip": "Veterinary.WEB\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T14:21:32.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Veterinary.WEB\\Pages\\Home.razor",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Pages\\Home.razor",
+              "RelativeToolTip": "Veterinary.WEB\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T14:07:14.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Agenda.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.Shared\\Entities\\Agenda.cs",
               "RelativeDocumentMoniker": "Veterinary.Shared\\Entities\\Agenda.cs",
@@ -78,12 +231,11 @@
               "RelativeToolTip": "Veterinary.Shared\\Entities\\Agenda.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAqwBgAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T22:33:16.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T22:33:16.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Pet.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.Shared\\Entities\\Pet.cs",
               "RelativeDocumentMoniker": "Veterinary.Shared\\Entities\\Pet.cs",
@@ -91,12 +243,11 @@
               "RelativeToolTip": "Veterinary.Shared\\Entities\\Pet.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAswCkAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T22:04:17.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T22:04:17.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "History.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.Shared\\Entities\\History.cs",
               "RelativeDocumentMoniker": "Veterinary.Shared\\Entities\\History.cs",
@@ -104,12 +255,11 @@
               "RelativeToolTip": "Veterinary.Shared\\Entities\\History.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T21:53:59.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T21:53:59.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "ServiceType.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.Shared\\Entities\\ServiceType.cs",
               "RelativeDocumentMoniker": "Veterinary.Shared\\Entities\\ServiceType.cs",
@@ -117,12 +267,11 @@
               "RelativeToolTip": "Veterinary.Shared\\Entities\\ServiceType.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T21:52:35.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T21:52:35.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "PetType.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.Shared\\Entities\\PetType.cs",
               "RelativeDocumentMoniker": "Veterinary.Shared\\Entities\\PetType.cs",
@@ -130,12 +279,11 @@
               "RelativeToolTip": "Veterinary.Shared\\Entities\\PetType.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T21:51:25.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T21:51:25.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "DataContext.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\Data\\DataContext.cs",
               "RelativeDocumentMoniker": "Veterinary.API\\Data\\DataContext.cs",
@@ -148,13 +296,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "OwnersController.cs",
               "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\Controllers\\OwnersController.cs",
               "RelativeDocumentMoniker": "Veterinary.API\\Controllers\\OwnersController.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.API\\Controllers\\OwnersController.cs",
               "RelativeToolTip": "Veterinary.API\\Controllers\\OwnersController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAArAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T03:05:22.386Z",
               "EditorCaption": ""

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qwE9tS2jgTpuK25KD8BytBDFHCOAqAth2PIUYjgD9ac=",
+  "Hash": "iY+7e150qsLFAoaREBnzNH0WQuG4k2KV5psAdmWiRZU=",
   "Source": "Veterinary.WEB",
   "BasePath": "/",
   "Mode": "Root",
@@ -71,7 +71,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.js"
+      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.js"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
@@ -90,15 +90,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.js.map"
+      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.js.map"
     },
     {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.3.210mc748q9.js",
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.4.6kltw682ay.js",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.3.210mc748q9.js",
+      "RelativePath": "_framework/dotnet.native.8.0.4.6kltw682ay.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +109,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.native.js"
+      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.native.js"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
@@ -128,15 +128,15 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
+      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
     },
     {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.3.2dlcrnxvxo.js",
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.4.xg4kmw0v86.js",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.3.2dlcrnxvxo.js",
+      "RelativePath": "_framework/dotnet.runtime.8.0.4.xg4kmw0v86.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,7 +147,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
+      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
@@ -166,7 +166,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
+      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
@@ -185,7 +185,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
@@ -204,7 +204,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
+      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
@@ -223,7 +223,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.wasm",
@@ -3969,25 +3969,6 @@
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Xml.XDocument.wasm"
     },
     {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\0pno5jcc2u.gz",
-      "SourceId": "Veterinary.WEB",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
-    },
-    {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\0svlir1n22.gz",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
@@ -4197,44 +4178,6 @@
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Formats.Asn1.wasm"
     },
     {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\210mc748q9.gz",
-      "SourceId": "Veterinary.WEB",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.3.210mc748q9.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.3.210mc748q9.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.3.210mc748q9.js"
-    },
-    {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\261ib5wmue.gz",
-      "SourceId": "Veterinary.WEB",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
-    },
-    {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\28jfxyb50f.gz",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
@@ -4252,25 +4195,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.Security.wasm"
-    },
-    {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\2dlcrnxvxo.gz",
-      "SourceId": "Veterinary.WEB",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.3.2dlcrnxvxo.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.3.2dlcrnxvxo.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.3.2dlcrnxvxo.js"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\2o3g6sdoo0.gz",
@@ -4634,23 +4558,42 @@
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.wasm"
     },
     {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\6a8dqb4dv5.gz",
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\6fkrz3oi8j.gz",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
       "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
+      "RelativePath": "_framework/icudt_CJK.dat.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
+      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
+      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
+    },
+    {
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\6kltw682ay.gz",
+      "SourceId": "Veterinary.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.8.0.4.6kltw682ay.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.4.6kltw682ay.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.4.6kltw682ay.js"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\6kywh1o3hg.gz",
@@ -4860,25 +4803,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.wasm"
-    },
-    {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\8zm5zyw0y6.gz",
-      "SourceId": "Veterinary.WEB",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\90kt13ysr6.gz",
@@ -5584,25 +5508,6 @@
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.CompilerServices.VisualC.wasm"
     },
     {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\ens4b89ke1.gz",
-      "SourceId": "Veterinary.WEB",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
-    },
-    {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\eo8n2t21ca.gz",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
@@ -5810,6 +5715,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Diagnostics.Tools.wasm"
+    },
+    {
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\ggxv0hdcpa.gz",
+      "SourceId": "Veterinary.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\gmdcnlskyu.gz",
@@ -6344,25 +6268,6 @@
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Threading.Tasks.wasm"
     },
     {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\lw6vhkzu3e.gz",
-      "SourceId": "Veterinary.WEB",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
-    },
-    {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\lx5a869egn.gz",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
@@ -6458,25 +6363,6 @@
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Private.Xml.wasm"
     },
     {
-      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\nhfzokb9u4.gz",
-      "SourceId": "Veterinary.WEB",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.wasm.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
-    },
-    {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\nhqfc9x77z.gz",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
@@ -6570,6 +6456,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.NameResolution.wasm"
+    },
+    {
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\olimv9mx5h.gz",
+      "SourceId": "Veterinary.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\om6t589id7.gz",
@@ -7180,6 +7085,25 @@
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.wasm"
     },
     {
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\tmnqt1f2lb.gz",
+      "SourceId": "Veterinary.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
+    },
+    {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\to6e95b5ez.gz",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
@@ -7313,6 +7237,25 @@
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Linq.Expressions.wasm"
     },
     {
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\vhwg4i3z9u.gz",
+      "SourceId": "Veterinary.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
+    },
+    {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\voyl4sehi0.gz",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
@@ -7330,6 +7273,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Json.wasm"
+    },
+    {
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\vptm9asmv4.gz",
+      "SourceId": "Veterinary.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\w6m8dr9qtz.gz",
@@ -7446,6 +7408,25 @@
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Globalization.Calendars.wasm"
     },
     {
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\wlhhykwsuu.gz",
+      "SourceId": "Veterinary.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
+    },
+    {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\wmz0mm2evj.gz",
       "SourceId": "Veterinary.WEB",
       "SourceType": "Computed",
@@ -7520,6 +7501,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Formats.Tar.wasm"
+    },
+    {
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\xg4kmw0v86.gz",
+      "SourceId": "Veterinary.WEB",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.8.0.4.xg4kmw0v86.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.4.xg4kmw0v86.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.4.xg4kmw0v86.js"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\obj\\Debug\\net8.0\\compressed\\xgeu6ll691.gz",
@@ -7862,6 +7862,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\wwwroot\\css\\Estilos.css",
+      "SourceId": "Veterinary.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/Estilos.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Estilos.css"
     },
     {
       "Identity": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\wwwroot\\favicon.png",
