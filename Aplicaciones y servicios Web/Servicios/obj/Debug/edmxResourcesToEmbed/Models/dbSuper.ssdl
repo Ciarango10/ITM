@@ -148,6 +148,14 @@
     <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Activo" Type="bit" Nullable="false" />
   </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PaginaNavegar" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="PRODucto">
     <Key>
       <PropertyRef Name="Codigo" />
@@ -235,6 +243,25 @@
     <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Activo" Type="bit" Nullable="false" />
   </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Documento_Empleado" Type="varchar" MaxLength="20" />
+    <Property Name="userName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Clave" Type="nvarchar" MaxLength="2000" Nullable="false" />
+    <Property Name="Salt" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="Usuario_Perfil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="idPerfil" Type="int" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+  </EntityType>
   <Association Name="FK_COntactoPRoveedoreedor">
     <End Role="PROVeedor" Type="Self.PROVeedor" Multiplicity="1" />
     <End Role="COntactoPRoveedor" Type="Self.COntactoPRoveedor" Multiplicity="*" />
@@ -316,6 +343,42 @@
       </Principal>
       <Dependent Role="EMpleadoCArgo">
         <PropertyRef Name="Documento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_EMPLeado">
+    <End Role="EMPLeado" Type="Self.EMPLeado" Multiplicity="0..1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLeado">
+        <PropertyRef Name="Documento" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="Documento_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Perfil_Perfil">
+    <End Role="Perfil" Type="Self.Perfil" Multiplicity="1" />
+    <End Role="Usuario_Perfil" Type="Self.Usuario_Perfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Usuario_Perfil">
+        <PropertyRef Name="idPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Perfil_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Usuario_Perfil" Type="Self.Usuario_Perfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Usuario_Perfil">
+        <PropertyRef Name="idUsuario" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -539,6 +602,7 @@
     <EntitySet Name="FActuraCOmpra" EntityType="Self.FActuraCOmpra" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NOtaCRedito" EntityType="Self.NOtaCRedito" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PAIS" EntityType="Self.PAIS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Perfil" EntityType="Self.Perfil" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PRODucto" EntityType="Self.PRODucto" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PRoductoPRoveedor" EntityType="Self.PRoductoPRoveedor" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PROVeedor" EntityType="Self.PROVeedor" Schema="dbo" store:Type="Tables" />
@@ -548,6 +612,8 @@
     <EntitySet Name="TELEfono" EntityType="Self.TELEfono" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TIpoPRoducto" EntityType="Self.TIpoPRoducto" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TIpoTElefono" EntityType="Self.TIpoTElefono" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario_Perfil" EntityType="Self.Usuario_Perfil" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_COntactoPRoveedoreedor" Association="Self.FK_COntactoPRoveedoreedor">
       <End Role="PROVeedor" EntitySet="PROVeedor" />
       <End Role="COntactoPRoveedor" EntitySet="COntactoPRoveedor" />
@@ -575,6 +641,18 @@
     <AssociationSet Name="FK_EMpleadoCArgo_EMPLeado" Association="Self.FK_EMpleadoCArgo_EMPLeado">
       <End Role="EMPLeado" EntitySet="EMPLeado" />
       <End Role="EMpleadoCArgo" EntitySet="EMpleadoCArgo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_EMPLeado" Association="Self.FK_Usuario_EMPLeado">
+      <End Role="EMPLeado" EntitySet="EMPLeado" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Perfil_Perfil" Association="Self.FK_Usuario_Perfil_Perfil">
+      <End Role="Perfil" EntitySet="Perfil" />
+      <End Role="Usuario_Perfil" EntitySet="Usuario_Perfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Perfil_Usuario" Association="Self.FK_Usuario_Perfil_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Usuario_Perfil" EntitySet="Usuario_Perfil" />
     </AssociationSet>
     <AssociationSet Name="FKCucursalCiudad" Association="Self.FKCucursalCiudad">
       <End Role="CIUDad" EntitySet="CIUDad" />

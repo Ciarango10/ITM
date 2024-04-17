@@ -164,6 +164,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Perfils">
+      <EntityTypeMapping TypeName="DBSuperModel.Perfil">
+        <MappingFragment StoreEntitySet="Perfil">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="PaginaNavegar" ColumnName="PaginaNavegar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="PRODuctoes">
       <EntityTypeMapping TypeName="DBSuperModel.PRODucto">
         <MappingFragment StoreEntitySet="PRODucto">
@@ -256,6 +265,27 @@
         <MappingFragment StoreEntitySet="TIpoTElefono">
           <ScalarProperty Name="Codigo" ColumnName="Codigo" />
           <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="DBSuperModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Documento_Empleado" ColumnName="Documento_Empleado" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario_Perfil">
+      <EntityTypeMapping TypeName="DBSuperModel.Usuario_Perfil">
+        <MappingFragment StoreEntitySet="Usuario_Perfil">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
           <ScalarProperty Name="Activo" ColumnName="Activo" />
         </MappingFragment>
       </EntityTypeMapping>

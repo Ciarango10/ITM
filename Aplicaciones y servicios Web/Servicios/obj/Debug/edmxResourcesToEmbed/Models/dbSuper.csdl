@@ -118,6 +118,7 @@
     <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
     <NavigationProperty Name="EMpleadoCArgoes" Relationship="Self.FK_EMpleadoCArgo_EMPLeado" FromRole="EMPLeado" ToRole="EMpleadoCArgo" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_Usuario_EMPLeado" FromRole="EMPLeado" ToRole="Usuario" />
   </EntityType>
   <EntityType Name="EMpleadoCArgo">
     <Key>
@@ -178,6 +179,15 @@
     <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Activo" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="DEPArtamentoes" Relationship="Self.FKrtamento" FromRole="PAIS" ToRole="DEPArtamento" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PaginaNavegar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Usuario_Perfil" Relationship="Self.FK_Usuario_Perfil_Perfil" FromRole="Perfil" ToRole="Usuario_Perfil" />
   </EntityType>
   <EntityType Name="PRODucto">
     <Key>
@@ -282,6 +292,29 @@
     <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Activo" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="TELEfonoes" Relationship="Self.FKTelefono_TIpoTElefono" FromRole="TIpoTElefono" ToRole="TELEfono" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Documento_Empleado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="userName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Clave" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Salt" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EMPLeado" Relationship="Self.FK_Usuario_EMPLeado" FromRole="Usuario" ToRole="EMPLeado" />
+    <NavigationProperty Name="Usuario_Perfil" Relationship="Self.FK_Usuario_Perfil_Usuario" FromRole="Usuario" ToRole="Usuario_Perfil" />
+  </EntityType>
+  <EntityType Name="Usuario_Perfil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUsuario" Type="Int32" Nullable="false" />
+    <Property Name="idPerfil" Type="Int32" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Perfil" Relationship="Self.FK_Usuario_Perfil_Perfil" FromRole="Usuario_Perfil" ToRole="Perfil" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Usuario_Perfil_Usuario" FromRole="Usuario_Perfil" ToRole="Usuario" />
   </EntityType>
   <Association Name="FKEmpleadoCArgo">
     <End Role="CARGo" Type="Self.CARGo" Multiplicity="1" />
@@ -463,6 +496,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Usuario_EMPLeado">
+    <End Role="EMPLeado" Type="Self.EMPLeado" Multiplicity="0..1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLeado">
+        <PropertyRef Name="Documento" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="Documento_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FKEmpleadoCArgoSucursal">
     <End Role="SUCUrsal" Type="Self.SUCUrsal" Multiplicity="1" />
     <End Role="EMpleadoCArgo" Type="Self.EMpleadoCArgo" Multiplicity="*" />
@@ -508,6 +553,18 @@
       </Principal>
       <Dependent Role="FActuraCOmpra">
         <PropertyRef Name="DocumentoProveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Perfil_Perfil">
+    <End Role="Perfil" Type="Self.Perfil" Multiplicity="1" />
+    <End Role="Usuario_Perfil" Type="Self.Usuario_Perfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Usuario_Perfil">
+        <PropertyRef Name="idPerfil" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -571,6 +628,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Usuario_Perfil_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Usuario_Perfil" Type="Self.Usuario_Perfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Usuario_Perfil">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="DBSuperEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="CARGoes" EntityType="Self.CARGo" />
     <EntitySet Name="CIUDads" EntityType="Self.CIUDad" />
@@ -587,6 +656,7 @@
     <EntitySet Name="FActuraCOmpras" EntityType="Self.FActuraCOmpra" />
     <EntitySet Name="NOtaCReditoes" EntityType="Self.NOtaCRedito" />
     <EntitySet Name="PAIS" EntityType="Self.PAI" />
+    <EntitySet Name="Perfils" EntityType="Self.Perfil" />
     <EntitySet Name="PRODuctoes" EntityType="Self.PRODucto" />
     <EntitySet Name="PRoductoPRoveedors" EntityType="Self.PRoductoPRoveedor" />
     <EntitySet Name="PROVeedors" EntityType="Self.PROVeedor" />
@@ -596,6 +666,8 @@
     <EntitySet Name="TELEfonoes" EntityType="Self.TELEfono" />
     <EntitySet Name="TIpoPRoductoes" EntityType="Self.TIpoPRoducto" />
     <EntitySet Name="TIpoTElefonoes" EntityType="Self.TIpoTElefono" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+    <EntitySet Name="Usuario_Perfil" EntityType="Self.Usuario_Perfil" />
     <AssociationSet Name="FKEmpleadoCArgo" Association="Self.FKEmpleadoCArgo">
       <End Role="CARGo" EntitySet="CARGoes" />
       <End Role="EMpleadoCArgo" EntitySet="EMpleadoCArgoes" />
@@ -656,6 +728,10 @@
       <End Role="EMPLeado" EntitySet="EMPLeadoes" />
       <End Role="EMpleadoCArgo" EntitySet="EMpleadoCArgoes" />
     </AssociationSet>
+    <AssociationSet Name="FK_Usuario_EMPLeado" Association="Self.FK_Usuario_EMPLeado">
+      <End Role="EMPLeado" EntitySet="EMPLeadoes" />
+      <End Role="Usuario" EntitySet="Usuarios" />
+    </AssociationSet>
     <AssociationSet Name="FKEmpleadoCArgoSucursal" Association="Self.FKEmpleadoCArgoSucursal">
       <End Role="SUCUrsal" EntitySet="SUCUrsals" />
       <End Role="EMpleadoCArgo" EntitySet="EMpleadoCArgoes" />
@@ -671,6 +747,10 @@
     <AssociationSet Name="FKFacturaCOmpraProveedor" Association="Self.FKFacturaCOmpraProveedor">
       <End Role="PROVeedor" EntitySet="PROVeedors" />
       <End Role="FActuraCOmpra" EntitySet="FActuraCOmpras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Perfil_Perfil" Association="Self.FK_Usuario_Perfil_Perfil">
+      <End Role="Perfil" EntitySet="Perfils" />
+      <End Role="Usuario_Perfil" EntitySet="Usuario_Perfil" />
     </AssociationSet>
     <AssociationSet Name="FKProducto_TIpoPRoducto" Association="Self.FKProducto_TIpoPRoducto">
       <End Role="TIpoPRoducto" EntitySet="TIpoPRoductoes" />
@@ -691,6 +771,10 @@
     <AssociationSet Name="FKTelefono_TIpoTElefono" Association="Self.FKTelefono_TIpoTElefono">
       <End Role="TIpoTElefono" EntitySet="TIpoTElefonoes" />
       <End Role="TELEfono" EntitySet="TELEfonoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Perfil_Usuario" Association="Self.FK_Usuario_Perfil_Usuario">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Usuario_Perfil" EntitySet="Usuario_Perfil" />
     </AssociationSet>
   </EntityContainer>
 </Schema>
