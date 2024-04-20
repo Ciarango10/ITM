@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\wwwroot\\images\\duck.gif",
+      "PackagePath": "staticwebassets\\images\\duck.gif"
+    },
+    {
       "Id": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

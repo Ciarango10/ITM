@@ -1030,3 +1030,12 @@ D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterin
 D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\compressed\6fkrz3oi8j.gz
 D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\compressed\wlhhykwsuu.gz
 D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\compressed\tmnqt1f2lb.gz
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\bin\Debug\net8.0\wwwroot\_framework\Veterinary.Shared.pdb
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\bin\Debug\net8.0\wwwroot\_framework\Veterinary.Shared.wasm
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\bin\Debug\net8.0\wwwroot\_framework\Veterinary.Shared.pdb.gz
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\bin\Debug\net8.0\wwwroot\_framework\Veterinary.Shared.wasm.gz
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\bin\Debug\net8.0\Veterinary.Shared.dll
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\bin\Debug\net8.0\Veterinary.Shared.pdb
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\webcil\Veterinary.Shared.wasm
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\compressed\so2uajobb5.gz
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\compressed\g69wnnqgn8.gz
