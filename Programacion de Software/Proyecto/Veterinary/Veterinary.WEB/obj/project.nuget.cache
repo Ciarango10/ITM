@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "virBqhEH1DLCv10ol1dd+DE0PxhOCfByoFobTSnlBkzkhx3dG827nBMTgtdJfUEtkouCSlj+zfiDVu7Dr/Dfyg==",
+  "dgSpecHash": "lF0mdahixWjnzxjZuzya9b6GNuv8iuGeqG4hdveGopXeP0WAfO6d88Ul7VoIlM9MvYFDuZjSq5rYozhGqzV/wQ==",
   "success": true,
   "projectFilePath": "D:\\Carlos Arango\\Codigo\\ITM\\Programacion de Software\\Proyecto\\Veterinary\\Veterinary.WEB\\Veterinary.WEB.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\carlo\\.nuget\\packages\\currietechnologies.razor.sweetalert2\\5.6.0\\currietechnologies.razor.sweetalert2.5.6.0.nupkg.sha512",
     "C:\\Users\\carlo\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.2\\microsoft.aspnetcore.authorization.8.0.2.nupkg.sha512",
     "C:\\Users\\carlo\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.2\\microsoft.aspnetcore.components.8.0.2.nupkg.sha512",
     "C:\\Users\\carlo\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.2\\microsoft.aspnetcore.components.analyzers.8.0.2.nupkg.sha512",

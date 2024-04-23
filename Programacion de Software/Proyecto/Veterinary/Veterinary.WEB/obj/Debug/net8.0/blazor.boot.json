@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Veterinary.WEB",
   "resources": {
-    "hash": "sha256-tdmUqPen85OWj15wMGSeXtYW/X92MSpmsqN4MYamrSE=",
+    "hash": "sha256-VQQUjUzyWnI3tF0Pl0OxwYQlFT9hA82Ho6rVTpT/WuQ=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.6kltw682ay.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -17,6 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
+      "CurrieTechnologies.Razor.SweetAlert2.wasm": "sha256-n6ubE26hJennNg6Gc9pr3BUMAuIS7CU4C94k2cw++m8=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-xpsdU9uDJz5t2/e+ZH5CkB8nfZeCmSo9PqwquQX4B2U=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-buD5cBBc62HWdCjvn6Z3Zo39W90qvd5Wk6QfHoBzWqw=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-K/+6c3zlmAc3Y2qud/ksu/AexTbQpjbOhmTw03Ttg7E=",
@@ -208,12 +209,12 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "Veterinary.Shared.wasm": "sha256-uWpLfCJCq934LiGMzCF3V836BxYh1eSxYb/sBGX+38w=",
-      "Veterinary.WEB.wasm": "sha256-WCGVy0hAQAUMQrnJvxbOkJLNKQWeBEZT0FyFSnEHpd4="
+      "Veterinary.Shared.wasm": "sha256-vv0YZXuvpEN7ImYjuVheqBaYDex7kFnCFuEiI0lMCRc=",
+      "Veterinary.WEB.wasm": "sha256-oJy34eJaX4KtgYjaRmR9hO+9S2FjGNn20ZIZa/6wzRk="
     },
     "pdb": {
-      "Veterinary.Shared.pdb": "sha256-mRjhwMbKP6c2zk8sIjJPgvIYclRxBuvmxQuHVBkaxY0=",
-      "Veterinary.WEB.pdb": "sha256-aWRJUbh/Bn+bYfd+K6+Z/9AJNAmNO1BQckix0xtFOIU="
+      "Veterinary.Shared.pdb": "sha256-gK7oAhWOtGImSblYY6iDfHC630kE0As9LqeWGwyBD30=",
+      "Veterinary.WEB.pdb": "sha256-hPQ9UgK3dYrdWQpb9faXCKnaeRALU6LQLU5yN75Akbw="
     }
   },
   "cacheBootResources": true,

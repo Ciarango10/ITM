@@ -1039,3 +1039,8 @@ D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterin
 D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\webcil\Veterinary.Shared.wasm
 D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\compressed\so2uajobb5.gz
 D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\compressed\g69wnnqgn8.gz
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\bin\Debug\net8.0\wwwroot\_framework\CurrieTechnologies.Razor.SweetAlert2.wasm
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\bin\Debug\net8.0\wwwroot\_framework\CurrieTechnologies.Razor.SweetAlert2.wasm.gz
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\bin\Debug\net8.0\CurrieTechnologies.Razor.SweetAlert2.dll
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\webcil\CurrieTechnologies.Razor.SweetAlert2.wasm
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.WEB\obj\Debug\net8.0\compressed\psce08n9r9.gz

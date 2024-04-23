@@ -1,0 +1,27 @@
+﻿@page "/owners/form"
+@using Veterinary.Shared.Entities
+@using Veterinary.WEB.Repositories
+@using Veterinary.WEB.Shared
+@inject IRepository repository
+
+<EditForm Model="Owner" OnValidSubmit="Onsubmit">
+
+    <DataAnnotationsValidator  />
+    
+    <div class="mb-3">
+
+        <label>Owners</label>
+        <div>
+            <InputText class="form-control" @bind-Value="Owner.FirstName"></InputText>
+            <ValidationMessage For="@(() => Owner.FirstName)" />
+        </div>
+
+    </div>
+
+</EditForm>
+
+@code {
+    [EditorRequired]
+    [Parameter]
+    public Owner Owner { get; set; }
+}

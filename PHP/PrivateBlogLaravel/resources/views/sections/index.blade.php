@@ -26,6 +26,33 @@
             </div>
 
             <div class="card-body">
+
+                <form class="navbar-search" method="GET" action="{{ route('sections.index')}}">
+                    <div class="row mt-3">
+                        <div class="col-md-auto">
+                            <select class="form-select bg-light border-0 small" data-width="100%" value="{{ $data->records_per_page }}" name="records_per_page">
+                                <option {{ $data->records_per_page == 2 ? 'selected' : '' }} value="2">2</option>
+                                <option {{ $data->records_per_page == 5 ? 'selected' : '' }} value="5">5</option>
+                                <option {{ $data->records_per_page == 10 ? 'selected' : '' }} value="10">10</option>
+                                <option {{ $data->records_per_page == 20 ? 'selected ' : '' }} value="20">20</option>
+                                <option {{ $data->records_per_page == 50 ? 'selected ' : '' }} value="50">50</option>
+                            </select>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="input-group mb-3">
+
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar.." aria-label="Search" name="filter" value="{{ $data->filter }}">
+
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -54,6 +81,12 @@
                         @endforeach
                     </tbody>
                 </table>
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        {{ $sections->appends(request()->except('page'))->links('vendor.pagination.custom') }}
+                    </ul>
+                </nav>
 
             </div>
 
