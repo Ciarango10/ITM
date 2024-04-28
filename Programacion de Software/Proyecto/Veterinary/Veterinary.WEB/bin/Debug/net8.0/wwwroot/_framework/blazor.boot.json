@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Veterinary.WEB",
   "resources": {
-    "hash": "sha256-9SAGHoGnwPe56VQTOzYkuYHKkfoyl2sO1U/lll8flmk=",
+    "hash": "sha256-TW5to/iG7KiCEMA7XqvxomgY8ITCUDxwpGLRILRmpvk=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.6kltw682ay.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -220,11 +220,11 @@
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
       "Veterinary.Shared.wasm": "sha256-qOcIt5hi5lUnOgGcmI/jHVVJN7tH4ObDQjOiQM0EyEk=",
-      "Veterinary.WEB.wasm": "sha256-o2mPvKSw8k5FJAmGWAEQ7dExV1HgMTYSPPMR3CahF44="
+      "Veterinary.WEB.wasm": "sha256-dwRZX0qLEhRPvUGOo3cPWl+/famBfJpx1YNbAdC/23Y="
     },
     "pdb": {
       "Veterinary.Shared.pdb": "sha256-3ac3B/iCRI/bpEUTohrsiWypaBWFHWW8sycI6ms6Z2c=",
-      "Veterinary.WEB.pdb": "sha256-2GeysljMw89v4X0QeG734cqTMsi4gg0JrikaMVDnuDA="
+      "Veterinary.WEB.pdb": "sha256-OFlRGMZjpn87Z7RgvmGBzjcbihDb6CGl6ojBfJ38ueg="
     }
   },
   "cacheBootResources": true,
