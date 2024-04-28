@@ -4,19 +4,64 @@
 @using Veterinary.WEB.Shared
 @inject IRepository repository
 
-<EditForm Model="Owner" OnValidSubmit="Onsubmit">
+<EditForm Model="Owner" OnSubmit="OnSubmit">
 
     <DataAnnotationsValidator  />
-    
-    <div class="mb-3">
 
-        <label>Owners</label>
+    <div class="mb-3">
+        <label>Document:</label>
         <div>
-            <InputText class="form-control" @bind-Value="Owner.FirstName"></InputText>
+            <InputText width="10" @bind-Value="Owner.Document"></InputText>
+            <ValidationMessage For="@(() => Owner.Document)" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Nombres:</label>
+        <div>
+            <InputText width="10" @bind-Value="Owner.FirstName"></InputText>
             <ValidationMessage For="@(() => Owner.FirstName)" />
         </div>
-
     </div>
+    <div class="mb-3">
+        <label>Apellidos:</label>
+        <div>
+            <InputText width="10" @bind-Value="Owner.LastName"></InputText>
+            <ValidationMessage For="@(() => Owner.LastName)" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Email</label>
+        <div>
+            <InputText width="10" @bind-Value="Owner.Email"></InputText>
+            <ValidationMessage For="@(() => Owner.Email)" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Teléfono:</label>
+        <div>
+            <InputText width="10" @bind-Value="Owner.FixedPhone"></InputText>
+            <ValidationMessage For="@(() => Owner.FixedPhone)" />
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label>Móvil:</label>
+        <div>
+            <InputText width="10" @bind-Value="Owner.CellPhone"></InputText>
+            <ValidationMessage For="@(() => Owner.CellPhone)" />
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Dirección:</label>
+        <div>
+            <InputText width="10" @bind-Value="Owner.Address"></InputText>
+            <ValidationMessage For="@(() => Owner.Address)" />
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Guardar</button>
+    <button class="btn btn-success" onclick="ReturnAction">Regresar</button>
+    <button class="btn btn-info" type="reset">Limpiar</button>
 
 </EditForm>
 
@@ -24,4 +69,15 @@
     [EditorRequired]
     [Parameter]
     public Owner Owner { get; set; }
+
+    [EditorRequired]
+    [Parameter]
+    public EventCallback OnSubmit { get; set; }
+
+    [EditorRequired]
+    [Parameter]
+    public EventCallback ReturnAction { get; set; }
+
+    public bool FormPostedSuccessfully { get; set; }
+
 }

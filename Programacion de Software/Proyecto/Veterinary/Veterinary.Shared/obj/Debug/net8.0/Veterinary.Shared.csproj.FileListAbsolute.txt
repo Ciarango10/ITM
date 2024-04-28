@@ -10,3 +10,4 @@ D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterin
 D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.Shared\obj\Debug\net8.0\refint\Veterinary.Shared.dll
 D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.Shared\obj\Debug\net8.0\Veterinary.Shared.pdb
 D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.Shared\obj\Debug\net8.0\ref\Veterinary.Shared.dll
+D:\Carlos Arango\Codigo\ITM\Programacion de Software\Proyecto\Veterinary\Veterinary.Shared\obj\Debug\net8.0\Veterinary.Shared.csproj.AssemblyReference.cache

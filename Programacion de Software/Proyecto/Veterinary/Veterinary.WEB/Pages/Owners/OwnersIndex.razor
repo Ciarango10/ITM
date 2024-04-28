@@ -6,8 +6,6 @@
 
 <h1>Owners</h1>
 
-@inject IRepository repository
-
 <div class="mb-3">
     <a class="btn btn-primary" href="/owners/create">New Owner</a>
 </div>
@@ -18,16 +16,22 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Owner</th>
-                    <th></th>
-
+                    <th>Document</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Celular</th>
+                    <th>Dirección</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var owner in Owners!)
                 {
                     <tr>
-
+                        <td>
+                            @owner.Document
+                        </td>
                         <td>
                             @owner.FirstName
                         </td>
@@ -35,10 +39,7 @@
                             @owner.LastName
                         </td>
                         <td>
-                            @owner.Document
-                        </td>
-                        <td>
-                            @owner.Address
+                            @owner.Email
                         </td>
                         <td>
                             @owner.FixedPhone
@@ -46,7 +47,9 @@
                         <td>
                             @owner.CellPhone
                         </td>
-                      
+                        <td>
+                            @owner.Address
+                        </td>                      
                         <td>
                             <a class="btn btn-warning">Edit</a>
                             <button class="btn btn-danger">Delete</button>
@@ -68,11 +71,8 @@
 
     protected async override Task OnInitializedAsync()
     {
-
         var responseHttp = await repository.GetAsync<List<Owner>>("/api/owners");
-
         Owners = responseHttp.Response!;
-
     }
 
 }
