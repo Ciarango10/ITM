@@ -123,6 +123,8 @@ class SectionsController extends Controller
             if (empty($section)) {
 
                 Session::flash('message', ['content' => "La sección con id '$id' no existe", 'type' => 'error']);
+                return redirect()->action([SectionsController::class, 'index']);
+
             }
 
             $section->delete();

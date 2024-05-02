@@ -2,11 +2,11 @@
 
 @section('content')
     <div class="pagetitle">
-        <h1>Secciones</h1>
+        <h1>Blogs</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('home.index') }}">Home</a></li>
-                <li class="breadcrumb-item active">Secciones</li>
+                <li class="breadcrumb-item active">Blogs</li>
             </ol>
         </nav>
     </div>
@@ -17,9 +17,9 @@
 
             <div class="card-header py-3">
                 <div class="row">
-                    <h3 class="m-0 font-weight-bold text-primary col-md-11">Secciones</h3>
+                    <h3 class="m-0 font-weight-bold text-primary col-md-11">Blogs</h3>
                     <div class="col-md-1">
-                        <a href="{{ route('sections.create') }}" class="btn btn-primary"><i
+                        <a href="{{ route('blogs.create') }}" class="btn btn-primary"><i
                                 class="bi bi-plus-circle"></i></a>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
 
             <div class="card-body">
 
-                <form class="navbar-search" method="GET" action="{{ route('sections.index')}}">
+                <form class="navbar-search" method="GET" action="{{ route('blogs.index')}}">
                     <div class="row mt-3">
                         <div class="col-md-auto">
                             <select class="form-select bg-light border-0 small" data-width="100%" value="{{ $data->records_per_page }}" name="records_per_page">
@@ -56,20 +56,25 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th> Nombre </th>
+                            <th> Id </th>
+                            <th> Titulo </th>
+                            <th> Sección </th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($sections as $section)
+                        @foreach ($blogs as $blog)
                             <tr>
-                                <td> {{ $section->name }} </td>
+                                <td> {{ $blog->id }} </td>
+                                <td> {{ $blog->title }} </td>
+                                <td> {{ $blog->section->name }} </td>
+
                                 <td>
-                                    <a href="{{ route('sections.edit', $section->id) }}" class="btn btn-sm btn-warning"><i
+                                    <a href="{{ route('blogs.edit', $blog->id) }}" class="btn btn-sm btn-warning"><i
                                             class="bi bi-pencil-fill"></i></a>
 
 
-                                    <form action="{{ route('sections.delete', $section->id) }}" style="display:contents" method="POST">
+                                    <form action="{{ route('blogs.delete', $blog->id) }}" style="display:contents" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button class="btn btn-danger btn-sm btnDelete"><i
@@ -84,7 +89,7 @@
 
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
-                        {{ $sections->appends(request()->except('page'))->links('vendor.pagination.custom') }}
+                        {{ $blogs->appends(request()->except('page'))->links('vendor.pagination.custom') }}
                     </ul>
                 </nav>
 
@@ -105,7 +110,7 @@
             event.preventDefault();
 
             Swal.fire({
-                title: "¿Desea eliminar la sección?",
+                title: "¿Desea eliminar el blog?",
                 text: "No podrá revertirlo",
                 icon: "question",
                 showCancelButton: true,

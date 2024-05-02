@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Section extends Model
+class Blog extends Model
 {
-    public function blogs() {
-        return $this->hasMany(Blog::class);
+    public function section() {
+        return $this->belongsTo(Section::class);
     }
 }
