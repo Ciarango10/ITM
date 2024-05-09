@@ -15,19 +15,27 @@
         </a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link {{ !str_contains($currentUrl, 'sections') ? 'collapsed' : '' }}" href="{{ route('sections.index') }}">
-          <i class="bi bi-puzzle"></i>
-          <span>Secciones</span>
-        </a>
-      </li>
+      @if(\App\Helpers\RoleHelper::isAuthorized('Secciones.showSections'))
 
-      <li class="nav-item">
-        <a class="nav-link {{ !str_contains($currentUrl, 'blogs') ? 'collapsed' : '' }}" href="{{ route('blogs.index') }}">
-          <i class="bi bi-card-text"></i>
-          <span>Blogs</span>
-        </a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link {{ !str_contains($currentUrl, 'sections') ? 'collapsed' : '' }}" href="{{ route('sections.index') }}">
+            <i class="bi bi-puzzle"></i>
+            <span>Secciones</span>
+          </a>
+        </li>
+
+      @endif
+
+      @if(\App\Helpers\RoleHelper::isAuthorized('Blogs.showBlogs'))
+
+        <li class="nav-item">
+          <a class="nav-link {{ !str_contains($currentUrl, 'blogs') ? 'collapsed' : '' }}" href="{{ route('blogs.index') }}">
+            <i class="bi bi-card-text"></i>
+            <span>Blogs</span>
+          </a>
+        </li>
+        
+      @endif
 
     </ul>
 
