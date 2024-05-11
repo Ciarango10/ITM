@@ -28,7 +28,7 @@ namespace Servicios.Controllers
         }
 
         [HttpGet]
-        [Route("api/Empleado/ConsultarConCargo")]
+        [Route("api/Empleados/ConsultarConCargo")]
         // GET -- Invoca el Consultar con un parametro: Documento
         public IQueryable ConsultarConCargo(string Documento)
         {

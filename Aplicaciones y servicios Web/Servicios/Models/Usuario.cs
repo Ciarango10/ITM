@@ -26,7 +26,8 @@ namespace Servicios.Models
         public string userName { get; set; }
         public string Clave { get; set; }
         public string Salt { get; set; }
-    
+
+        [JsonIgnore]
         public virtual EMPLeado EMPLeado { get; set; }
 
         [JsonIgnore]

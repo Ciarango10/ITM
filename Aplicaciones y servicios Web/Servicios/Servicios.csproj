@@ -189,11 +189,14 @@
     <Compile Include="Clases\clsTipoProducto.cs" />
     <Compile Include="Clases\clsUsuario.cs" />
     <Compile Include="Controllers\ClientesController.cs" />
+    <Compile Include="Clases\clsPerfil.cs" />
     <Compile Include="Controllers\EmpleadosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PerfilesController.cs" />
     <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Controllers\ReservasController.cs" />
     <Compile Include="Controllers\TipoProductosController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

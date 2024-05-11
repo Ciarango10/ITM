@@ -1,0 +1,33 @@
+﻿using Servicios.Clases;
+using Servicios.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using System.Web.Http.Cors;
+
+namespace Servicios.Controllers
+{
+    [EnableCors(origins: "https://localhost:44350", headers: "*", methods: "*")]
+    [RoutePrefix("api/Usuarios")]
+    public class UsuariosController : ApiController
+    {
+        [HttpPost]
+        [Route("CrearUsuario")]
+        public string CrearUsuario(Usuario _usuario, int idPerfil)
+        {
+            clsUsuario usuario = new clsUsuario();
+            usuario.usuario = _usuario;
+            return usuario.Insertar(idPerfil);
+        }
+        [HttpGet]
+        [Route("ListarUsuariosEmpleados")]
+        public IQueryable ListarUsuariosEmpleados()
+        {
+            clsUsuario usuario = new clsUsuario();
+            return usuario.ListarUsuariosEmpleados();
+        }
+    }
+}
