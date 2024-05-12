@@ -34,7 +34,9 @@ GO
 CREATE TABLE Cliente (
 	Documento varchar(20) primary key,
 	Nombre varchar(50) not null,
-	Apellido varchar(50) not null,
+	PrimerApellido varchar(50) not null,
+	SegundoApellido varchar(50) not null,
+	Direccion varchar(200) not null,
 	Email varchar(50),
 	Telefono varchar(20),
 	FechaNacimiento date
@@ -43,10 +45,28 @@ GO
 CREATE TABLE Empleado (
 	Documento varchar(20) primary key,
 	Nombre varchar(50) not null,
-	Apellido varchar(50) not null,
+	PrimerApellido varchar(50) not null,
+	SegundoApellido varchar(50) not null,
+	Direccion varchar(200) not null,
 	Email varchar(50),
 	Telefono varchar(20),
 	FechaNacimiento date
+);
+GO
+CREATE TABLE Cargo(
+	Codigo int primary key,
+	Nombre varchar(50) not null,
+	Salario int not null
+);
+GO
+CREATE TABLE EmpleadoCargo(
+	Codigo int primary key,
+	FechaInicio date,
+	FechaFin date,
+	Documento_Empleado varchar(20),
+	Codigo_Cargo int,
+	Constraint FKEmpleado_EmpleadoCargo foreign key (Documento_Empleado) references Empleado(Documento),
+	Constraint FKCargo_EmpleadoCargo foreign key (Codigo_Cargo) references Cargo(Codigo)
 );
 GO
 CREATE TABLE Queja (
@@ -70,6 +90,12 @@ CREATE TABLE Inmueble (
 	IdInmueble int identity(1,1) primary key,
 	Direccion varchar(30) not null,
 	Precio float not null,
+	Area float not null,
+	NroHabitaciones int not null,
+	NroBaños int not null,
+	Estado varchar(50) not null,
+	Caracteristicas varchar(200) not null,
+	FechaPublicacion date,
 	Id_Ciudad int,
 	Id_TipoInmueble int,
 	Constraint FKCiudad_Inmueble foreign key (Id_Ciudad) references Ciudad(IdCiudad),

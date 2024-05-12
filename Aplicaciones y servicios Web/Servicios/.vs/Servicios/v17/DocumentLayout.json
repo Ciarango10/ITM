@@ -7,27 +7,27 @@
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:clases\\clsusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\servicios\\clases\\clsperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\clases\\clsperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:clases\\clsperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\servicios\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\servicios\\controllers\\perfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\controllers\\perfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:controllers\\perfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\servicios\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\servicios\\models\\usuario_perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\models\\usuario_perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:models\\usuario_perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\servicios\\clases\\clscypher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\clases\\clscypher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{038D32B7-AF42-42C7-912E-4F0B178BD149}|Servicios.csproj|solutionrelative:clases\\clscypher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -51,8 +51,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T11:39:25.829Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -65,8 +64,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T11:33:25.665Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -76,7 +74,7 @@
               "RelativeDocumentMoniker": "Clases\\clsUsuario.cs",
               "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Servicios\\Clases\\clsUsuario.cs",
               "RelativeToolTip": "Clases\\clsUsuario.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAswCgAAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T11:35:40.127Z",
               "IsPinned": true,
@@ -111,6 +109,10 @@
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "UsuariosController.cs",
@@ -120,8 +122,7 @@
               "RelativeToolTip": "Controllers\\UsuariosController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T12:30:41.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T12:30:41.723Z"
             },
             {
               "$type": "Document",
@@ -133,8 +134,7 @@
               "RelativeToolTip": "Controllers\\PerfilesController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T12:30:30.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T12:30:30.643Z"
             },
             {
               "$type": "Document",
@@ -146,8 +146,7 @@
               "RelativeToolTip": "Controllers\\EmpleadosController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T12:30:26.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T12:30:26.439Z"
             },
             {
               "$type": "Document",
@@ -159,8 +158,7 @@
               "RelativeToolTip": "Clases\\clsPerfil.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T11:28:45.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T11:28:45.246Z"
             }
           ]
         }
