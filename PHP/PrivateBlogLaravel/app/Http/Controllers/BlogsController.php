@@ -12,14 +12,15 @@ use Illuminate\Support\Facades\Validator;
 
 class BlogsController extends Controller
 {
-    public function index(Request $request) {
+    public function index(Request $request)
+    {
 
         $filter = $request->filter;
 
-        if(!empty($request->records_per_page)) {
-            $request->records_per_page = $request->records_per_page <= env("PAGINATION_MAX_SIZE") 
-                                                                    ? $request->records_per_page 
-                                                                    : env("PAGINATION_MAX_SIZE");
+        if (!empty($request->records_per_page)) {
+            $request->records_per_page = $request->records_per_page <= env("PAGINATION_MAX_SIZE")
+                ? $request->records_per_page
+                : env("PAGINATION_MAX_SIZE");
         } else {
             $request->records_per_page = env("PAGINATION_DEFAULT_SIZE");
         }
@@ -29,44 +30,49 @@ class BlogsController extends Controller
 
     }
 
-    public function create() {
+    public function create()
+    {
         $sections = Section::all();
         return view("blogs.create", ['sections' => $sections]);
     }
 
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
 
         // Validación de los datos recibidos en la solicitud
-        $validator = Validator::make($request->all(), [
+        $validator = Validator::make(
+            $request->all(),
+            [
 
-            'title' => 'required|max:64',
-            'description' => 'required',
-            'section_id' => 'required|exists:sections,id'
+                'title' => 'required|max:64',
+                'description' => 'required',
+                'section_id' => 'required|exists:sections,id'
 
-        ],
-        [
-            'title.required' => 'El titulo es requerido.',
-            'title.max' => 'El titulo no puede ser mayor a :max caracteres.',
-            'description.required' => 'La descripción es requerida.',
-            'section_id.required' => 'La sección es requerida.',
-            'section_id.exists' => 'El id dado para la sección no existe.',
+            ],
+            [
+                'title.required' => 'El titulo es requerido.',
+                'title.max' => 'El titulo no puede ser mayor a :max caracteres.',
+                'description.required' => 'La descripción es requerida.',
+                'section_id.required' => 'La sección es requerida.',
+                'section_id.exists' => 'El id dado para la sección no existe.',
 
-        ])->validate();
+            ]
+        )->validate();
 
         try {
-            
+
             $blog = new Blog();
             $blog->title = $request->title;
             $blog->description = $request->description;
             $blog->section_id = $request->section_id;
 
-    
+
             $blog->save();
-    
+
             Session::flash('message', ['content' => 'Blog creado con éxito', 'type' => 'success']);
             return redirect()->action([BlogsController::class, 'index']);
 
-        }catch(Exception $ex) {
+        } catch (Exception $ex) {
 
             Log::error($ex);
             Session::flash('message', ['content' => "Ha ocurrido un error", 'type' => 'error']);
@@ -74,8 +80,9 @@ class BlogsController extends Controller
         }
 
     }
- 
-    public function edit($id) {
+
+    public function edit($id)
+    {
 
         $blog = Blog::find($id);
         $sections = Section::all();
@@ -89,25 +96,29 @@ class BlogsController extends Controller
         return view('blogs.edit', ['blog' => $blog, 'sections' => $sections]);
     }
 
-    public function update(Request $request) {
+    public function update(Request $request)
+    {
 
         try {
-            Validator::make($request->all(), [
+            Validator::make(
+                $request->all(),
+                [
 
-                'blog_id' => 'required|exists:blogs,id', 
-                'title' => 'required|max:64',
-                'description' => 'required',
-                'section_id' => 'required|exists:sections,id'
-    
-            ],
-            [
-                'title.required' => 'El titulo es requerido.',
-                'title.max' => 'El titulo no puede ser mayor a :max caracteres.',
-                'description.required' => 'La descripción es requerida.',
-                'section_id.required' => 'La sección es requerida.',
-                'section_id.exists' => 'El id dado para la sección no existe.'
-    
-            ])->validate();
+                    'blog_id' => 'required|exists:blogs,id',
+                    'title' => 'required|max:64',
+                    'description' => 'required',
+                    'section_id' => 'required|exists:sections,id'
+
+                ],
+                [
+                    'title.required' => 'El titulo es requerido.',
+                    'title.max' => 'El titulo no puede ser mayor a :max caracteres.',
+                    'description.required' => 'La descripción es requerida.',
+                    'section_id.required' => 'La sección es requerida.',
+                    'section_id.exists' => 'El id dado para la sección no existe.'
+
+                ]
+            )->validate();
 
             $blog = Blog::find($request->blog_id);
 
@@ -121,13 +132,13 @@ class BlogsController extends Controller
             $blog->description = $request->description;
             $blog->section_id = $request->section_id;
 
-    
+
             $blog->save();
 
             Session::flash('message', ['content' => 'Blog editado con éxito', 'type' => 'success']);
             return redirect()->action([BlogsController::class, 'index']);
 
-        } catch(Exception $ex) {
+        } catch (Exception $ex) {
 
             Log::error($ex);
             Session::flash('message', ['content' => "Ha ocurrido un error", 'type' => 'error']);
@@ -135,7 +146,8 @@ class BlogsController extends Controller
         }
     }
 
-    public function delete($id) {
+    public function delete($id)
+    {
         try {
 
             $blog = Blog::find($id);
@@ -144,7 +156,7 @@ class BlogsController extends Controller
 
                 Session::flash('message', ['content' => "El blog con id '$id' no existe", 'type' => 'error']);
                 return redirect()->action([BlogsController::class, 'index']);
-                
+
             }
 
             $blog->delete();
@@ -152,7 +164,7 @@ class BlogsController extends Controller
             Session::flash('message', ['content' => 'Blog eliminado con éxito', 'type' => 'success']);
             return redirect()->action([BlogsController::class, 'index']);
 
-        } catch(Exception $ex) {
+        } catch (Exception $ex) {
 
             Log::error($ex);
             Session::flash('message', ['content' => "Ha ocurrido un error", 'type' => 'error']);
