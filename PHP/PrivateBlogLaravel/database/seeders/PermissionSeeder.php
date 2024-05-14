@@ -25,6 +25,18 @@ class PermissionSeeder extends Seeder
             ["name" => "createBlogs", "description" => "Crear Blogs", "module" => "Blogs"],
             ["name" => "updateBlogs", "description" => "Editar Blogs", "module" => "Blogs"],
             ["name" => "deleteBlogs", "description" => "Eliminar Blogs", "module" => "Blogs"],
+
+            // Roles
+            ["name" => "showRoles", "description" => "Ver Roles", "module" => "Roles"],
+            ["name" => "createRoles", "description" => "Crear Roles", "module" => "Roles"],
+            ["name" => "updateRoles", "description" => "Editar Roles", "module" => "Roles"],
+            ["name" => "deleteRoles", "description" => "Eliminar Roles", "module" => "Roles"],
+
+            // Usuarios
+            ["name" => "showUsers", "description" => "Ver Usuarios", "module" => "Users"],
+            ["name" => "createUsers", "description" => "Crear Usuarios", "module" => "Users"],
+            ["name" => "updateUsers", "description" => "Editar Usuarios", "module" => "Users"],
+            ["name" => "deleteUsers", "description" => "Eliminar Usuarios", "module" => "Users"],
         ];
 
         foreach($list as $item) {
