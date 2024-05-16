@@ -1,5 +1,6 @@
 ﻿//Se define una variable de tipo datable, púlica para la página
 var oTabla = $("#tblUsuarios").DataTable();
+var idUsuarioPerf;
 jQuery(function () {
     //Registrar los botones para responder al evento click
     $("#dvMenu").load("../Paginas/Menu.html");
@@ -7,19 +8,19 @@ jQuery(function () {
     //Con jquery, los objetos se identifican con "$(#" al inicio del nombre del objeto
 
     $("#btnInsertar").on("click", () => {
-        EjecutarComando("POST");
+        EjecutarComando("POST", "CrearUsuario");
     });
 
     $("#btnActualizar").on("click", () => {
-        EjecutarComando("PUT");
+        EjecutarComando("PUT", "ActualizarUsuario");
     });
 
-    $("#btnEliminar").on("click", () => {
-        EjecutarComando("DELETE");
+    $("#btnActivar").on("click", () => {
+        EjecutarComando("PUT", "Activar");
     });
 
-    $("#btnConsultar").on("click", () => {
-        Consultar();
+    $("#btnResetear").on("click", () => {
+        EjecutarComando("PUT", "ResetearClave");
     });
 
     LlenarComboPerfiles();
@@ -35,12 +36,14 @@ function LlenarTablaPerfilesEmpleados() {
     LlenarTablaXServicios("https://localhost:44374/api/Usuarios/ListarUsuariosEmpleados", "#tblUsuarios");
 }
 
-function Editar(Documento, Empleado, Cargo, Usuario, idPerfil) {
+function Editar(Documento, Empleado, Cargo, Usuario, idPerfil, idUsuarioPerfil, Activo) {
     $("#txtDocumento").val(Documento);
     $("#txtNombre").val(Empleado);
     $("#txtCargo").val(Cargo);
     $("#txtUsuario").val(Usuario);
     $("#cboPerfil").val(idPerfil);
+    $("#chkActivo").prop("checked", Activo);
+    idUsuarioPerf = idUsuarioPerfil;
 }
 
 async function Buscar() {
@@ -65,7 +68,7 @@ async function Buscar() {
     }
 }
 
-async function EjecutarComando(Comando) {
+async function EjecutarComando(Comando, Metodo) {
     //Capturar los datos de entrada
     let Documento = $("#txtDocumento").val();
     let Usuario = $("#txtUsuario").val();
@@ -86,8 +89,19 @@ async function EjecutarComando(Comando) {
         Salt: ""
     }
 
+    let Extension = "";
+    let sURLBase = "https://localhost:44374/api/Usuarios/";
+
+    if (Metodo == "Activar") {
+        let Activo = $("#chkActivo").is(":checked");
+        Extension = Metodo + "?idUsuarioPerfil=" + idUsuarioPerf + "&Activo=" + Activo;
+
+    } else {
+        Extension = Metodo + "?idPerfil=" + idPerfil;
+    }
+
     try {
-        const Respuesta = await fetch("https://localhost:44374/api/Usuarios/CrearUsuario?idPerfil=" + idPerfil,
+        const Respuesta = await fetch(sURLBase + Extension,
             {
                 method: Comando,
                 mode: "cors",

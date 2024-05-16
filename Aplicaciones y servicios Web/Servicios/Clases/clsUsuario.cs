@@ -2,6 +2,7 @@
 using Servicios_PD.Clases;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Web;
 
@@ -48,6 +49,66 @@ namespace Servicios.Clases
             }
         }
 
+        public string Actualizar(int idPerfil)
+        {
+            try
+            {
+                //Consulta el usuario
+                Usuario _usuario = dbSuper.Usuarios.FirstOrDefault(u => u.Documento_Empleado == usuario.Documento_Empleado);
+                _usuario.userName = usuario.userName;
+                dbSuper.Usuarios.AddOrUpdate(_usuario);
+                dbSuper.SaveChanges();
+                Usuario_Perfil usuarioPerfil = dbSuper.Usuario_Perfil.FirstOrDefault(p => p.idUsuario == _usuario.id);
+                usuarioPerfil.idPerfil = idPerfil;
+                dbSuper.Usuario_Perfil.AddOrUpdate(usuarioPerfil);
+                dbSuper.SaveChanges();
+                return "Se actualizó el usuario";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public string Activar(int idUsuarioPerfil, bool activo)
+        {
+            try
+            {
+                Usuario_Perfil usuarioPerfil = dbSuper.Usuario_Perfil.FirstOrDefault(u => u.id == idUsuarioPerfil);
+                usuarioPerfil.Activo = activo;
+                dbSuper.Usuario_Perfil.AddOrUpdate(usuarioPerfil);
+                dbSuper.SaveChanges();
+                return "Se actualizó el estado del usuario";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public string ResetearClave()
+        {
+            //Instanciamos la clase de cifrado
+            clsCypher Cifrado = new clsCypher();
+            //Pasamos la contraseña del usuario
+            Cifrado.Password = usuario.Clave;
+            //Ciframos la clave
+            if (Cifrado.CifrarClave())
+            {
+                Usuario _usuario = dbSuper.Usuarios.FirstOrDefault(u => u.Documento_Empleado == usuario.Documento_Empleado);
+                //Si el cifrado es exitoso pasamos la contraseña cifrada al usuario nuevamente
+                _usuario.Clave = Cifrado.PasswordCifrado;
+                _usuario.Salt = Cifrado.Salt;
+                dbSuper.Usuarios.AddOrUpdate(_usuario);
+                dbSuper.SaveChanges();
+                return "Se reseteó la clave del usuario";
+            } 
+            else
+            {
+                return "No se pudo resetear la clave del usuario";
+            }
+        }
+
         public IQueryable ListarUsuariosEmpleados()
         {
             return from E in dbSuper.Set<EMPLeado>()
@@ -65,12 +126,13 @@ namespace Servicios.Clases
                    {
                        Editar = "<button type=\"button\" id=\"btnEdit\" class=\"btn-block btn-sm btn-danger\" " +
                                  "onclick=\"Editar('" + E.Documento + "', '" + E.Nombre + " " + E.PrimerApellido + " " +
-                                 E.SegundoApellido + "', '" + C.Nombre + "', '" + U.userName + "', " + UP.idPerfil + ")\">EDIT</button>",
+                                 E.SegundoApellido + "', '" + C.Nombre + "', '" + U.userName + "', " + UP.idPerfil + "," + UP.id + "," + UP.Activo.ToString().ToLower() + ")\">EDIT</button>",
                        Documento = E.Documento,
                        Empleado = E.Nombre + " " + E.PrimerApellido + " " + E.SegundoApellido,
                        Cargo = C.Nombre,
                        Usuario = U.userName,
-                       Perfil = P.Nombre
+                       Perfil = P.Nombre,
+                       Activo = UP.Activo ? "ACTIVO" : "INACTIVO"
                    };
         }
     }

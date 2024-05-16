@@ -22,12 +22,39 @@ namespace Servicios.Controllers
             usuario.usuario = _usuario;
             return usuario.Insertar(idPerfil);
         }
+
         [HttpGet]
         [Route("ListarUsuariosEmpleados")]
         public IQueryable ListarUsuariosEmpleados()
         {
             clsUsuario usuario = new clsUsuario();
             return usuario.ListarUsuariosEmpleados();
+        }
+
+        [HttpPut]
+        [Route("ActualizarUsuario")]
+        public string ActualizarUsuario(Usuario _usuario, int idPerfil)
+        {
+            clsUsuario usuario = new clsUsuario();
+            usuario.usuario = _usuario;
+            return usuario.Actualizar(idPerfil);
+        }
+
+        [HttpPut]
+        [Route("Activar")]
+        public string Activar(int idUsuarioPerfil, bool activo)
+        {
+            clsUsuario usuario = new clsUsuario();
+            return usuario.Activar(idUsuarioPerfil, activo);
+        }
+
+        [HttpPut]
+        [Route("ResetearClave")]
+        public string ResetearClave(Usuario _usuario, int idPerfil)
+        {
+            clsUsuario usuario = new clsUsuario();
+            usuario.usuario = _usuario;
+            return usuario.ResetearClave();
         }
     }
 }

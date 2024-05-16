@@ -57,7 +57,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-3">
+                                            <div class="col-md-2">
                                                 <div class="form-group">
                                                     <label for="txtUsuario">USUARIO</label>
                                                     <input type="text" class="form-control" id="txtUsuario" placeholder="USUARIO">
@@ -75,12 +75,18 @@
                                                     <input type="password" class="form-control" id="txtConfirmaClave" placeholder="CONFIRME CLAVE">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-md-2">
                                                 <div class="form-group">
                                                     <label for="cboPerfil">PERFIL</label>
                                                     <select id="cboPerfil" class="form-control">
                                                         <option value="0">Seleccione...</option>
                                                     </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label for="chkActivo">ACTIVO</label>
+                                                    <input type="checkbox" class="form-control" id="chkActivo" placeholder="ACTIVO">
                                                 </div>
                                             </div>
                                         </div>
@@ -95,11 +101,11 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <br />
-                                                <button type="button" id="btnEliminar" class="btn-block btn-lg btn-primary">ELIMINAR</button>
+                                                <button type="button" id="btnActivar" class="btn-block btn-lg btn-primary">ACTIVAR</button>
                                             </div>
                                             <div class="col-md-3">
                                                 <br />
-                                                <button type="button" id="btnConsultar" class="btn-block btn-lg btn-primary">CONSULTAR</button>
+                                                <button type="button" id="btnResetear" class="btn-block btn-lg btn-primary">RESET CLAVE</button>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -107,12 +113,13 @@
                                                 <table id="tblUsuarios" class="table table-bordered table-striped" style="width:100%;">
                                                     <thead>
                                                         <tr>
+                                                            <th>Editar</th>
                                                             <th>Documento</th>
                                                             <th>Empleado</th>
                                                             <th>Cargo</th>
                                                             <th>Usuario</th>
-                                                            <th>Cargo</th>
                                                             <th>Perfil</th>
+                                                            <th>Activo</th>
                                                         </tr>
                                                     </thead>
                                                 </table>
@@ -123,7 +130,7 @@
                                 <div class="card-footer">
                                     <div id="dvMensaje" class=""></div>
                                 </div>
-
+                            </div>
                         </form>
                     </div>
                 </div>
