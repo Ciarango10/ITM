@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\parcial final\\web\\paginas\\scripts\\subastavehiculo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|c:\\users\\user\\desktop\\codigo\\itm\\aplicaciones y servicios web\\parcial final\\web\\paginas\\scripts\\subastavehiculo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|solutionrelative:paginas\\scripts\\subastavehiculo.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\parcial final\\web\\paginas\\scripts\\comunes\\comunes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\paginas\\scripts\\comunes\\comunes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|solutionrelative:paginas\\scripts\\comunes\\comunes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\parcial final\\web\\paginas\\examen_3_18_20.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\paginas\\examen_3_18_20.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|solutionrelative:paginas\\examen_3_18_20.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\parcial final\\web\\paginas\\scripts\\comunes\\tablas.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\paginas\\scripts\\comunes\\tablas.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|solutionrelative:paginas\\scripts\\comunes\\tablas.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\parcial final\\web\\paginas\\scripts\\comunes\\combos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\paginas\\scripts\\comunes\\combos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{F14CB087-44D6-4D50-97B9-29B9156CC6A2}|Web.csproj|solutionrelative:paginas\\scripts\\comunes\\combos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
@@ -64,63 +64,59 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Combos.js",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Combos.js",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Combos.js",
               "RelativeDocumentMoniker": "Paginas\\Scripts\\Comunes\\Combos.js",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Combos.js",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Combos.js",
               "RelativeToolTip": "Paginas\\Scripts\\Comunes\\Combos.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-22T17:49:40.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T17:49:40.532Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Comunes.js",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Comunes.js",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Comunes.js",
               "RelativeDocumentMoniker": "Paginas\\Scripts\\Comunes\\Comunes.js",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Comunes.js",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Comunes.js",
               "RelativeToolTip": "Paginas\\Scripts\\Comunes\\Comunes.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-22T17:49:29.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T17:49:29.622Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Examen_3_18_20.html",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Examen_3_18_20.html",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Examen_3_18_20.html",
               "RelativeDocumentMoniker": "Paginas\\Examen_3_18_20.html",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Examen_3_18_20.html",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Examen_3_18_20.html",
               "RelativeToolTip": "Paginas\\Examen_3_18_20.html",
               "ViewState": "AQIAAC0AAAAAAAAAAAAAADYAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-05-22T17:34:58.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T17:34:58.964Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Tablas.js",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Tablas.js",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Tablas.js",
               "RelativeDocumentMoniker": "Paginas\\Scripts\\Comunes\\Tablas.js",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Tablas.js",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\Comunes\\Tablas.js",
               "RelativeToolTip": "Paginas\\Scripts\\Comunes\\Tablas.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-22T17:38:42.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T17:38:42.868Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SubastaVehiculo.js",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\SubastaVehiculo.js",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\SubastaVehiculo.js",
               "RelativeDocumentMoniker": "Paginas\\Scripts\\SubastaVehiculo.js",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\SubastaVehiculo.js",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Web\\Paginas\\Scripts\\SubastaVehiculo.js",
               "RelativeToolTip": "Paginas\\Scripts\\SubastaVehiculo.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-05-22T17:38:00.022Z",
               "EditorCaption": ""
