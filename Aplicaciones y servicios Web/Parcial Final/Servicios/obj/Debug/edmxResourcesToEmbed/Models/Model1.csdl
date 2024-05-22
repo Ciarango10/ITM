@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBExamenFinalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SubastaVehiculo">
+    <Key>
+      <PropertyRef Name="idSubastaVehiculos" />
+    </Key>
+    <Property Name="idSubastaVehiculos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTipoVehiculo" Type="Int32" Nullable="false" />
+    <Property Name="Vehiculo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Vendedor" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comprador" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ValorVenta" Type="Single" Nullable="false" />
+    <Property Name="PlacaVehiculo" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ValorComision" Type="Single" Nullable="false" />
+    <Property Name="CiudadEntrega" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TipoVehiculo" Relationship="Self.FK_Subasta_TipoVehiculo" FromRole="SubastaVehiculos" ToRole="TipoVehiculo" />
+  </EntityType>
+  <EntityType Name="TipoVehiculo">
+    <Key>
+      <PropertyRef Name="idTipoVehiculo" />
+    </Key>
+    <Property Name="idTipoVehiculo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="SubastaVehiculos" Relationship="Self.FK_Subasta_TipoVehiculo" FromRole="TipoVehiculo" ToRole="SubastaVehiculos" />
+  </EntityType>
+  <Association Name="FK_Subasta_TipoVehiculo">
+    <End Role="TipoVehiculo" Type="Self.TipoVehiculo" Multiplicity="1" />
+    <End Role="SubastaVehiculos" Type="Self.SubastaVehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoVehiculo">
+        <PropertyRef Name="idTipoVehiculo" />
+      </Principal>
+      <Dependent Role="SubastaVehiculos">
+        <PropertyRef Name="idTipoVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBExamenFinalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SubastaVehiculos" EntityType="Self.SubastaVehiculo" />
+    <EntitySet Name="TipoVehiculoes" EntityType="Self.TipoVehiculo" />
+    <AssociationSet Name="FK_Subasta_TipoVehiculo" Association="Self.FK_Subasta_TipoVehiculo">
+      <End Role="TipoVehiculo" EntitySet="TipoVehiculoes" />
+      <End Role="SubastaVehiculos" EntitySet="SubastaVehiculos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

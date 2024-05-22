@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBExamenFinalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="SubastaVehiculos">
+    <Key>
+      <PropertyRef Name="idSubastaVehiculos" />
+    </Key>
+    <Property Name="idSubastaVehiculos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idTipoVehiculo" Type="int" Nullable="false" />
+    <Property Name="Vehiculo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Vendedor" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="Comprador" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="ValorVenta" Type="real" Nullable="false" />
+    <Property Name="PlacaVehiculo" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ValorComision" Type="real" Nullable="false" />
+    <Property Name="CiudadEntrega" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TipoVehiculo">
+    <Key>
+      <PropertyRef Name="idTipoVehiculo" />
+    </Key>
+    <Property Name="idTipoVehiculo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Subasta_TipoVehiculo">
+    <End Role="TipoVehiculo" Type="Self.TipoVehiculo" Multiplicity="1" />
+    <End Role="SubastaVehiculos" Type="Self.SubastaVehiculos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoVehiculo">
+        <PropertyRef Name="idTipoVehiculo" />
+      </Principal>
+      <Dependent Role="SubastaVehiculos">
+        <PropertyRef Name="idTipoVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBExamenFinalModelStoreContainer">
+    <EntitySet Name="SubastaVehiculos" EntityType="Self.SubastaVehiculos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoVehiculo" EntityType="Self.TipoVehiculo" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Subasta_TipoVehiculo" Association="Self.FK_Subasta_TipoVehiculo">
+      <End Role="TipoVehiculo" EntitySet="TipoVehiculo" />
+      <End Role="SubastaVehiculos" EntitySet="SubastaVehiculos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

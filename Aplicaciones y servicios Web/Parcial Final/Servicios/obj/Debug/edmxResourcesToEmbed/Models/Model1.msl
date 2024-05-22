@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBExamenFinalModelStoreContainer" CdmEntityContainer="DBExamenFinalEntities">
+    <EntitySetMapping Name="SubastaVehiculos">
+      <EntityTypeMapping TypeName="DBExamenFinalModel.SubastaVehiculo">
+        <MappingFragment StoreEntitySet="SubastaVehiculos">
+          <ScalarProperty Name="idSubastaVehiculos" ColumnName="idSubastaVehiculos" />
+          <ScalarProperty Name="idTipoVehiculo" ColumnName="idTipoVehiculo" />
+          <ScalarProperty Name="Vehiculo" ColumnName="Vehiculo" />
+          <ScalarProperty Name="Vendedor" ColumnName="Vendedor" />
+          <ScalarProperty Name="Comprador" ColumnName="Comprador" />
+          <ScalarProperty Name="ValorVenta" ColumnName="ValorVenta" />
+          <ScalarProperty Name="PlacaVehiculo" ColumnName="PlacaVehiculo" />
+          <ScalarProperty Name="ValorComision" ColumnName="ValorComision" />
+          <ScalarProperty Name="CiudadEntrega" ColumnName="CiudadEntrega" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoVehiculoes">
+      <EntityTypeMapping TypeName="DBExamenFinalModel.TipoVehiculo">
+        <MappingFragment StoreEntitySet="TipoVehiculo">
+          <ScalarProperty Name="idTipoVehiculo" ColumnName="idTipoVehiculo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

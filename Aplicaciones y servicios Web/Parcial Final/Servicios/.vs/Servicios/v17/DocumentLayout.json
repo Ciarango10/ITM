@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\parcial final\\servicios\\clases\\clssubastavehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|solutionrelative:clases\\clssubastavehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\clases\\clstipovehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|solutionrelative:clases\\clstipovehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\models\\subastavehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|solutionrelative:models\\subastavehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\controllers\\subastavehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|solutionrelative:controllers\\subastavehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\models\\tipovehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|solutionrelative:models\\tipovehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\parcial final\\servicios\\controllers\\tipovehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|solutionrelative:controllers\\tipovehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF96AAA-541E-474B-9EFB-35DFF1ED8DD1}|Servicios.csproj|solutionrelative:app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 92,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TipoVehiculosController.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Controllers\\TipoVehiculosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TipoVehiculosController.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Controllers\\TipoVehiculosController.cs",
+              "RelativeToolTip": "Controllers\\TipoVehiculosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:28:31.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubastaVehiculo.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Models\\SubastaVehiculo.cs",
+              "RelativeDocumentMoniker": "Models\\SubastaVehiculo.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Models\\SubastaVehiculo.cs",
+              "RelativeToolTip": "Models\\SubastaVehiculo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T12:49:28.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\WebApiConfig.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "App_Start\\WebApiConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T12:43:35.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SubastaVehiculosController.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Controllers\\SubastaVehiculosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SubastaVehiculosController.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Controllers\\SubastaVehiculosController.cs",
+              "RelativeToolTip": "Controllers\\SubastaVehiculosController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwCIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T12:14:45.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TipoVehiculo.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Models\\TipoVehiculo.cs",
+              "RelativeDocumentMoniker": "Models\\TipoVehiculo.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Models\\TipoVehiculo.cs",
+              "RelativeToolTip": "Models\\TipoVehiculo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T12:03:27.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsSubastaVehiculo.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Clases\\clsSubastaVehiculo.cs",
+              "RelativeDocumentMoniker": "Clases\\clsSubastaVehiculo.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Clases\\clsSubastaVehiculo.cs",
+              "RelativeToolTip": "Clases\\clsSubastaVehiculo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T11:43:53.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsTipoVehiculo.cs",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Clases\\clsTipoVehiculo.cs",
+              "RelativeDocumentMoniker": "Clases\\clsTipoVehiculo.cs",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\Parcial Final\\Servicios\\Clases\\clsTipoVehiculo.cs",
+              "RelativeToolTip": "Clases\\clsTipoVehiculo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T11:43:31.989Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

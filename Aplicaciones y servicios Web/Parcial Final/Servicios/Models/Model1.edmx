@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DBExamenFinalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="SubastaVehiculos">
+          <Key>
+            <PropertyRef Name="idSubastaVehiculos" />
+          </Key>
+          <Property Name="idSubastaVehiculos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idTipoVehiculo" Type="int" Nullable="false" />
+          <Property Name="Vehiculo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Vendedor" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Comprador" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ValorVenta" Type="real" Nullable="false" />
+          <Property Name="PlacaVehiculo" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="ValorComision" Type="real" Nullable="false" />
+          <Property Name="CiudadEntrega" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TipoVehiculo">
+          <Key>
+            <PropertyRef Name="idTipoVehiculo" />
+          </Key>
+          <Property Name="idTipoVehiculo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Subasta_TipoVehiculo">
+          <End Role="TipoVehiculo" Type="Self.TipoVehiculo" Multiplicity="1" />
+          <End Role="SubastaVehiculos" Type="Self.SubastaVehiculos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoVehiculo">
+              <PropertyRef Name="idTipoVehiculo" />
+            </Principal>
+            <Dependent Role="SubastaVehiculos">
+              <PropertyRef Name="idTipoVehiculo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBExamenFinalModelStoreContainer">
+          <EntitySet Name="SubastaVehiculos" EntityType="Self.SubastaVehiculos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipoVehiculo" EntityType="Self.TipoVehiculo" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Subasta_TipoVehiculo" Association="Self.FK_Subasta_TipoVehiculo">
+            <End Role="TipoVehiculo" EntitySet="TipoVehiculo" />
+            <End Role="SubastaVehiculos" EntitySet="SubastaVehiculos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBExamenFinalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="SubastaVehiculo">
+          <Key>
+            <PropertyRef Name="idSubastaVehiculos" />
+          </Key>
+          <Property Name="idSubastaVehiculos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idTipoVehiculo" Type="Int32" Nullable="false" />
+          <Property Name="Vehiculo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Vendedor" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Comprador" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ValorVenta" Type="Single" Nullable="false" />
+          <Property Name="PlacaVehiculo" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ValorComision" Type="Single" Nullable="false" />
+          <Property Name="CiudadEntrega" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="TipoVehiculo" Relationship="Self.FK_Subasta_TipoVehiculo" FromRole="SubastaVehiculos" ToRole="TipoVehiculo" />
+        </EntityType>
+        <EntityType Name="TipoVehiculo">
+          <Key>
+            <PropertyRef Name="idTipoVehiculo" />
+          </Key>
+          <Property Name="idTipoVehiculo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="SubastaVehiculos" Relationship="Self.FK_Subasta_TipoVehiculo" FromRole="TipoVehiculo" ToRole="SubastaVehiculos" />
+        </EntityType>
+        <Association Name="FK_Subasta_TipoVehiculo">
+          <End Role="TipoVehiculo" Type="Self.TipoVehiculo" Multiplicity="1" />
+          <End Role="SubastaVehiculos" Type="Self.SubastaVehiculo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoVehiculo">
+              <PropertyRef Name="idTipoVehiculo" />
+            </Principal>
+            <Dependent Role="SubastaVehiculos">
+              <PropertyRef Name="idTipoVehiculo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBExamenFinalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SubastaVehiculos" EntityType="Self.SubastaVehiculo" />
+          <EntitySet Name="TipoVehiculoes" EntityType="Self.TipoVehiculo" />
+          <AssociationSet Name="FK_Subasta_TipoVehiculo" Association="Self.FK_Subasta_TipoVehiculo">
+            <End Role="TipoVehiculo" EntitySet="TipoVehiculoes" />
+            <End Role="SubastaVehiculos" EntitySet="SubastaVehiculos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBExamenFinalModelStoreContainer" CdmEntityContainer="DBExamenFinalEntities">
+          <EntitySetMapping Name="SubastaVehiculos">
+            <EntityTypeMapping TypeName="DBExamenFinalModel.SubastaVehiculo">
+              <MappingFragment StoreEntitySet="SubastaVehiculos">
+                <ScalarProperty Name="idSubastaVehiculos" ColumnName="idSubastaVehiculos" />
+                <ScalarProperty Name="idTipoVehiculo" ColumnName="idTipoVehiculo" />
+                <ScalarProperty Name="Vehiculo" ColumnName="Vehiculo" />
+                <ScalarProperty Name="Vendedor" ColumnName="Vendedor" />
+                <ScalarProperty Name="Comprador" ColumnName="Comprador" />
+                <ScalarProperty Name="ValorVenta" ColumnName="ValorVenta" />
+                <ScalarProperty Name="PlacaVehiculo" ColumnName="PlacaVehiculo" />
+                <ScalarProperty Name="ValorComision" ColumnName="ValorComision" />
+                <ScalarProperty Name="CiudadEntrega" ColumnName="CiudadEntrega" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipoVehiculoes">
+            <EntityTypeMapping TypeName="DBExamenFinalModel.TipoVehiculo">
+              <MappingFragment StoreEntitySet="TipoVehiculo">
+                <ScalarProperty Name="idTipoVehiculo" ColumnName="idTipoVehiculo" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
