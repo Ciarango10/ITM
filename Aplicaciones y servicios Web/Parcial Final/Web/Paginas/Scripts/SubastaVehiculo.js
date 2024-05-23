@@ -1,5 +1,5 @@
 ﻿//Se define una variable de tipo datable, púlica para la página
-/*var oTabla = $("#tblSubasta").DataTable();*/
+//var oTabla = $("#tblSubasta").DataTable();
 jQuery(function () {
 
     $("#btnInsertar").on("click", () => {
@@ -35,7 +35,6 @@ async function EjecutarComando(Comando, Extension) {
     let ValorComision = $("#txtValorComision").val();
     let CiudadEntrega = $("#txtCiudad").val();
 
-    console.log(Codigo);
     let DatosSubasta = {
         idSubastaVehiculos: Codigo,
         Vendedor: Vendedor,

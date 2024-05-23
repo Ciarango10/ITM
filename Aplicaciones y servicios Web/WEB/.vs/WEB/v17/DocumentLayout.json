@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\scripts\\usuario.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|c:\\users\\user\\desktop\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\scripts\\usuario.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\scripts\\usuario.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\usuario.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\usuario.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\usuario.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -52,11 +52,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Usuario.js",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Usuario.js",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Usuario.js",
               "RelativeDocumentMoniker": "Paginas\\Scripts\\Usuario.js",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Usuario.js",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Usuario.js",
               "RelativeToolTip": "Paginas\\Scripts\\Usuario.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-05-15T23:55:36.812Z",
               "EditorCaption": ""
@@ -65,14 +65,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Usuario.html",
-              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Usuario.html",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Usuario.html",
               "RelativeDocumentMoniker": "Paginas\\Usuario.html",
-              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Usuario.html",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Usuario.html",
               "RelativeToolTip": "Paginas\\Usuario.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAIsAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-05-15T23:10:31.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T23:10:31.292Z"
             }
           ]
         }
