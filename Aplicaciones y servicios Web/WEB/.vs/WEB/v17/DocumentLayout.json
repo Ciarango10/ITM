@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\",
+  "WorkspaceRootPath": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|c:\\users\\user\\desktop\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\scripts\\usuario.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\scripts\\usuario.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|d:\\carlos arango\\codigo\\itm\\aplicaciones y servicios web\\web\\paginas\\scripts\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\scripts\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\usuario.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\usuario.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\paginas\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5BA7B54-6FFC-4FA5-8B31-1530CAFED92F}|WEB.csproj|solutionrelative:paginas\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,27 +51,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Usuario.js",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Usuario.js",
-              "RelativeDocumentMoniker": "Paginas\\Scripts\\Usuario.js",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Usuario.js",
-              "RelativeToolTip": "Paginas\\Scripts\\Usuario.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABFAAAA",
+              "Title": "Login.js",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Login.js",
+              "RelativeDocumentMoniker": "Paginas\\Scripts\\Login.js",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Scripts\\Login.js",
+              "RelativeToolTip": "Paginas\\Scripts\\Login.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-15T23:55:36.812Z",
+              "WhenOpened": "2024-05-25T03:24:18.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Usuario.html",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Usuario.html",
-              "RelativeDocumentMoniker": "Paginas\\Usuario.html",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Usuario.html",
-              "RelativeToolTip": "Paginas\\Usuario.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIsAAAA6AAAA",
+              "Title": "Login.html",
+              "DocumentMoniker": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Login.html",
+              "RelativeDocumentMoniker": "Paginas\\Login.html",
+              "ToolTip": "D:\\Carlos Arango\\Codigo\\ITM\\Aplicaciones y servicios Web\\WEB\\Paginas\\Login.html",
+              "RelativeToolTip": "Paginas\\Login.html",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADsAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-05-15T23:10:31.292Z"
+              "WhenOpened": "2024-05-25T03:26:00.01Z",
+              "EditorCaption": ""
             }
           ]
         }

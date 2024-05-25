@@ -23,3 +23,31 @@
         $("#dvMensaje").html(error);
     }
 }
+async function LlenarComboServiciosAuth(url, combo) {
+    try {
+        let ValorCookie = getCookie("token");
+        
+        const Respuesta = await fetch(url,
+            {
+                method: "GET",
+                mode: "cors",
+                headers: {
+                    "content-type": "application/json",
+                    'Authorization': 'Bearer ' + ValorCookie
+                }
+            }
+        );
+        const Rpta = await Respuesta.json();
+        //Recorrer la respuesta en Rpta, para agregarla al combo de tipo de producto
+        $(combo).empty();
+        //Se recorre la respuesta
+        for (i = 0; i < Rpta.length; i++) {
+            $(combo).append('<option value=' + Rpta[i].Codigo + '>' + Rpta[i].Nombre + '</option>');
+        }
+    }
+    catch (error) {
+        $("#dvMensaje").removeClass("alert alert-success");
+        $("#dvMensaje").addClass("alert alert-danger");
+        $("#dvMensaje").html(error);
+    }
+}

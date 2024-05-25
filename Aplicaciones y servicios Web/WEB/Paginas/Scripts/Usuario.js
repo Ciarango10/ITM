@@ -10,7 +10,7 @@ jQuery(function () {
     $("#btnInsertar").on("click", () => {
         EjecutarComando("POST", "CrearUsuario");
     });
-
+        
     $("#btnActualizar").on("click", () => {
         EjecutarComando("PUT", "ActualizarUsuario");
     });

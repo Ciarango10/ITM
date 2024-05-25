@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Servicios.Clases;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -11,6 +12,9 @@ namespace Servicios
         {
             // Configuración y servicios de Web API
             config.EnableCors();
+
+            //Manejo del token
+            config.MessageHandlers.Add(new TokenValidationHandler());
 
             // Rutas de Web API
             config.MapHttpAttributeRoutes();
