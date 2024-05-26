@@ -169,3 +169,27 @@ CREATE TABLE Arriendo (
 	Constraint FKInmueble_Arriendo foreign key (Id_Inmueble) references Inmueble(IdInmueble),
 	Constraint FKFormaPago_Arriendo foreign key (Id_FormaPago) references FormaPago(IdFormaPago)
 );
+GO
+CREATE TABLE Usuario (
+	IdUsuario int identity(1,1) primary key,
+	Documento_Empleado varchar(20),
+	UserName varchar(50) not null,
+	Clave nvarchar(2000) not null,
+	Salt nvarchar(2000) not null,
+	Constraint FKEmpleado_Usuario foreign key (Documento_Empleado) references Empleado(Documento)
+);
+GO
+CREATE TABLE Perfil (
+	IdPerfil int identity(1,1) primary key,
+	Nombre varchar(50) not null,
+	PaginaNavegar varchar(50) not null
+);
+GO
+CREATE TABLE Usuario_Perfil (
+	IdUsuarioPerfil int identity(1,1) primary key,
+	IdUsuario int not null,
+	IdPerfil int not null,
+	Activo bit not null
+	Constraint FKUsuario_UsuarioPerfil foreign key (IdUsuario) references Usuario(IdUsuario),
+	Constraint FKPerfil_UsuarioPerfil foreign key (IdPerfil) references Perfil(IdPerfil)
+);
