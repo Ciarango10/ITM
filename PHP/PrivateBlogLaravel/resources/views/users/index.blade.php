@@ -2,11 +2,11 @@
 
 @section('content')
     <div class="pagetitle">
-        <h1>Roles</h1>
+        <h1>Usuarios</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('home.index') }}">Home</a></li>
-                <li class="breadcrumb-item active">Roles</li>
+                <li class="breadcrumb-item active">Usuarios</li>
             </ol>
         </nav>
     </div>
@@ -17,9 +17,9 @@
 
             <div class="card-header py-3">
                 <div class="row">
-                    <h3 class="m-0 font-weight-bold text-primary col-md-11">Roles</h3>
+                    <h3 class="m-0 font-weight-bold text-primary col-md-11">Usuarios</h3>
                     <div class="col-md-1">
-                        <a href="{{ route('roles.create') }}" class="btn btn-primary"><i
+                        <a href="{{ route('users.create') }}" class="btn btn-primary"><i
                                 class="bi bi-plus-circle"></i></a>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
 
             <div class="card-body">
 
-                <form class="navbar-search" method="GET" action="{{ route('roles.index')}}" >
+                <form class="navbar-search" method="GET" action="{{ route('users.index')}}" >
 
                     <div class="row mt-3">
                         <div class="col-md-auto">
@@ -66,26 +66,23 @@
 
                 <table class="table table-bordered">
                     <thead>
-                        <tr>
-                            <th> Nombre </th>
+                            <th>Documento</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Rol</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($roles as $role)
+                        @foreach ($users as $user)
                             <tr>
-                                <td> {{ $role->name }} </td>
+                                <td> {{ $user->document }} </td>
+                                <td> {{ $user->full_name }} </td>
+                                <td> {{ $user->email }} </td>
+                                <td> {{ $user->role->name }} </td>
                                 <td>
-                                    <a href="{{ route('roles.edit', $role->id) }}" class="btn btn-sm btn-warning"><i
+                                    <a href="{{ route('users.edit', $user->id) }}" class="btn btn-sm btn-warning"><i
                                             class="bi bi-pencil-fill"></i></a>
-
-
-                                    <form action="{{ route('roles.delete', $role->id) }}" style="display:contents" method="POST">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button class="btn btn-danger btn-sm btnDelete"><i
-                                                class="bi bi-trash-fill"></i></button>
-                                    </form>
                                 </td>
                             </tr>
 
@@ -96,7 +93,7 @@
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
 
-                        {{ $roles->appends(request()->except('page'))->links('vendor.pagination.custom') }}
+                        {{ $users->appends(request()->except('page'))->links('vendor.pagination.custom') }}
 
                     </ul>
                   </nav>
@@ -108,32 +105,3 @@
     </section>
 
 @endsection
-
-<script type="module">
-
-    $(document).ready(function () {
-
-        $('.btnDelete').click(function (event) {
-
-            event.preventDefault();
-
-            Swal.fire({
-                title: "¿Desea eliminar el rol?",
-                text: "No prodrá revertirlo",
-                icon: "question",
-                showCancelButton: true,
-            }).then((result) => {
-
-                if (result.isConfirmed) {
-
-                    const form = $(this).closest('form');
-
-                    form.submit();
-                }
-
-            });
-
-        });
-
-    });
-</script>
