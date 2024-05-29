@@ -71,6 +71,19 @@ namespace Servicios.Clases
                        ValorUnitario = P.ValorUnitario
                    };
         }
+        
+        public IQueryable LlenarCombo(int idTipoProducto)
+        {
+            return from P in dbSuper.Set<PRODucto>()
+                   join TP in dbSuper.Set<TIpoPRoducto>()
+                   on P.CodigoTipoProducto equals TP.Codigo
+                   where P.CodigoTipoProducto == idTipoProducto
+                   select new
+                   {
+                       Codigo = P.Codigo 
+                   };
+        }
+
 
         public string Eliminar()
         {

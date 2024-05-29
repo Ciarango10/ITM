@@ -21,5 +21,16 @@ namespace Servicios.Clases
                 .OrderBy(t => t.Nombre)
                 .ToList();
         }
+
+        public IQueryable LlenarCombo()
+        {
+            return from TP in dbSuper.Set<TIpoPRoducto>()
+                   orderby TP.Nombre
+                   select new
+                   {
+                       Codigo = TP.Codigo,
+                       Nombre = TP.Nombre
+                   };
+        }
     }
 }

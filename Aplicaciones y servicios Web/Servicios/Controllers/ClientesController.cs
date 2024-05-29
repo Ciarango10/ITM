@@ -20,9 +20,10 @@ namespace Servicios.Controllers
         }
 
         // GET api/<controller>/5
-        public string Get(int id)
+        public CLIEnte Get(string Documento)
         {
-            return "value";
+            clsCliente _cliente = new clsCliente();
+            return _cliente.Consultar(Documento);
         }
 
         // POST api/<controller>

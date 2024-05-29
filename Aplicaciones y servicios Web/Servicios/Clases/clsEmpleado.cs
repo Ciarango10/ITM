@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Web;
+using System.Xml.Linq;
 
 namespace Servicios.Clases
 {
@@ -67,6 +68,20 @@ namespace Servicios.Clases
                    select new
                    {
                        NombreEmpleado  = E.Nombre + " " + E.PrimerApellido + " " + E.SegundoApellido,
+                       Cargo = C.Nombre
+                   };
+        }
+
+        public IQueryable LlenarCombo()
+        {
+            return from E in dbSuper.Set<EMPLeado>()
+                   join EC in dbSuper.Set<EMpleadoCArgo>()
+                   on E.Documento equals EC.Documento
+                   where EC.CodigoCargo == 1
+                   select new
+                   {
+                       Codigo = EC.Codigo,
+                       NombreEmpleado = E.Nombre + " " + E.PrimerApellido + " " + E.SegundoApellido,
                        Cargo = C.Nombre
                    };
         }

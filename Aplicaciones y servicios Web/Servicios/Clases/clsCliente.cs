@@ -1,4 +1,5 @@
-﻿using Servicios.Models;
+﻿using Microsoft.SqlServer.Server;
+using Servicios.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,11 @@ namespace Servicios.Clases
                 return ex.Message;
             }
 
+        }
+
+        public CLIEnte Consultar(string Documento)
+        {
+            return super.CLIEntes.FirstOrDefault(c => c.Documento == Documento);
         }
     }
 }
