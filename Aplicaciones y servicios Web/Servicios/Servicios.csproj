@@ -211,6 +211,7 @@
     <Compile Include="Clases\clsCliente.cs" />
     <Compile Include="Clases\clsCypher.cs" />
     <Compile Include="Clases\clsEmpleado.cs" />
+    <Compile Include="Clases\clsFacturacion.cs" />
     <Compile Include="Clases\clsLogin.cs" />
     <Compile Include="Clases\clsProducto.cs" />
     <Compile Include="Clases\clsReserva.cs" />
@@ -221,6 +222,7 @@
     <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Clases\clsPerfil.cs" />
     <Compile Include="Controllers\EmpleadosController.cs" />
+    <Compile Include="Controllers\FacturacionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PerfilesController.cs" />

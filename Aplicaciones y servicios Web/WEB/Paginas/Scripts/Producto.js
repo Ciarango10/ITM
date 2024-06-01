@@ -1,4 +1,5 @@
 ﻿var oTabla = $("#tblProductos").DataTable();
+
 jQuery(function () {
     //Registrar los botones para responder al evento click
     $("#dvMenu").load("../Paginas/Menu.html");
@@ -27,11 +28,11 @@ jQuery(function () {
 });
 
 async function LlenarTablaProductos() {
-    LlenarTablaXServicios("https://localhost:44374/api/Productos", "#tblProductos");
+    LlenarTablaServiciosAuth("https://localhost:44374/api/Productos", "#tblProductos");
 }
 
 async function LlenarComboTipoProducto() {
-    LlenarComboXServicios("https://localhost:44374/api/TipoProductos", "#cboTipoProducto");
+    LlenarComboServiciosAuth("https://localhost:44374/api/TipoProductos/LlenarCombo", "#cboTipoProducto");
 }
 
 //async function LlenarTablaProductos() {
@@ -87,6 +88,8 @@ async function LlenarComboTipoProducto() {
 //}
 
 async function EjecutarComando(Comando) {
+    let Token = getCookie("token");
+
     //Capturar los datos de entrada
     let Codigo = $("#txtCodigo").val();
     let Nombre = $("#txtNombre").val();
@@ -121,7 +124,10 @@ async function EjecutarComando(Comando) {
             {
                 method: Comando,
                 mode: "cors",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+                    "Content-Type": "application/json",
+                    'Authorization': 'Bearer ' + Token
+                },
                 body: JSON.stringify(DatosProducto)
             });
         //Leer la respuesta y presentarla en el div
@@ -135,6 +141,7 @@ async function EjecutarComando(Comando) {
 }
 
 async function Consultar() {
+    let Token = getCookie("token");
     try {
         //Capturar los datos de entrada
         let Codigo = $("#txtCodigo").val();
@@ -143,7 +150,10 @@ async function Consultar() {
             {
                 method: "GET",
                 mode: "cors",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+                    "Content-Type": "application/json",
+                    'Authorization': 'Bearer ' + Token
+                },
             });
         //Leer la respuesta y presentarla en el div
         const Resultado = await Respuesta.json();

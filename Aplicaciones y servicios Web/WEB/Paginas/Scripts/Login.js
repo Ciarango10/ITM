@@ -10,7 +10,7 @@
     
     //Invocamos el servicio de empleados de nuestra api, para realizar el proceso de inserción
     try {
-        const Respuesta = await fetch("https://localhost:44374/api/login/Ingresar",
+        const Respuesta = await fetch("https://localhost:44374/api/Login/Ingresar",
             {
                 method: "POST",
                 mode: "cors",
@@ -22,7 +22,7 @@
         );
         const Rpta = await Respuesta.json();
         //alert(Rpta.Error);
-        if (Rpta.length == 0) {
+        if (Rpta == null) {
             document.cookie = "token=0;path=/";
             //Hubo un error al procesar el comando
             $("#dvMensaje").removeClass("alert alert-success");
@@ -35,7 +35,7 @@
             d.setTime(d.getTime() + (extdays * 24 * 60 * 60 * 1000));
             let expires = ";expires=" + d.toUTCString();
             //alert(Rpta[0].Perfil);
-            document.cookie = "token=" + Rpta[0].token + expires + ";path=/";
+            document.cookie = "token=" + Rpta[0].Token + expires + ";path=/";
             $("#dvMensaje").removeClass("alert alert-danger");
             $("#dvMensaje").addClass("alert alert-success");
             $("#dvMensaje").html(Rpta[0].Autenticado);

@@ -11,13 +11,16 @@ using System.Web.Http.Cors;
 namespace Servicios.Controllers
 {
     [EnableCors(origins: "https://localhost:44350", headers: "*", methods:"*")]
+    [Authorize]
     public class ClientesController : ApiController
     {
         // GET api/<controller>
-        public IEnumerable<string> Get()
+        public IQueryable Get()
         {
-            return new string[] { "value1", "value2" };
+            clsCliente cliente = new clsCliente();
+            return cliente.ListarClientes();
         }
+
 
         // GET api/<controller>/5
         public CLIEnte Get(string Documento)
@@ -38,13 +41,15 @@ namespace Servicios.Controllers
         }
 
         // PUT api/<controller>/5
-        public void Put(int id, [FromBody] string value)
+        public string Put(int id, [FromBody] string value)
         {
+            return "Sin implementar";
         }
 
         // DELETE api/<controller>/5
-        public void Delete(int id)
+        public string Delete(int id)
         {
+            return "Sin implementar";
         }
     }
 }

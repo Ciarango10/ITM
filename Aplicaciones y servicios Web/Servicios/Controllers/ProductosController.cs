@@ -11,8 +11,19 @@ using System.Web.Http.Cors;
 namespace Servicios.Controllers
 {
     [EnableCors(origins: "https://localhost:44350", headers: "*", methods: "*")]
+    [RoutePrefix("api/Productos")]
+    [Authorize]
+
     public class ProductosController : ApiController
     {
+        [HttpGet]
+        [Route("LlenarCombo")]
+        public IQueryable LlenarCombo(int idTipoProducto)
+        {
+            clsProducto _producto = new clsProducto();
+            return _producto.LlenarCombo(idTipoProducto);
+        }
+
         // GET api/<controller>
         public PRODucto Get(int id)
         {
@@ -23,7 +34,7 @@ namespace Servicios.Controllers
         public IQueryable Get()
         {
             clsProducto _producto = new clsProducto();
-            return _producto.ListarProductos();
+            return _producto.ListarTodosConTipo();
         }
 
         // POST api/<controller>

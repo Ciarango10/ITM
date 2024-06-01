@@ -54,7 +54,7 @@ namespace Servicios.Clases
             return dbSuper.PRODuctoes.FirstOrDefault(p => p.Codigo == id);
         }
 
-        public IQueryable ListarProductos()
+        public IQueryable ListarTodosConTipo()
         {
             return from TP in dbSuper.Set<TIpoPRoducto>()
                    join P in dbSuper.Set<PRODucto>()
@@ -62,28 +62,26 @@ namespace Servicios.Clases
                    orderby TP.Nombre, P.Nombre
                    select new
                    {
-                       Cod_Tipo_Producto = TP.Codigo,
+                       Cod_Tipo_Prod = TP.Codigo,
                        Tipo_Producto = TP.Nombre,
                        Codigo = P.Codigo,
-                       Nombre = P.Nombre,
+                       Producto = P.Nombre,
                        Descripcion = P.Descripcion,
                        Cantidad = P.Cantidad,
-                       ValorUnitario = P.ValorUnitario
-                   };
-        }
-        
-        public IQueryable LlenarCombo(int idTipoProducto)
-        {
-            return from P in dbSuper.Set<PRODucto>()
-                   join TP in dbSuper.Set<TIpoPRoducto>()
-                   on P.CodigoTipoProducto equals TP.Codigo
-                   where P.CodigoTipoProducto == idTipoProducto
-                   select new
-                   {
-                       Codigo = P.Codigo 
+                       Valor_Unitario = P.ValorUnitario
                    };
         }
 
+        public IQueryable LlenarCombo(int idTipoProducto)
+        {
+            return from P in dbSuper.Set<PRODucto>()
+                   where P.CodigoTipoProducto == idTipoProducto
+                   select new
+                   {
+                       Codigo = P.Codigo + "|" + P.ValorUnitario,
+                       Nombre = P.Nombre
+                   };
+        }
 
         public string Eliminar()
         {
@@ -95,7 +93,7 @@ namespace Servicios.Clases
                 dbSuper.PRODuctoes.Remove(_producto);
                 //Para garantizar la grabacion en la base de datos, se invoca el metodo SaveChanges
                 dbSuper.SaveChanges();
-                return "Se eliminó el producto: " + producto.Nombre;
+                return "Se eliminó el producto: " + _producto.Nombre;
             }
             catch (Exception ex)
             {

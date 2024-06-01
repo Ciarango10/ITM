@@ -36,6 +36,17 @@ namespace Servicios.Clases
 
         }
 
+        public IQueryable ListarClientes()
+        {
+            return from C in super.Set<CLIEnte>()
+                   orderby C.PrimerApellido, C.SegundoApellido
+                   select new
+                   {
+                       Codigo = C.Documento,
+                       Nombre = C.Nombre + " " + C.PrimerApellido + " " + C.SegundoApellido
+                   };
+        }
+
         public CLIEnte Consultar(string Documento)
         {
             return super.CLIEntes.FirstOrDefault(c => c.Documento == Documento);

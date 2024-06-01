@@ -21,6 +21,7 @@
 });
 
 async function Consultar() {
+    let Token = getCookie("token");
     //Capturar los datos de entrada
     let Documento = $("#txtDocumento").val();
 
@@ -30,7 +31,10 @@ async function Consultar() {
             {
                 method: "GET",
                 mode: "cors",
-                headers: { "Content-Type": "application/json" }
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": 'Bearer ' + Token
+                }
             });
         //Leer la respuesta y presentarla en el div
         const Resultado = await Respuesta.json();
@@ -75,11 +79,15 @@ async function EjecutarComando(Comando) {
     //En el body, se envían los datos al servicio, en formato json
     //Javascript, tiene una librería JSON, que permite convertir la variable en formato json
     try {
+        let Token = getCookie("token");
         const Respuesta = await fetch("https://localhost:44374/api/Empleados",
             {
                 method: Comando,
                 mode: "cors",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": 'Bearer ' + Token
+                },
                 body: JSON.stringify(DatosEmpleado)
             });
         //Leer la respuesta y presentarla en el div

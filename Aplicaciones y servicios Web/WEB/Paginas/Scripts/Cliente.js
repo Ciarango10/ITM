@@ -36,11 +36,15 @@ async function insertar() {
     //En el body, se envían los datos al servicio, en formato json
     //Javascript, tiene una librería JSON, que permite convertir la variable en formato json
     try {
+        let Token = getCookie("token");
         const Respuesta = await fetch("https://localhost:44374/api/Clientes",
             {
                 method: "POST",
                 mode: "cors",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": 'Bearer ' + Token
+                },
                 body: JSON.stringify(DatosClientes)
             });
         //Leer la respuesta y presentarla en el div

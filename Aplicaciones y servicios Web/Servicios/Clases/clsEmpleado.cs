@@ -64,7 +64,6 @@ namespace Servicios.Clases
                    join C in dbSuper.Set<CARGo>()
                    on EC.CodigoCargo equals C.Codigo
                    where E.Documento == Documento 
-                   //&& EC.FechaFin == null
                    select new
                    {
                        NombreEmpleado  = E.Nombre + " " + E.PrimerApellido + " " + E.SegundoApellido,
@@ -81,8 +80,7 @@ namespace Servicios.Clases
                    select new
                    {
                        Codigo = EC.Codigo,
-                       NombreEmpleado = E.Nombre + " " + E.PrimerApellido + " " + E.SegundoApellido,
-                       Cargo = C.Nombre
+                       Nombre = E.Nombre + " " + E.PrimerApellido + " " + E.SegundoApellido
                    };
         }
 
