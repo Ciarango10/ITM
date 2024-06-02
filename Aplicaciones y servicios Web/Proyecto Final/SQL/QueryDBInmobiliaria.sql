@@ -193,3 +193,22 @@ CREATE TABLE Usuario_Perfil (
 	Constraint FKUsuario_UsuarioPerfil foreign key (IdUsuario) references Usuario(IdUsuario),
 	Constraint FKPerfil_UsuarioPerfil foreign key (IdPerfil) references Perfil(IdPerfil)
 );
+GO
+CREATE TABLE Factura(
+	Numero int primary key not null, 
+	Documento varchar(20) not null,
+	Fecha datetime not null,
+	CodigoEmpleado int not null,
+	Constraint FKFactura_Cliente foreign key (Documento) references Cliente(Documento),
+	Constraint FKFactura_EmpleadoCargo foreign key (CodigoEmpleado) references EmpleadoCargo(Codigo)
+);
+GO
+CREATE TABLE DetalleFactura(
+	Codigo int identity(1,1) primary key not null,
+	Numero int not null, 
+	CodigoInmueble int not null,
+	Cantidad int not null,
+	ValorUnitario float not null,
+	Constraint FKDetalleFactura_Inmueble foreign key (CodigoInmueble) references Inmueble(IdInmueble),
+	Constraint FKDetalleFactura_Factura foreign key (Numero) references Factura(Numero)
+);
